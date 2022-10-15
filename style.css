@@ -8,15 +8,29 @@ div.main{
     font-size: 50px;
 }
 div.nav{
-    width: 80%;
+    width: 100%;
 }
-
-a.bar{
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+    width: 25%;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
     text-decoration: none;
-    color: rgb(88, 88, 88);
-    width: 500px;
-    height: 100px;
-}
-a.bar:hover{
-    background-color: aqua;
-}
+  }
+  
+  li a:hover {
+    background-color: #111;
+  }
