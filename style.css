@@ -50,3 +50,10 @@ ul.nav {
   a{
     text-decoration: none;
   }
+  div.ioe{
+    border: 1px rgb(0, 0, 0) solid;
+    background-color:rgb(189, 189, 189)
+  }
+  td{
+    border: 1px black solid;
+  }
