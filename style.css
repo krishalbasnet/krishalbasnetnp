@@ -1,16 +1,17 @@
 div.main{
-    color: white;
-    border: 1px white solid;
     width: 85%;
     border-radius: 15px;
     text-align: left;
     padding-left: 15px;
     font-size: 50px;
 }
+body{
+  background-color: rgb(173, 173, 173);
+}
 div.nav{
     width: 100%;
 }
-ul {
+ul.nav {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -18,12 +19,12 @@ ul {
     background-color: #333;
   }
   
-  li {
+  li.nav {
     float: left;
     width: 25%;
   }
   
-  li a {
+  li.nav a.nav {
     display: block;
     color: white;
     text-align: center;
@@ -31,6 +32,6 @@ ul {
     text-decoration: none;
   }
   
-  li a:hover {
+  li.nav a.nav:hover {
     background-color: #111;
   }
