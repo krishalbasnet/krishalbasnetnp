@@ -11,8 +11,10 @@ body{
 div.nav{
     width: 100%;
 }
+ul{
+  list-style-type: none;
+}
 ul.nav {
-    list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
