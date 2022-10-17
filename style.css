@@ -1,63 +1,63 @@
 div.main{
-    width: 85%;
-    border-radius: 15px;
-    text-align: left;
-    padding-left: 15px;
-    font-size: 50px;
+  width: 85%;
+  border-radius: 15px;
+  text-align: left;
+  padding-left: 15px;
+  font-size: 50px;
 }
 img.top_logo{
-  height: 100px;
+height: 100px;
 }
 body{
-  background-color: rgb(177, 223, 171);
+background-color: rgb(177, 223, 171);
 }
 div.nav{
-    width: 100%;
+  width: 100%;
 }
 ul{
-  list-style-type: none;
+list-style-type: none;
 }
 ul.nav {
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-  }
-  
-  li.nav {
-    float: left;
-    width: 25%;
-  }
-  
-  li.nav a.nav {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    border: 1px solid black;
-  }
-  
-  li.nav a.nav:hover {
-    background-color: #111;
-  }
-  div.beta{
-    background-color: rgb(133, 196, 255);
-    margin: auto;
-    width: 60%;
-    border: 1px solid #000000;
-    padding: 10px;
-    font-size: 20px;
-    color: black;
-    border-radius: 15px;
-  }
-  a{
-    text-decoration: none;
-  }
-  div.ioe{
-    border: 1px rgb(0, 0, 0) solid;
-    background-color:rgb(189, 189, 189)
-  }
-  td{
-    border: 1px black solid;
-  }
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li.nav {
+  float: left;
+  width: 25%;
+}
+
+li.nav a.nav {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  border: 1px solid black;
+}
+
+li.nav a.nav:hover {
+  background-color: #111;
+}
+div.beta{
+  background-color: rgb(133, 196, 255);
+  margin: auto;
+  width: 60%;
+  border: 1px solid #000000;
+  padding: 10px;
+  font-size: 20px;
+  color: black;
+  border-radius: 15px;
+}
+a{
+  text-decoration: none;
+}
+div.ioe{
+  border: 1px rgb(0, 0, 0) solid;
+  background-color:rgb(189, 189, 189)
+}
+td{
+  border: 1px black solid;
+}
