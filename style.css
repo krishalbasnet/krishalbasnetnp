@@ -61,3 +61,6 @@ div.ioe{
 td{
   border: 1px black solid;
 }
+div.text{
+  width: 90%;
+}
