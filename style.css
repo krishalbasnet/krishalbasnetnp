@@ -64,3 +64,10 @@ td{
 div.text{
   width: 90%;
 }
+div.back{
+  width: 80%;
+  text-align: left;
+}
+img.backk{
+  height: 20px;
+}
