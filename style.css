@@ -82,3 +82,7 @@ img.Ulogo{
   position: absolute;
   left: 320px;
 }
+.dark-mode {
+  background-color: black;
+  color: white;
+}
