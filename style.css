@@ -89,3 +89,24 @@ img.Ulogo{
 img.slogoo{
   height: 30px;
 }
+.black_boarder{
+  border: black solid 2px;
+}
+.sizee{
+  width: auto;
+  height: 170px;
+}
+div.boooook{
+  width: 10%;
+  position: absolute;
+}
+div.booooook{
+  width: 80%;
+  position: absolute;
+  left: 15%;
+  text-align: left;
+}
+nav.inn{
+  width: 95%;
+  text-align: left;
+}
