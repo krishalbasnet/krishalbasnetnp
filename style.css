@@ -91,6 +91,7 @@ img.slogoo{
 }
 .black_boarder{
   border: black solid 2px;
+  width: 70%;
 }
 .sizee{
   width: auto;
