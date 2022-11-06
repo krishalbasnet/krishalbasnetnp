@@ -97,6 +97,7 @@ img.slogoo{
   width: auto;
   height: 170px;
   box-shadow: #000000 0px 0px 9px 2px;
+  transition: all 1s;
 }
 div.boooook{
   width: 10%;
@@ -126,4 +127,10 @@ nav.inn{
     margin: 0 auto;
     justify-content: center;
   }
+}
+img.sizee:hover{
+  box-shadow: rgb(73, 73, 73) -3px 3px;
+  transition: all 0.5s;
+  width: auto;
+  height: 200px;
 }
