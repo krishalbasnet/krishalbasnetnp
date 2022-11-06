@@ -116,16 +116,15 @@ nav.inn{
 @media all and (max-width: 1200px) {
   div.bo2{
     width: fit-content;
+    position: relative;
   }
 }
 @media all and (max-width:880px){
   div.detailss{
-    top: 450px;
-    text-align: center;
+    position: relative;
   }
   div.bo2{
-    margin: 0 auto;
-    justify-content: center;
+    position: relative;
   }
 }
 img.sizee:hover{
