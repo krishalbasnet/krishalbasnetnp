@@ -60,6 +60,7 @@ div.ioe{
 }
 td{
   border: 1px black solid;
+  text-align: center;
 }
 div.text{
   width: 90%;
@@ -135,4 +136,23 @@ img.sizee:hover{
 }
 a{
   color: #000000;
+}
+form{
+  width: fit-content;
+  background-color: rgb(187, 175, 175);
+  height: fit-content;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  box-shadow: #000000 0px 0px 30px 4px;
+  border-radius: 10px;
+  font-size: 18px;
+}
+input{
+  border-radius: 5px;
+  font-size: 18px;
+  padding-left: 10px;
+  font-family:Arial, Helvetica, sans-serif;
+  font-family: 'Crimson Text', serif;
 }
