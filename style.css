@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
 div.main{
   width: 85%;
   border-radius: 15px;
@@ -8,15 +9,19 @@ div.main{
 img.top_logo{
 height: 100px;
 }
+
 body{
 background-color: rgb(177, 223, 171);
 }
+
 div.nav{
   width: 100%;
 }
+
 ul{
 list-style-type: none;
 }
+
 ul.nav {
   margin: 0;
   padding: 0;
@@ -163,7 +168,6 @@ div.descriptionb{
   padding-left: 20px;
   font-family: 'Patrick Hand', cursive;
 }
-@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
 div.dpad{
   padding-bottom: 10px;
 }
