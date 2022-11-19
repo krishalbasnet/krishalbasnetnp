@@ -133,12 +133,6 @@ nav.inn{
     position: relative;
   }
 }
-img.sizee:hover{
-  box-shadow: rgb(73, 73, 73) -3px 3px;
-  transition: all 0.5s;
-  width: auto;
-  height: 200px;
-}
 a{
   color: #000000;
 }
