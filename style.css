@@ -11,31 +11,25 @@ div.main {
 img.top_logo {
   height: 100px;
 }
-
 body {
   background-color: rgb(177, 223, 171);
 }
-
 div.nav {
   width: 100%;
 }
-
 ul {
   list-style-type: none;
 }
-
 ul.nav {
   margin: 0;
   padding: 0;
   overflow: hidden;
   background-color: #333;
 }
-
 li.nav {
   float: left;
   width: 25%;
 }
-
 li.nav a.nav {
   display: block;
   color: white;
@@ -44,7 +38,6 @@ li.nav a.nav {
   text-decoration: none;
   border: 1px solid black;
 }
-
 li.nav a.nav:hover {
   background-color: #111;
 }
@@ -57,7 +50,6 @@ div.beta {
   border-radius: 15px;
   transition: 0.5s;
 }
-
 div.beta:hover {
   border: 0px;
   box-shadow: #000000 0px 0px 15px 1px;
@@ -119,7 +111,7 @@ div.boooook {
   position: absolute;
 }
 div.booooook {
-  width: 30%;
+  width: 40%;
   text-align: left;
   padding-left: 40px;
   padding-right: 40px;
@@ -197,6 +189,7 @@ div.card{
   border-radius: 10px;
   width: 100%;
   text-align: center;
+  padding-bottom: 5px;
 }
 div.wrap91 {
   width: 40%;
@@ -217,9 +210,9 @@ div.card:hover{
 div.bo2{
   background-color: #7dd18a;
   background-image: url("https://www.transparenttextures.com/patterns/football-no-lines.png");
-  padding-bottom: 8px;
-  padding-top: 10px;
+  padding-bottom: 10px;
 }
 progress{
   width: 105%;
+  height: 20px;
 }
