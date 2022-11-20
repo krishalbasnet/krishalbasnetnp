@@ -1,25 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
-div.main{
+@import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap");
+div.main {
   width: 85%;
   border-radius: 15px;
   text-align: left;
   padding-left: 15px;
   font-size: 50px;
 }
-img.top_logo{
-height: 100px;
+img.top_logo {
+  height: 100px;
 }
 
-body{
-background-color: rgb(177, 223, 171);
+body {
+  background-color: rgb(177, 223, 171);
 }
 
-div.nav{
+div.nav {
   width: 100%;
 }
 
-ul{
-list-style-type: none;
+ul {
+  list-style-type: none;
 }
 
 ul.nav {
@@ -46,44 +46,47 @@ li.nav a.nav {
 li.nav a.nav:hover {
   background-color: #111;
 }
-div.beta{
+div.beta {
   background-color: rgb(133, 196, 255);
-  margin: auto;
-  width: 60%;
   border: 1px solid #000000;
   padding: 10px;
   font-size: 20px;
   color: black;
   border-radius: 15px;
 }
-a{
+div.beta:hover {
+  border: 0px;
+  box-shadow: #000000 0px 0px 15px 1px;
+  background-color: rgb(147, 194, 238);
+}
+a {
   text-decoration: none;
 }
-div.ioe{
+div.ioe {
   border: 1px rgb(0, 0, 0) solid;
-  background-color:rgb(189, 189, 189)
+  background-color: rgb(189, 189, 189);
 }
-td{
+td {
   border: 1px black solid;
   text-align: center;
 }
-div.text{
+div.text {
   width: 90%;
 }
-div.back{
+div.back {
   width: 80%;
   text-align: left;
 }
-img.backk{
+img.backk {
   height: 20px;
 }
-li.active{
+li.active {
   background-color: rgb(111, 154, 219);
 }
-img.logoooos{
+img.logoooos {
   height: 40px;
 }
-img.Ulogo{
+img.Ulogo {
   height: 125px;
   position: absolute;
   left: 320px;
@@ -92,51 +95,51 @@ img.Ulogo{
   background-color: black;
   color: white;
 }
-img.slogoo{
+img.slogoo {
   height: 30px;
 }
-.black_boarder{
+.black_boarder {
   border: black solid 2px;
   width: 70%;
 }
-.sizee{
+.sizee {
   width: auto;
   height: 170px;
   box-shadow: #000000 0px 0px 9px 2px;
   transition: all 1s;
 }
-div.boooook{
+div.boooook {
   width: 10%;
   position: absolute;
 }
-div.booooook{
+div.booooook {
   width: 30%;
   text-align: left;
   padding-left: 40px;
   padding-right: 40px;
 }
-nav.inn{
+nav.inn {
   width: 95%;
   text-align: left;
 }
 @media all and (max-width: 1200px) {
-  div.bo2{
+  div.bo2 {
     width: fit-content;
     position: relative;
   }
 }
-@media all and (max-width:880px){
-  div.detailss{
+@media all and (max-width: 880px) {
+  div.detailss {
     position: relative;
   }
-  div.bo2{
+  div.bo2 {
     position: relative;
   }
 }
-a{
+a {
   color: #000000;
 }
-form{
+form {
   width: fit-content;
   background-color: rgb(187, 175, 175);
   height: fit-content;
@@ -148,20 +151,24 @@ form{
   border-radius: 10px;
   font-size: 18px;
 }
-input{
+input {
   border-radius: 5px;
   font-size: 18px;
   padding-left: 10px;
-  font-family:Arial, Helvetica, sans-serif;
-  font-family: 'Crimson Text', serif;
+  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Crimson Text", serif;
 }
-div.descriptionb{
+div.descriptionb {
   text-align: justify;
   font-size: 20px;
   font-weight: 10;
   padding-left: 20px;
-  font-family: 'Patrick Hand', cursive;
+  font-family: "Patrick Hand", cursive;
 }
-div.dpad{
+div.dpad {
   padding-bottom: 10px;
+}
+div.wrap90 {
+  width: 60%;
+  text-align: left;
 }
