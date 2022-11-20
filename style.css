@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap');
 div.main {
   width: 85%;
   border-radius: 15px;
@@ -121,6 +123,9 @@ div.booooook {
   text-align: left;
   padding-left: 40px;
   padding-right: 40px;
+  font-family: 'Marcellus SC', serif;
+  font-weight: bold;
+  font-size: 17px;
 }
 nav.inn {
   width: 95%;
@@ -164,7 +169,10 @@ div.descriptionb {
   font-size: 20px;
   font-weight: 10;
   padding-left: 20px;
+  padding-right: 20px;
   font-family: "Patrick Hand", cursive;
+  background-color: #ffefdd;
+  background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
 }
 div.dpad {
   padding-bottom: 10px;
@@ -172,4 +180,46 @@ div.dpad {
 div.wrap90 {
   width: 60%;
   text-align: left;
+}
+hr{
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 200%;
+}
+div.detailss{
+  background-color: #b1dfab;
+  background-image: url("https://www.transparenttextures.com/patterns/buried.png");
+}
+div.card{
+  background-color: #8ed198;
+  background-image: url("https://www.transparenttextures.com/patterns/hexabump.png");
+  box-shadow: #000000 3px 3px 10px 2px;
+  border: #000000 solid 0px;
+  border-radius: 10px;
+  width: 100%;
+  text-align: center;
+}
+div.wrap91 {
+  width: 40%;
+  position: relative;
+  left: 50px;
+}
+img.cardimg{
+  width: 98%;
+  border-radius: 10px;
+  padding-left: 5px;
+  padding-top: 5px;
+  padding-right: 5px;
+}
+div.card:hover{
+  box-shadow: #000000 4px 4px 11px 3px;
+  border: 0px;
+}
+div.bo2{
+  background-color: #7dd18a;
+  background-image: url("https://www.transparenttextures.com/patterns/football-no-lines.png");
+  padding-bottom: 8px;
+  padding-top: 10px;
+}
+progress{
+  width: 105%;
 }
