@@ -218,3 +218,6 @@ progress{
   width: 105%;
   height: 20px;
 }
+.text_center{
+  text-align: center;
+}
