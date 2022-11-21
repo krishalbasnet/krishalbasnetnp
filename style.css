@@ -127,6 +127,8 @@ nav.inn {
   div.bo2 {
     width: fit-content;
     position: relative;
+    padding-left: 8px;
+    padding-right: 8px;
   }
 }
 @media all and (max-width: 880px) {
