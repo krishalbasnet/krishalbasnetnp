@@ -1,6 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans:ital@1&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Alumni+Sans:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap");
+*{
+  transition: all 0.5s;
+}
 div.main {
   width: 85%;
   border-radius: 15px;
@@ -48,13 +51,13 @@ div.beta {
   font-size: 20px;
   color: black;
   border-radius: 15px;
-  transition: 0.5s;
+  /*transition: 0.5s;*/
 }
 div.beta:hover {
   border: 0px;
   box-shadow: #000000 0px 0px 15px 1px;
   background-color: rgb(147, 194, 238);
-  transition: 0.5s;
+  /*transition: 0.5s;*/
 }
 a {
   text-decoration: none;
@@ -115,7 +118,7 @@ div.booooook {
   text-align: left;
   padding-left: 40px;
   padding-right: 40px;
-  font-family: 'Marcellus SC', serif;
+  font-family: "Marcellus SC", serif;
   font-weight: bold;
   font-size: 17px;
 }
@@ -175,15 +178,15 @@ div.wrap90 {
   width: 60%;
   text-align: left;
 }
-hr{
+hr {
   border: 2px solid rgb(0, 0, 0);
   border-radius: 200%;
 }
-div.detailss{
+div.detailss {
   background-color: #b1dfab;
   background-image: url("https://www.transparenttextures.com/patterns/buried.png");
 }
-div.card{
+div.card {
   background-color: #8ed198;
   background-image: url("https://www.transparenttextures.com/patterns/hexabump.png");
   box-shadow: #000000 3px 3px 10px 2px;
@@ -198,26 +201,26 @@ div.wrap91 {
   position: relative;
   left: 50px;
 }
-img.cardimg{
+img.cardimg {
   width: 98%;
   border-radius: 10px;
   padding-left: 5px;
   padding-top: 5px;
   padding-right: 5px;
 }
-div.card:hover{
+div.card:hover {
   box-shadow: #000000 4px 4px 11px 3px;
   border: 0px;
 }
-div.bo2{
+div.bo2 {
   background-color: #2e632a;
   background-image: url("https://www.transparenttextures.com/patterns/football-no-lines.png");
   padding-bottom: 10px;
 }
-progress{
+progress {
   width: 105%;
   height: 20px;
 }
-.text_center{
+.text_center {
   text-align: center;
 }
