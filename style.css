@@ -27,7 +27,8 @@ ul.nav {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  background-color: #000000;
+  background-image: url("https://www.transparenttextures.com/patterns/green-dust-and-scratches.png");
 }
 li.nav {
   float: left;
@@ -82,7 +83,8 @@ img.backk {
   height: 20px;
 }
 li.active {
-  background-color: rgb(111, 154, 219);
+  background-color: #424242;
+  background-image: url("https://www.transparenttextures.com/patterns/green-dust-and-scratches.png");
 }
 img.logoooos {
   height: 40px;
