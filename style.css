@@ -52,13 +52,12 @@ div.beta {
   font-size: 20px;
   color: black;
   border-radius: 15px;
-  /*transition: 0.5s;*/
+  text-align: center;
 }
 div.beta:hover {
   border: 0px;
   box-shadow: #000000 0px 0px 15px 1px;
   background-color: rgb(147, 194, 238);
-  /*transition: 0.5s;*/
 }
 a {
   text-decoration: none;
