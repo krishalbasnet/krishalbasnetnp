@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Alumni+Sans:ital@1&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap");
-*{
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap");
+* {
   transition: all 0.5s;
 }
 div.main {
@@ -48,12 +49,12 @@ li.nav a.nav:hover {
 }
 div.beta {
   background-color: rgb(133, 196, 255);
-  border: 1px solid #000000;
   padding: 10px;
   font-size: 20px;
   color: black;
   border-radius: 15px;
   text-align: center;
+  box-shadow: #000000 0px 0px 4px 2px;
 }
 div.beta:hover {
   border: 0px;
@@ -130,7 +131,6 @@ nav.inn {
 }
 @media all and (max-width: 1200px) {
   div.bo2 {
-    width: fit-content;
     position: relative;
     padding-left: 8px;
     padding-right: 8px;
@@ -225,4 +225,30 @@ progress {
 }
 .text_center {
   text-align: center;
+}
+div.tabss {
+  border: black solid 1px;
+  width: 82%;
+  border-radius: 10px;
+  text-align: justify;
+  padding-left: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 15px;
+  font-size: 20px;
+  font-family: "Balsamiq Sans", cursive;
+  background-color: #4e6068;
+  background-image: url("https://www.transparenttextures.com/patterns/crossword.png");
+}
+@media all and (max-width: 600px) {
+  div.wrap91 {
+    width: 80%;
+  }
+}
+div.unit56 {
+  border: #000000 1px solid;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #2b5469;
+  background-image: url("https://www.transparenttextures.com/patterns/brick-wall-dark.png");
 }
