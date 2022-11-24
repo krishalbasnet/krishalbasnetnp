@@ -252,3 +252,8 @@ div.unit56 {
   background-color: #2b5469;
   background-image: url("https://www.transparenttextures.com/patterns/brick-wall-dark.png");
 }
+img.pp234{
+  height: 200px;
+  border: #000000 4px solid;
+  border-radius: 50%;
+}
