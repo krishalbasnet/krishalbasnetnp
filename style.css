@@ -44,6 +44,7 @@ li.nav a.nav {
 }
 li.nav a.nav:hover {
   background-color: #111;
+  background-image: url("https://www.transparenttextures.com/patterns/green-dust-and-scratches.png");
 }
 div.beta {
   background-color: rgb(133, 196, 255);
