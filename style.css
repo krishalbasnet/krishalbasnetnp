@@ -50,7 +50,8 @@ li.nav a.nav:hover {
 }
 div.beta {
   background-color: rgb(133, 196, 255);
-  padding: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   font-size: 20px;
   color: black;
   border-radius: 15px;
@@ -114,8 +115,10 @@ img.slogoo {
   transition: all 1s;
 }
 div.boooook {
-  width: 10%;
+  width: fit-content;
   position: absolute;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 div.booooook {
   width: 40%;
@@ -168,8 +171,8 @@ div.descriptionb {
   text-align: justify;
   font-size: 20px;
   font-weight: 10;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
   font-family: "Patrick Hand", cursive;
   background-color: #ffefdd;
   background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
@@ -201,8 +204,8 @@ div.card {
 }
 div.wrap91 {
   width: 40%;
+  left: -350px;
   position: relative;
-  left: 50px;
 }
 img.cardimg {
   width: 98%;
@@ -252,6 +255,24 @@ div.tabss {
   }
   div.beta{
     width: 100%;
+  }
+  div.wrap90{
+    width: 80%;
+  }
+  div.wrap91{
+    position: static;
+  }
+}
+@media all and (max-width: 1200px) {
+  img.Ulogo{
+    position: relative;
+    left: 0px;
+  }
+  div.booooook{
+    width: 75%;
+  }
+  div.descriptionb{
+    width: 75%;
   }
 }
 div.unit56 {
