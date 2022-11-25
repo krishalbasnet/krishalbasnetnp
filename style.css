@@ -23,6 +23,7 @@ div.nav {
 }
 ul {
   list-style-type: none;
+  padding-left: 0px;
 }
 ul.nav {
   margin: 0;
@@ -248,6 +249,9 @@ div.tabss {
   img.top_logo{
     width: 50%;
     height: auto;
+  }
+  div.beta{
+    width: 100%;
   }
 }
 div.unit56 {
