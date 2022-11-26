@@ -262,6 +262,7 @@ div.tabss {
   }
   div.wrap91{
     position: static;
+    margin-bottom: 30px;
   }
 }
 @media all and (max-width: 1200px) {
@@ -287,6 +288,11 @@ img.pp234{
   height: 200px;
   border: #000000 4px solid;
   border-radius: 50%;
+}
+img.pp234:hover{
+  transition: all 1s;
+  border-radius: 40%;
+  box-shadow: #000000 0px 0px 10px 3px;
 }
 .wtext{
   color: white;
