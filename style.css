@@ -36,6 +36,10 @@ li.nav {
   float: left;
   width: 25%;
 }
+li.active {
+  background-color: #424242;
+  background-image: url("https://www.transparenttextures.com/patterns/green-dust-and-scratches.png");
+}
 li.nav a.nav {
   display: block;
   color: white;
@@ -84,10 +88,6 @@ div.back {
 }
 img.backk {
   height: 20px;
-}
-li.active {
-  background-color: #424242;
-  background-image: url("https://www.transparenttextures.com/patterns/green-dust-and-scratches.png");
 }
 img.logoooos {
   height: 40px;
