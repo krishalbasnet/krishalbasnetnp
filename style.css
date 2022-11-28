@@ -3,7 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap");
 * {
-  transition: all 0.5s;
+  transition: all 1s;
 }
 div.main {
   width: 85%;
@@ -98,6 +98,7 @@ img.Ulogo {
   left: 320px;
 }
 .dark-mode {
+  transition: 1.5s;
   background-color: black;
   color: white;
 }
@@ -251,8 +252,10 @@ div.tabss {
     width: 80%;
   }
   img.top_logo{
-    width: 50%;
+    width: 60%;
     height: auto;
+    position: relative;
+    top: -10px;
   }
   div.beta{
     width: 100%;
@@ -296,4 +299,16 @@ img.pp234:hover{
 }
 .wtext{
   color: white;
+}
+img.dlamp{
+  height: 100px;
+  top: 0;
+  left: 90%;
+  position: sticky;
+}
+@media all and (max-width: 600px) {
+  img.dlamp{
+    width: 25%;
+    height: auto;
+  }
 }
