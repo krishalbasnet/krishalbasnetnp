@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+body{
+    background-image: url("https://media.istockphoto.com/id/1131560859/photo/video-game-pixel-background.jpg?b=1&s=170667a&w=0&k=20&c=eItSRWFFTauVd65WQnXxI55tN4qNoj6ToNlPlekByfQ=");
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+.e404{
+    font-size: 80px;
+    font-family: 'Press Start 2P', cursive;
+}
