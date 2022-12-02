@@ -3,7 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap");
 * {
-  transition: all 1s;
+  transition: all 0.5s;
 }
 div.main {
   width: 85%;
@@ -98,7 +98,7 @@ img.Ulogo {
   left: 320px;
 }
 .dark-mode {
-  transition: 1.5s;
+  transition: 0.5s;
   background-color: black;
   color: white;
 }
@@ -113,7 +113,7 @@ img.slogoo {
   width: auto;
   height: 170px;
   box-shadow: #000000 0px 0px 9px 2px;
-  transition: all 1s;
+  transition: all 0.5s;
 }
 div.boooook {
   width: fit-content;
@@ -293,7 +293,7 @@ img.pp234{
   border-radius: 50%;
 }
 img.pp234:hover{
-  transition: all 1s;
+  transition: all 0.5s;
   border-radius: 40%;
   box-shadow: #000000 0px 0px 10px 3px;
 }
@@ -311,4 +311,25 @@ img.dlamp{
     width: 25%;
     height: auto;
   }
+}
+table.collpaseb{
+  border-collapse: collapse;
+}
+img.sketchimg{
+  width: 100px;
+  border: #000000 1px solid;
+  border-radius: 5px;
+  box-shadow: #000000 1px 1px ;
+}
+img.sketchimg:hover{
+  transition: all 0.5s;
+  box-shadow: #000000 1px 1px 5px 1px;
+}
+td{
+  width: fit-content;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: #000000 2px solid;
 }
