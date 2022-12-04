@@ -26,12 +26,6 @@ ul {
   list-style-type: none;
   padding-left: 0px;
 }
-table.colleges {
-  background-color: #00401c;
-  background-image: url("https://www.transparenttextures.com/patterns/brushed-alum-dark.png");
-  color: navajowhite;
-  font-family: "Handlee", cursive;
-}
 ul.nav {
   margin: 0;
   padding: 0;
@@ -342,4 +336,11 @@ td {
 }
 table {
   border-collapse: collapse;
+}
+
+table.colleges {
+  background-color: #00401c;
+  background-image: url("https://www.transparenttextures.com/patterns/brushed-alum-dark.png");
+  color: navajowhite;
+  font-family: "Handlee", cursive;
 }
