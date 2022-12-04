@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Alumni+Sans:ital@1&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Handlee&display=swap");
 * {
   transition: all 0.5s;
 }
@@ -24,6 +25,12 @@ div.nav {
 ul {
   list-style-type: none;
   padding-left: 0px;
+}
+table.colleges {
+  background-color: #00401c;
+  background-image: url("https://www.transparenttextures.com/patterns/brushed-alum-dark.png");
+  color: navajowhite;
+  font-family: "Handlee", cursive;
 }
 ul.nav {
   margin: 0;
@@ -208,7 +215,7 @@ div.wrap91 {
   position: absolute;
   left: 8%;
 }
-div.r56ow2{
+div.r56ow2 {
   left: 52%;
 }
 img.cardimg {
@@ -251,32 +258,32 @@ div.tabss {
   div.wrap91 {
     width: 80%;
   }
-  img.top_logo{
+  img.top_logo {
     width: 60%;
     height: auto;
     position: relative;
     top: -10px;
   }
-  div.beta{
+  div.beta {
     width: 100%;
   }
-  div.wrap90{
+  div.wrap90 {
     width: 80%;
   }
-  div.wrap91{
+  div.wrap91 {
     position: static;
     margin-bottom: 30px;
   }
 }
 @media all and (max-width: 1200px) {
-  img.Ulogo{
+  img.Ulogo {
     position: relative;
     left: 0px;
   }
-  div.booooook{
+  div.booooook {
     width: 75%;
   }
-  div.descriptionb{
+  div.descriptionb {
     width: 75%;
   }
 }
@@ -287,49 +294,52 @@ div.unit56 {
   background-color: #2b5469;
   background-image: url("https://www.transparenttextures.com/patterns/brick-wall-dark.png");
 }
-img.pp234{
+img.pp234 {
   height: 200px;
   border: #000000 4px solid;
   border-radius: 50%;
 }
-img.pp234:hover{
+img.pp234:hover {
   transition: all 0.5s;
   border-radius: 40%;
   box-shadow: #000000 0px 0px 10px 3px;
 }
-.wtext{
+.wtext {
   color: white;
 }
-img.dlamp{
+img.dlamp {
   height: 100px;
   top: 0;
   left: 90%;
   position: sticky;
 }
 @media all and (max-width: 600px) {
-  img.dlamp{
+  img.dlamp {
     width: 25%;
     height: auto;
   }
 }
-table.collpaseb{
+table.collpaseb {
   border-collapse: collapse;
 }
-img.sketchimg{
+img.sketchimg {
   width: 100px;
   border: #000000 1px solid;
   border-radius: 5px;
-  box-shadow: #000000 1px 1px ;
+  box-shadow: #000000 1px 1px;
 }
-img.sketchimg:hover{
+img.sketchimg:hover {
   transition: all 0.5s;
   box-shadow: #000000 1px 1px 5px 1px;
 }
-td{
+td {
   width: fit-content;
   padding-left: 10px;
   padding-right: 10px;
   padding-top: 10px;
   padding-bottom: 10px;
   border: #000000 2px solid;
+}
+table {
+  border-collapse: collapse;
 }
