@@ -14,10 +14,20 @@
     /></a>
     <img onclick="myFunction()" src="dlamp.png" alt="" class="dlamp" />
     <script>
+        a=5;
       function myFunction() {
         var element = document.body;
         element.classList.toggle("dark-mode");
-        var a = document.getElementById("logo567");
+        if(a==5){
+          document.getElementById("logo567").src="logo2222.png";
+          document.getElementById("a").innerHTML="Dark";
+          a=4;
+        }
+        else{
+          document.getElementById("logo567").src="logo2.png";
+          document.getElementById("a").src="Light";
+          a=5;
+        }
       }
     </script>
     <center>
@@ -37,7 +47,7 @@
           </li>
         </ul>
       </div>
-      <h1>NO DATA!!!</h1>
+      <h1 id="a">NO DATA!!!</h1>
     </center>
   </body>
 </html>
