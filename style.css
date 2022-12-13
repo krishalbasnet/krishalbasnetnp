@@ -3,7 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Handlee&display=swap");
-:root{
+:root {
   --bgcolor: rgb(177, 223, 171);
 }
 * {
@@ -304,6 +304,22 @@ img.pp234:hover {
 .wtext {
   color: white;
 }
+:root {
+  --top: #043863;
+}
+tr.header23 {
+  position: sticky;
+  top: 0;
+  background-color: var(--top);
+  background-image: url("https://www.transparenttextures.com/patterns/brushed-alum-dark.png");
+}
+tr.header24 {
+  position: sticky;
+  top: 63px;
+  background-color: var(--top);
+  background-image: url("https://www.transparenttextures.com/patterns/brushed-alum-dark.png");
+}
+
 img.dlamp {
   height: 100px;
   top: 0;
@@ -346,10 +362,4 @@ table.colleges {
   background-image: url("https://www.transparenttextures.com/patterns/brushed-alum-dark.png");
   color: navajowhite;
   font-family: "Handlee", cursive;
-}
-tr.header23{
-  position: sticky;
-  top: 0;
-  background-color: #2e632a;
-background-image: url("https://www.transparenttextures.com/patterns/brushed-alum.png");
 }
