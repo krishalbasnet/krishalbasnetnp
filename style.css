@@ -366,3 +366,18 @@ table.colleges {
   color: navajowhite;
   font-family: "Handlee", cursive;
 }
+table.colleges > td {
+  border: none;
+  border-bottom: rgb(177, 223, 171) 2px solid;
+  border-left: rgb(177, 223, 171) 2px solid;
+}
+table.colleges > .first_row {
+  border-left: none;
+  border-radius: 15px 0px 0px 0px;
+}
+table.colleges > table {
+  border-radius: 15px;
+}
+table.colleges > .locc{
+  border-radius: 0px 15px 0px 0px;
+}
