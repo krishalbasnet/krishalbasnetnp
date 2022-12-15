@@ -103,7 +103,7 @@ img.Ulogo {
 }
 .dark-mode {
   transition: 0.2s;
-  background-color: black;
+  background-color: rgb(24, 24, 24);
   color: white;
 }
 img.slogoo {
@@ -118,6 +118,9 @@ img.slogoo {
   height: 170px;
   box-shadow: #000000 0px 0px 9px 2px;
   transition: all 0.5s;
+}
+.sizee:hover{
+  transform: scale(1.2);
 }
 div.boooook {
   width: fit-content;
