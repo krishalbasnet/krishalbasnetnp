@@ -52,6 +52,7 @@ div.cppr{
     display: grid;
     grid-template-columns: auto auto;
 }
+/* ss */
 div.as:hover{
     background-color: var(--default1);
 }
