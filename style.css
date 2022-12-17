@@ -105,3 +105,20 @@ div.myphoto{
 img.myphoto{
     width: 100%;
 }
+@media only screen and (max-width: 600px) {
+    div.container{
+    border-radius: 0px;
+    display: grid;
+    grid-template-columns: 1fr;
+    }
+    div.item1{
+        border-radius: 0px;
+    }
+    div.item4{
+        border-radius: 0px;
+    }
+    div.content23{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
