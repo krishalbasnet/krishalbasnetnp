@@ -4,7 +4,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Handlee&display=swap");
 :root {
-  --bgcolor: rgb(177, 223, 171);
+  --light_green: rgb(177, 223, 171);
+  --black:#000000;
+  --navhov:#424242;
+  --white:white;
 }
 * {
   transition: all 0.5s;
@@ -20,7 +23,7 @@ img.top_logo {
   height: 100px;
 }
 body {
-  background-color: var(--bgcolor);
+  background-color: var(--light_green);
 }
 div.nav {
   width: 100%;
@@ -33,7 +36,7 @@ ul.nav {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #000000;
+  background-color: var(--black);
   background-image: url("https://www.transparenttextures.com/patterns/green-dust-and-scratches.png");
 }
 li.nav {
@@ -41,16 +44,16 @@ li.nav {
   width: 25%;
 }
 li.active {
-  background-color: #424242;
+  background-color: var(--navhov);
   background-image: url("https://www.transparenttextures.com/patterns/green-dust-and-scratches.png");
 }
 li.nav a.nav {
   display: block;
-  color: white;
+  color: var(--white);
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  border: 1px solid black;
+  border: 1px solid var(--black);
 }
 li.nav a.nav:hover {
   background-color: #111;
@@ -61,19 +64,19 @@ div.beta {
   padding-top: 10px;
   padding-bottom: 10px;
   font-size: 20px;
-  color: black;
+  color: var(--black);
   border-radius: 15px;
   text-align: center;
-  box-shadow: #000000 2px 2px 2px 1px;
+  box-shadow: var(--black) 2px 2px 2px 1px;
 }
 div.beta:hover {
   border: 0px;
-  box-shadow: #000000 2px 2px 5px 2px;
+  box-shadow: var(--black) 2px 2px 5px 2px;
   background-color: rgb(147, 194, 238);
 }
 a {
   text-decoration: none;
-  color: #000000;
+  color: var(--black);
 }
 div.ioe {
   border: 1px rgb(0, 0, 0) solid;
@@ -116,7 +119,7 @@ img.slogoo {
 .sizee {
   width: auto;
   height: 170px;
-  box-shadow: #000000 0px 0px 9px 2px;
+  box-shadow: var(--black) 0px 0px 9px 2px;
   transition: all 0.5s;
 }
 .sizee:hover{
@@ -164,7 +167,7 @@ form {
   padding-bottom: 10px;
   padding-left: 10px;
   padding-right: 10px;
-  box-shadow: #000000 0px 0px 30px 4px;
+  box-shadow: var(--black) 0px 0px 30px 4px;
   border-radius: 10px;
   font-size: 18px;
 }
@@ -203,8 +206,8 @@ div.detailss {
 div.card {
   background-color: #8ed198;
   background-image: url("https://www.transparenttextures.com/patterns/hexabump.png");
-  box-shadow: #000000 3px 3px 10px 2px;
-  border: #000000 solid 0px;
+  box-shadow: var(--black) 3px 3px 10px 2px;
+  border: var(--black) solid 0px;
   border-radius: 10px;
   width: 100%;
   text-align: center;
@@ -224,7 +227,7 @@ img.cardimg {
   padding-top: 5px;
 }
 div.card:hover {
-  box-shadow: #000000 4px 4px 11px 3px;
+  box-shadow: var(--black) 4px 4px 11px 3px;
   border: 0px;
 }
 div.bo2 {
@@ -288,7 +291,7 @@ div.tabss {
   }
 }
 div.unit56 {
-  border: #000000 1px solid;
+  border: var(--black) 1px solid;
   border-radius: 10px;
   padding: 10px;
   background-color: #2b5469;
@@ -296,13 +299,13 @@ div.unit56 {
 }
 img.pp234 {
   height: 200px;
-  border: #000000 4px solid;
+  border: var(--black) 4px solid;
   border-radius: 50%;
 }
 img.pp234:hover {
   transition: all 0.5s;
   border-radius: 40%;
-  box-shadow: #000000 0px 0px 10px 3px;
+  box-shadow: var(--black) 0px 0px 10px 3px;
 }
 .wtext {
   color: white;
