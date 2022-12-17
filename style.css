@@ -1,0 +1,106 @@
+:root{
+    --default1:#E6CFC9;
+    --default2:#FAF2E0;
+    --default3:#B89168;
+    --default4:#4C2B18;
+    --default5:#301b10;
+    --default6:#000000;
+    --default7:#beae87;
+}
+body{
+    background-color: var(--default3);
+}
+img.toplogo{
+    height: 90px;
+}
+div.container{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    background-color: var(--default2);
+    width: 90%;
+    border-radius: 25px;
+    margin-top: 10px;
+}
+div.as{
+    border: 1px solid var(--default6);
+    padding: 10px;
+}
+div.item1{
+    border-radius: 20px 0px 0px 20px ;
+}
+div.item4{
+    border-radius: 0px 20px 20px 0px ;
+}
+a{
+    text-decoration: none;
+    color: var(--default6);
+}
+footer{
+    display: grid;
+    position: absolute;
+    width: 100%;
+    border-top: 2px var(--default6) solid;
+    left: 0;
+    background-color: var(--default4);
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+div.cppr{
+    grid-column: 1/5;
+    background-color: var(--default5);
+    padding: 2px;
+    color: var(--default3);
+    display: grid;
+    grid-template-columns: auto auto;
+}
+div.as:hover{
+    background-color: var(--default1);
+}
+div.active{
+    background-color: var(--default7);
+}
+div.content23{
+    display: grid;
+    width: 80%;
+    gap: 1em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    grid-template-columns: auto auto;
+}
+div.card{
+    width: 95%;
+    padding: 10px;  
+    background-color: var(--default7);
+    border-radius: 20px;
+    box-shadow: var(--default6) 2px 2px 10px 1px;
+}
+img.card{
+    border-radius: 15px;
+    width: 100%;
+}
+div.list{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 12px;
+    width: 70%;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+div.list > div{
+    padding: 10px;
+    background-color: var(--default2);
+    border-radius: 20px;
+    box-shadow: var(--default5) 2px 2px 8px 1px;
+}
+div.whole{
+    width: 90%;
+    display: grid;
+    padding: 10px;
+    margin: 10px 0px;
+    grid-template-columns: 1fr 3fr;
+}
+div.myphoto{
+    width: 90%;
+}
+img.myphoto{
+    width: 100%;
+}
