@@ -121,4 +121,11 @@ img.myphoto{
         display: grid;
         grid-template-columns: 1fr;
     }
+    div.cppr{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    footer{
+        display: block;
+    }
 }
