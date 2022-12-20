@@ -119,6 +119,20 @@ div.book_draw {
   color: white;
   border: 3px solid black;
 }
+
+div.back{
+  display: grid;
+  width: 95%;
+  margin: 15px;
+  position: sticky;
+  top: 10px;
+}
+div.back>a{
+  width: fit-content;
+}
+img.back{
+  width: 40px;
+}
 img.book_cover{
     height: 170px;
     box-shadow: black 0px 0px 5px 2px;
