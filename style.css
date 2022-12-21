@@ -72,6 +72,7 @@ div.content23 {
   grid-template-columns: auto auto;
 }
 div.card {
+  transition: all 0s;
   width: 95%;
   padding: 10px;
   background-color: var(--default7);
@@ -210,4 +211,11 @@ div.notesbook > hr{
   footer {
     display: block;
   }
+}
+div.card:hover{
+  position: relative;
+  transition: all 0s;
+  top: -10px;
+  left: -10px;
+  box-shadow: 9px 9px black;
 }
