@@ -159,10 +159,11 @@ progress{
   border-radius: 2px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
 }
-div.notesbook>ul>li{
+div.notesbook{
   text-align: justify;
   font-family: 'Caveat', cursive;
   font-size: 19px;
+  width: 70%;
 }
 div.book_calc{
     text-align: left;
@@ -210,6 +211,15 @@ div.notesbook > hr{
   }
   footer {
     display: block;
+  }
+  div.book_detail{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  div.notesbook>ul{
+    list-style-type: disc;
+  }
+  div.notesbook{
   }
 }
 div.card:hover{
