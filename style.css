@@ -213,9 +213,5 @@ div.notesbook > hr{
   }
 }
 div.card:hover{
-  position: relative;
-  transition: all 0s;
-  top: -10px;
-  left: -10px;
-  box-shadow: 9px 9px black;
+  transform: translate(-10px, -10px);
 }
