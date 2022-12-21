@@ -219,8 +219,6 @@ div.notesbook > hr{
   div.notesbook>ul{
     list-style-type: disc;
   }
-  div.notesbook{
-  }
 }
 div.card:hover{
   transform: translate(-10px, -10px);
