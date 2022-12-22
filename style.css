@@ -101,6 +101,7 @@ div.list > a {
 }
 footer>a:hover{
   background-color: var(--default7);
+  outline: 2px black solid;
 }
 div.whole {
   width: 90%;
