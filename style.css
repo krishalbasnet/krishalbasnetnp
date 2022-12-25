@@ -126,7 +126,17 @@ div.book_draw {
   color: white;
   border: 3px solid black;
 }
-
+div.unilogobar{
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+  margin: 10px 30%;
+}
+div.unilogo{
+  height: 150px;
+}
+div.unilogo>img{
+  height: 100%;
+}
 div.back{
   display: grid;
   width: 95%;
