@@ -99,6 +99,10 @@ div.list > a {
   border-radius: 20px;
   box-shadow: var(--default5) 2px 2px 8px 1px;
 }
+div.list > a:hover{
+  box-shadow: var(--default5) 3px 3px 9px 2px;
+  transform: scaleX(0.95);
+}
 footer>a:hover{
   background-color: var(--default7);
   outline: 2px black solid;
