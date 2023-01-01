@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Bad+Script&display=swap");
+body {
+  background-color: #181818;
+  background-image: url("https://uploads-ssl.webflow.com/62e3ee10882dc50bcae8d07a/631a5d4631d4c55a475f3e34_noise-50.png");
+  padding: 20px;
+  padding-bottom: 0;
+}
+div.container {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  background-color: rgb(148, 148, 148, 0.5);
+  background-image: url("https://uploads-ssl.webflow.com/62e3ee10882dc50bcae8d07a/631a5d4631d4c55a475f3e34_noise-50.png");
+  padding: 10px;
+  padding-right: 0px;
+  padding-left: 0px;
+  border-radius: 20px;
+  margin-left: auto;
+  margin: auto;
+  margin-right: auto;
+}
+div.container > a {
+  display: block;
+  margin: 3px;
+  margin-left: auto;
+  margin: auto;
+  margin-bottom: 6px;
+  margin-right: auto;
+}
+div.container > a > img {
+  width: 125px;
+}
+img.facebook:hover {
+  background-color: #4267b2;
+  border-radius: 15px;
+}
+img.instagram:hover {
+  background: url("igb.jpg");
+  border-radius: 35px;
+}
+p {
+  grid-column: 1/10;
+  text-align: center;
+  font-size: 50px;
+  margin: 0px;
+  margin-top: 0px;
+  font-family: "Bad Script", cursive;
+}
+img.youtube:hover {
+  background-color: red;
+  border-radius: 50%;
+}
+img.white:hover {
+  background-color: white;
+  border-radius: 50%;
+}
+img.soap2day:hover {
+  background-color: rgb(52, 137, 216);
+  border-radius: 50%;
+}
+img.chess:hover {
+  background-color: rgb(63, 158, 54);
+  border-radius: 50%;
+}
+img.texture:hover {
+  background-color: rgb(35, 86, 194);
+  border-radius: 50%;
+}
+img.twitter:hover {
+  background-color: rgb(65, 164, 221);
+  border-radius: 50%;
+}
+img.pinterest:hover {
+  background-color: red;
+  border-radius: 50%;
+}
+img.reddit:hover {
+  background-color: #ff4601;
+  border-radius: 50%;
+}
+img.w3:hover {
+  background-color: rgb(31, 161, 31);
+  border-radius: 50%;
+}
+img.gmail:hover {
+  background-color: rgb(31, 161, 31);
+  border-radius: 50%;
+}
+img.cricbuzz:hover {
+  background-color: rgb(79, 184, 79);
+  border-radius: 50%;
+}
+img.cricket:hover {
+  background-color: rgb(80, 70, 70);
+  border-radius: 50%;
+}
+img.onedrive:hover {
+  background-color: rgb(5, 35, 170);
+  border-radius: 50%;
+}
+img.coolors:hover {
+  background-color: rgb(66, 81, 146);
+  border-radius: 50%;
+}
+img.udemy:hover {
+  background-color: rgb(188, 70, 192);
+  border-radius: 50%;
+}
+div.preloader{
+  background: black url("loader.gif") no-repeat center;
+  height: 97vh;
+  width: 96%;
+  position: fixed;
+  z-index: 100;
+}
