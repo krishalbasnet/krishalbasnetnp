@@ -1,12 +1,231 @@
-body{
-    background-color: rgb(12, 12, 12);
-    color: aliceblue;
+*{
+    transition: all 1s;
 }
-div.container{
-    height: 100%;
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+:root {
+  --default1: #e6cfc9;
+  --default2: #faf2e0;
+  --default3: #b89168;
+  --default4: #4c2b18;
+  --default5: #301b10;
+  --default6: #000000;
+  --default7: #beae87;
+}
+body {
+  background-color: var(--default3);
+}
+img.toplogo {
+  height: 90px;
+}
+div.container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  background-color: var(--default2);
+  width: 90%;
+  border-radius: 25px;
+  margin-top: 10px;
+}
+div.as {
+  border: 1px solid var(--default6);
+  padding: 10px;
+}
+div.item1 {
+  border-radius: 20px 0px 0px 20px;
+}
+div.item4 {
+  border-radius: 0px 20px 20px 0px;
+}
+a {
+  text-decoration: none;
+  color: var(--default6);
+}
+footer {
+  display: grid;
+  position: absolute;
+  width: 100%;
+  border-top: 2px var(--default6) solid;
+  left: 0;
+  background-color: var(--default4);
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+div.cppr {
+  grid-column: 1/5;
+  background-color: var(--default5);
+  padding: 2px;
+  color: var(--default3);
+  display: grid;
+  grid-template-columns: auto auto;
+}
+div.cppr>div>a{
+  color: var(--default3);
+}
+div.as:hover {
+  background-color: var(--default1);
+}
+div.active {
+  background-color: var(--default7);
+}
+div.content23 {
+  display: grid;
+  width: 80%;
+  gap: 1em;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  grid-template-columns: auto auto;
+}
+div.card {
+  transition: all 0s;
+  width: 95%;
+  padding: 10px;
+  background-color: var(--default7);
+  border-radius: 20px;
+  box-shadow: var(--default6) 2px 2px 10px 1px;
+}
+img.card {
+  border-radius: 15px;
+  width: 100%;
+}
+div.list {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 12px;
+  width: 70%;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+div.list > a {
+  padding: 10px;
+  background-color: var(--default2);
+  border-radius: 20px;
+  box-shadow: var(--default5) 2px 2px 8px 1px;
+}
+footer>a:hover{
+  background-color: var(--default7);
+  outline: 2px black solid;
+}
+div.whole {
+  width: 90%;
+  display: grid;
+  padding: 10px;
+  margin: 10px 0px;
+  grid-template-columns: 1fr 3fr;
+}
+div.myphoto {
+  width: 90%;
+}
+img.myphoto {
+  width: 100%;
+}
+div.book_draw {
+  background-color: #00520a;
+  background-image: url("https://www.transparenttextures.com/patterns/football-no-lines.png");
+  width: 80%;
+  padding: 20px;
+  padding-top: 0px;
+  margin: 10px;
+  color: white;
+  border: 3px solid black;
+}
+
+div.back{
+  display: grid;
+  width: 95%;
+  margin: 15px;
+  position: sticky;
+  top: 10px;
+}
+div.back>a{
+  width: fit-content;
+}
+img.back{
+  width: 40px;
+}
+img.book_cover{
+    height: 170px;
+    box-shadow: black 0px 0px 5px 2px;
+}
+div.notesbook{
+    width: 80%;
+    background-color: var(--default2);
+    padding: 40px;
+    border: 3px solid black;
+    background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+    border-radius: 20px;
+    margin: 10px;
+}
+div.side_poster{
+    background-color: #00520a;
+    width: fit-content;
+    padding: 23px;
+    background-image: url("https://www.transparenttextures.com/patterns/football-no-lines.png");  
+}
+progress{
+  width: 100%;
+  background-color: red;
+  border-radius: 2px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+div.notesbook{
+  text-align: justify;
+  font-family: 'Caveat', cursive;
+  font-size: 19px;
+  width: 70%;
+}
+div.book_calc{
+    text-align: left;
+    border: 2px black solid;
+    width: 70%;
+    font-size: 20px;
+    font-weight: bolder;
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-bottom: 10px;
+    border-radius: 20px;
+    background-color: var(--default2);
+    background-image: url("https://www.transparenttextures.com/patterns/black-felt.png");
+}
+div.book_detail{
+    margin: 10px;
     display: grid;
-    grid-template-columns: 7fr 1fr;
+    gap: 10px;
+    grid-template-columns: 1.2fr 5fr;
 }
-img.me{
-    height: 50%;
+div.notesbook > hr{
+    border: 2px solid black;
+    border-radius: 50%;
+    width: 90%;
+}
+@media only screen and (max-width: 600px) {
+  div.container {
+    border-radius: 0px;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  div.item1 {
+    border-radius: 0px;
+  }
+  div.item4 {
+    border-radius: 0px;
+  }
+  div.content23 {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  div.cppr {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  footer {
+    display: block;
+  }
+  div.book_detail{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  div.notesbook>ul{
+    list-style-type: disc;
+  }
+}
+div.card:hover{
+  transform: translate(-10px, -10px);
 }
