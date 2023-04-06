@@ -2,13 +2,17 @@
 body {
   background-color: rgb(37, 37, 37);
   color: antiquewhite;
-  font-family: "Alkatra", cursive;
+  font-family: "Alkatra", cursive;  margin-top: 20px;
+
 }
 div.topbar {
   display: grid;
-  grid-template-columns: 1.5fr 1fr;
+  grid-template-columns: 8fr 1fr 1fr 1fr 1fr 1fr;
+  width: 80%;
+  font-family: "Alkatra", cursive;
+  font-size: 25px;
   margin: auto;
-  width: 85%;
+  gap: 10px;
 }
 div.topbar > * {
   padding: 5px;
@@ -18,12 +22,7 @@ a {
   text-decoration: none;
   color: antiquewhite;
 }
-.topbar_sub {
-  display: grid;
-  text-align: center;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-}
-.topbar_sub > *:hover {
+.baritem:hover:not(.logo_text) {
   color: rgb(133, 133, 133);
 }
 div.books_container {
@@ -128,4 +127,10 @@ hr{
 }
 p.statusbook{
   display: none;
+}
+.introname34{
+  font-size: 50px;
+  text-align: justify;
+  line-height: 50px;
+  margin-top: 20px;
 }
