@@ -47,3 +47,8 @@ a3.appendChild(txt3);
 a4.appendChild(txt4);
 a5.appendChild(txt5);
 a6.appendChild(txt6);
+div2.classList.add("f56");
+div3.classList.add("f56");
+div4.classList.add("f56");
+div5.classList.add("f56");
+div6.classList.add("f56");

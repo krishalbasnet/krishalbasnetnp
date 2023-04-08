@@ -2,13 +2,13 @@
 body {
   background-color: rgb(37, 37, 37);
   color: antiquewhite;
-  font-family: "Alkatra", cursive;  margin-top: 20px;
-
+  font-family: "Alkatra", cursive;
+  margin-top: 20px;
 }
 div.topbar {
   display: grid;
   grid-template-columns: 8fr 1fr 1fr 1fr 1fr 1fr;
-  width: 80%;
+  width: 95%;
   font-family: "Alkatra", cursive;
   font-size: 25px;
   margin: auto;
@@ -115,16 +115,19 @@ progress {
   margin-top: 20px;
   border-radius: 10px;
 }
-hr{
+hr {
   border-color: black;
   border-width: 2px;
   border-radius: 50%;
 }
-.back_but{
+.back_but {
   height: 50px;
   width: 75%;
   margin: auto;
 }
-p.statusbook{
+p.statusbook {
   display: none;
+}
+.f56 {
+  margin: auto;
 }
