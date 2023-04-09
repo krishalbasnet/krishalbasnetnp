@@ -29,7 +29,7 @@ div.books_container {
   width: 80%;
   margin: auto;
   padding: 2%;
-  background-color: rgba(12, 12, 12, 0.199);
+  background-color: rgba(83, 83, 83, 0.199);
   border-radius: 10px;
 }
 div.book_cat > a > img {
@@ -144,10 +144,10 @@ p.statusbook {
   content: "";
   transform: scaleX(0);
   transition: 0.3s transform ease-in;
-  transform-origin: right;
+  transform-origin:right;
 }
 .baritem:not(.logo_text):hover::after{
   transform: scaleX(1);
   background-color: rgb(133, 133, 133);
-  transform-origin: left;
+  transform-origin:left;
 }
