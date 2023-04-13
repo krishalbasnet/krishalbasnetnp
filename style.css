@@ -151,3 +151,46 @@ p.statusbook {
   background-color: rgb(133, 133, 133);
   transform-origin:left;
 }
+div.list56{
+  list-style-type: none;
+  display:  grid;
+  grid-template-columns: auto;
+  width: 60%;
+  margin: auto;
+  margin-top: 20px;
+  text-align: center;
+  gap: 15px;
+}
+div.list56>a{
+  background-color: #77777796;
+  width: 100%;
+  font-size: 20px;
+  padding: 5px;
+  transition: all 0.5s;
+  border-radius: 20px;
+}
+div.list56>a:hover{
+  transform: translate(-3px,-4px);
+  box-shadow: 4px 4px 10px 1px rgba(0, 0, 0, 0.568);
+  transition: all 0.5s;
+}
+.topNameUni{
+  display: grid;
+  grid-template-columns: 1fr 7fr;
+  width: 70%;
+  margin: auto;
+  text-align: center;
+  margin-top: 20px;
+}
+.topNameUni>img{
+  width: 100%;
+  height: auto;
+}
+div.cover569{
+  background-color: rgba(66, 66, 66, 0.473);
+  width: 80%;
+  margin: auto;
+  padding: 30px 10px;
+  border-radius: 30px;
+  border: 2px solid black;
+}
