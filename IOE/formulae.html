@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Math Formulae</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+    <script>
+      MathJax.typeset();
+    </script>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body onload="bar2()">
+    <div class="adminbar"><a href="admin.html">admin</a></div>
+    <div id="topbar" class="topbar"></div>
+    <div class="container">
+      <div class="header">Trigonometry</div>
+      <div class="formulas">
+        <div class="sheader">Addition & Substraction</div>
+       <div onclick="drop34()" class="dd77" id="myDropdown">
+         $$(A+B) = sinA cosB + cosA sinB $$
+         $$(A-B) = sinA cosB - cosA sinB$$
+         $$(A+B)=cosAcosB-sinAsinB$$
+         $$(A-B)=cosAcosB+sinAsinB$$
+       </div>
+        <div class="sheader">Sum to Product</div>
+        <div class="dd77" id="myDropdown">
+          $$sinA + sinB = 2sin(\frac{A+B}{2}).cos(\frac{A-B}{2})$$
+          $$sinA - sinB = 2cos(\frac{A+B}{2}).sin(\frac{A-B}{2})$$
+          $$cosA + cosB = 2cos(\frac{A+B}{2}).cos(\frac{A-B}{2})$$
+          $$cosA - cosB = -2sin(\frac{A+B}{2}).sin(\frac{A-B}{2})$$
+        </div>
+        <div class="sheader">Product to Sum</div>
+        <div class="dd77" id="myDropdown">
+          $$sin A cos B = \frac{1}{2} [ sin (A + B) + sin (A - B) ]$$
+          $$cos A sin B = \frac{1}{2} [ sin (A + B) - sin (A - B) ]$$
+          $$cos A cos B = \frac{1}{2} [ cos (A + B) + cos (A - B) ]$$
+          $$sin A sin B = \frac{1}{2} [ cos (A - B) - cos (A + B) ]$$
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="../script.js"></script>
+</html>
