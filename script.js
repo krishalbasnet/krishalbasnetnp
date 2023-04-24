@@ -1,149 +1,120 @@
-function bar1() {
-  var div = document.getElementById("topbar");
-  var div1 = document.createElement("div");
-  var a1 = document.createElement("a");
-  var txt1 = document.createTextNode("Krishal Basnet");
-  var div2 = document.createElement("div");
-  var a2 = document.createElement("a");
-  var txt2 = document.createTextNode("Home");
-  var div3 = document.createElement("div");
-  var a3 = document.createElement("a");
-  var txt3 = document.createTextNode("Portfolio");
-  var div4 = document.createElement("div");
-  var a4 = document.createElement("a");
-  var txt4 = document.createTextNode("ZenTech");
-  var div5 = document.createElement("div");
-  var a5 = document.createElement("a");
-  var txt5 = document.createTextNode("IOE");
-  var div6 = document.createElement("div");
-  var a6 = document.createElement("a");
-  var txt6 = document.createTextNode("Contact");
-  a1.classList.add("baritem", "logo_text");
-  a2.classList.add("baritem");
-  a3.classList.add("baritem");
-  a4.classList.add("baritem");
-  a5.classList.add("baritem");
-  a6.classList.add("baritem");
-  a1.setAttribute("href", "index.html");
-  a2.setAttribute("href", "index.html");
-  a3.setAttribute("href", "portfolio.html");
-  a4.setAttribute("href", "ZenTech/index.html");
-  a5.setAttribute("href", "IOE.html");
-  a6.setAttribute("href", "contact.html");
-  div.appendChild(div1);
-  div.appendChild(div2);
-  div.appendChild(div3);
-  div.appendChild(div4);
-  div.appendChild(div5);
-  div.appendChild(div6);
-  div1.appendChild(a1);
-  div2.appendChild(a2);
-  div3.appendChild(a3);
-  div4.appendChild(a4);
-  div5.appendChild(a5);
-  div6.appendChild(a6);
-  a1.appendChild(txt1);
-  a2.appendChild(txt2);
-  a3.appendChild(txt3);
-  a4.appendChild(txt4);
-  a5.appendChild(txt5);
-  a6.appendChild(txt6);
-  div2.classList.add("f56");
-  div3.classList.add("f56");
-  div4.classList.add("f56");
-  div5.classList.add("f56");
-  div6.classList.add("f56");
+function bar1(){
+    var divbar = document.getElementById("topbar");
+    var div1 = document.createElement("div");
+    var a1 = document.createElement("a");
+    div1.classList.add("topnamebar");
+    var txt1 = document.createTextNode("Krishal Basnet");
+    divbar.appendChild(div1);
+    div1.appendChild(a1);
+    a1.setAttribute("href","index.html");
+    a1.appendChild(txt1);
+
+    var div2 = document.createElement("div");
+    var a2 = document.createElement("a");
+    var txt2 = document.createTextNode("Home");
+    divbar.appendChild(div2);
+    div2.appendChild(a2);   
+    a2.classList.add("item23");
+    a2.appendChild(txt2);
+    a2.setAttribute("href","index.html");
+
+    var div6 = document.createElement("div");
+    var a6 = document.createElement("a");
+    var txt6 = document.createTextNode("Portfolio");
+    divbar.appendChild(div6);
+    a6.classList.add("item23");
+    div6.appendChild(a6);
+    a6.appendChild(txt6);
+
+    var div3 = document.createElement("div");
+    var a3 = document.createElement("a");
+    var txt3 = document.createTextNode("Engineering");
+    divbar.appendChild(div3);
+    a3.classList.add("item23");
+    div3.appendChild(a3);
+    a3.appendChild(txt3);
+
+    var div4 = document.createElement("div");
+    var a4 = document.createElement("a");
+    var txt4 = document.createTextNode("Our Work");
+    divbar.appendChild(div4);
+    a4.classList.add("item23");
+    div4.appendChild(a4);
+    a4.appendChild(txt4);
+
+    var div5 = document.createElement("div");
+    var a5 = document.createElement("a");
+    var txt5 = document.createTextNode("Contact");
+    divbar.appendChild(div5);
+    a5.classList.add("item23");
+    div5.appendChild(a5);
+    a5.appendChild(txt5);
+
 }
 
-function login() {
-    // Get the username and password from the form
-    var username = document.getElementById("username").value;
-    var password = document.getElementById("password").value;
-  
-    // Check if the username and password are valid
-    if (username === "admin" && password === "password") {
-      // Set a session variable to indicate that the user is logged in
-      sessionStorage.setItem("loggedIn", "true");
-  
-      // Redirect the user to the admin page
-      window.location.href = "personal563.html";
+document.querySelector('form').addEventListener('submit', function(event) {
+    event.preventDefault(); 
+
+    var username = document.querySelector('#username').value;
+    var password = document.querySelector('#password').value;
+
+    if (username === 'admin' && password === 'password') {
+        window.location.href = 'personal567.html';
     } else {
-      // Display an error message if the login credentials are incorrect
-      document.getElementById("login-message").innerHTML = "Invalid username or password.";
+        alert('Invalid username or password.');
     }
-  }
-  
+});
 
-  function bar2(){
-    var div = document.getElementById("topbar");
-var div1 = document.createElement("div");
-var div2 = document.createElement("div");
-var div3 = document.createElement("div");
-var div4 = document.createElement("div");
-var div5 = document.createElement("div");
-var div6 = document.createElement("div");
-var a1 = document.createElement("a");
-var a2 = document.createElement("a");
-var a3 = document.createElement("a");
-var a4 = document.createElement("a");
-var a5 = document.createElement("a");
-var a6 = document.createElement("a");
-var txt1 = document.createTextNode("Krishal Basnet");
-var txt2 = document.createTextNode("Home");
-var txt3 = document.createTextNode("Portfolio");
-var txt4 = document.createTextNode("ZenTech");
-var txt5 = document.createTextNode("Blog");
-var txt6 = document.createTextNode("Contact");
-a1.classList.add("baritem", "logo_text");
-a2.classList.add("baritem");
-a3.classList.add("baritem");
-a4.classList.add("baritem");
-a5.classList.add("baritem");
-a6.classList.add("baritem");
-a1.setAttribute("href", "../index.html");
-a2.setAttribute("href", "../index.html");
-a3.setAttribute("href", "../portfolio.html");
-a4.setAttribute("href", "../ZenTech/index.html");
-a5.setAttribute("href", "../blog.html");
-a6.setAttribute("href", "../contact.html");
-div.appendChild(div1);
-div.appendChild(div2);
-div.appendChild(div3);
-div.appendChild(div4);  
-div.appendChild(div5);
-div.appendChild(div6);
-div1.appendChild(a1);
-div2.appendChild(a2);
-div3.appendChild(a3);
-div4.appendChild(a4);
-div5.appendChild(a5);
-div6.appendChild(a6);
-a1.appendChild(txt1);
-a2.appendChild(txt2);
-a3.appendChild(txt3);
-a4.appendChild(txt4);
-a5.appendChild(txt5);
-a6.appendChild(txt6);
-div2.classList.add("f56");
-div3.classList.add("f56");
-div4.classList.add("f56");
-div5.classList.add("f56");
-div6.classList.add("f56");
-  }
-  // Get all .sheader elements
-var sheaders = document.querySelectorAll(".sheader");
+function bar2(){
+    var divbar = document.getElementById("topbar");
+    var div1 = document.createElement("div");
+    var a1 = document.createElement("a");
+    div1.classList.add("topnamebar");
+    var txt1 = document.createTextNode("Krishal Basnet");
+    divbar.appendChild(div1);
+    div1.appendChild(a1);
+    a1.setAttribute("href","../index.html");
+    a1.appendChild(txt1);
 
-// Add event listeners to each .sheader element
-for (var i = 0; i < sheaders.length; i++) {
-  sheaders[i].addEventListener("click", function () {
-    // Get the next sibling element of the clicked .sheader element
-    var nextElement = this.nextElementSibling;
+    var div2 = document.createElement("div");
+    var a2 = document.createElement("a");
+    var txt2 = document.createTextNode("Home");
+    divbar.appendChild(div2);
+    a2.classList.add("item23");
+    div2.appendChild(a2);   
+    a2.appendChild(txt2);
+    a2.setAttribute("href","../index.html");
 
-    // Toggle the display of the next element
-    if (nextElement.style.display === "none") {
-      nextElement.style.display = "block";
-    } else {
-      nextElement.style.display = "none";
-    }
-  });
+    var div6 = document.createElement("div");
+    var a6 = document.createElement("a");
+    var txt6 = document.createTextNode("Portfolio");
+    divbar.appendChild(div6);
+    a6.classList.add("item23");
+    div6.appendChild(a6);
+    a6.appendChild(txt6);
+
+    var div3 = document.createElement("div");
+    var a3 = document.createElement("a");
+    var txt3 = document.createTextNode("Engineering");
+    divbar.appendChild(div3);
+    a3.classList.add("item23");
+    div3.appendChild(a3);
+    a3.appendChild(txt3);
+
+    var div4 = document.createElement("div");
+    var a4 = document.createElement("a");
+    var txt4 = document.createTextNode("Our Work");
+    divbar.appendChild(div4);
+    a4.classList.add("item23");
+    div4.appendChild(a4);
+    a4.appendChild(txt4);
+
+    var div5 = document.createElement("div");
+    var a5 = document.createElement("a");
+    var txt5 = document.createTextNode("Contact");
+    divbar.appendChild(div5);
+    div5.appendChild(a5);
+    a5.classList.add("item23");
+    a5.appendChild(txt5);
+
 }
