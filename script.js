@@ -58,7 +58,7 @@ document.querySelector('form').addEventListener('submit', function(event) {
     var username = document.querySelector('#username').value;
     var password = document.querySelector('#password').value;
 
-    if (username === 'admin' && password === 'password') {
+    if (username === 'krishalbasnet1@gmail.com' && password === 'HailHydra7') {
         window.location.href = 'personal567.html';
     } else {
         alert('Invalid username or password.');
