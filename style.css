@@ -1,0 +1,98 @@
+/*Body*/
+body {
+  background-color: rgb(224, 224, 224);
+}
+/**/
+
+/*Mass Formatting*/
+a {
+  color: black;
+  text-decoration: none;
+  width: fit-content;
+}
+/**/
+
+/*Top Bar */
+div.topbar {
+  display: grid;
+  grid-template-columns: 5fr repeat(5, 1fr);
+  width: 90%;
+  margin: auto;
+  gap: 10px;
+}
+img {
+  width: 60%;
+  height: auto;
+}
+div.topbar > div:not(.topbarimg) {
+  text-align: center;
+  margin: auto;
+}
+@media screen and (max-width: 1000px) {
+  div.topbar {
+    grid-template-columns: 1fr;
+  }
+ div.topbar>div{
+    margin: auto;
+ }
+ a{
+    margin: auto;
+ }
+ img{
+    margin: auto;
+ }
+}
+/**/
+
+/*Body container*/
+div.bodycontainer{
+  display: grid;
+  grid-template-columns: 11fr 3.8fr;
+  width: 90%;
+  margin: auto;
+}
+div.main_side{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+div.side_bar{
+  padding: 20px;
+  border-left: black 2px solid;
+}
+a.content56{
+  background-color: rgba(128, 128, 128, 0.5);
+  padding: 20px;
+  transition: 0.3s ;
+  border-radius: 20px;
+}
+a.content56:hover{
+  box-shadow: black 0px 0px 100px 2px;
+  transform: scale(1.01);
+  background-color: rgba(120, 120, 120, 0.5);
+  transition: 0.3s ;
+}
+div.sidecontent{
+  background-color: rgba(128, 128, 128, 0.5);
+  padding: 5px 5%;
+}
+a.content56>img{
+  border-radius: 15px;
+  width: 100%;
+}
+/**/
+
+
+/*Note Section*/
+div.notesection{
+  background-color: antiquewhite;
+background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+width: 90%;
+margin: auto;
+margin-top: 20px;
+padding: 20px;
+border: 1px solid rgba(0, 0, 0, 0.274);
+border-radius: 20px;
+text-align: justify;
+}
