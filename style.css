@@ -124,3 +124,31 @@ div.topbar>div{
 .tex{
   font-size: 20px;
 }
+
+.compcont{
+  width: 90%;
+  margin: auto;
+  display: grid;
+  gap: 10px;
+}
+.question44{
+  background-color: rgb(99, 99, 99);
+  padding: 10px;
+}
+.answer44{
+  padding: 10px;
+  background-color: rgb(127, 172, 255);
+}
+.tasksss{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 10px;
+}
+.tasksss>div{
+  background-color: rgb(156, 156, 156);
+  border-radius: 20px;
+}
+.tasksss>div:hover{
+  box-shadow: black 0px 0px 20px 1px;
+  transform: scale(1.01);
+}
