@@ -1,6 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Yatra+One&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
 body {
   background-color: rgb(224, 224, 224);
+  margin: 0;
 }
 a {
   text-decoration: none;
@@ -14,6 +17,7 @@ div.topbar {
   font-family: "Yatra One", cursive;
   gap: 10px;
   font-size: 16px;
+  margin-top: 8px;
 }
 img {
   width: 60%;
@@ -39,3 +43,112 @@ div.topbar > div:not(.topbarimg) {
     transform: scale(1);
     transition: 0.3s;
   }
+  div.mainbody{
+    width: 95%;
+    margin: auto;
+  }
+.mainhead{
+    font-family: 'Roboto Condensed', sans-serif;
+    margin-bottom: 0;
+}
+hr{
+    background-color: black;
+    margin-top: 0;
+    height: 1px;
+}
+div.footertab{
+    background-color: rgb(37, 37, 37);
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    text-align: center;
+    color: rgb(224, 224, 224);
+    padding: 10px;
+    gap: 10px;
+}
+div.copyrighttab{
+    background-color: rgb(83, 83, 83);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    font-family: 'Kanit', sans-serif;
+    color: rgb(224, 224, 224);
+}
+.inter76{
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  width: 80%;
+  margin: auto;
+  margin-top: 2px;
+  gap: 5px;
+}
+.text56{
+  text-align: left;
+  margin: auto;
+  margin-left: 0;
+}
+.img56{
+  width: 100%;
+  height: auto;
+}
+.logo56{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 80%;
+  gap: 5px;
+  margin: auto;
+  margin-top: 20px;
+}
+.code55{
+  width: 95%;
+  margin: auto;
+}
+.code-container {
+  background-color: #f1f1f1;
+  padding: 1px;
+}
+.question55{
+  padding: 10px;
+  background-color: #7a7a7a;
+  border-radius: 20px 20px 0 0;
+}
+.code {
+  font-family: "Courier New", monospace;
+  font-size: 14px;
+  color: #333;
+  white-space: pre-wrap;
+}
+.output55{
+  padding: 10px;
+  background-color: #7a7a7a;
+  border-radius: 0 0 20px 20px;
+}
+div.cardholder{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-top: 25px;
+}
+a.card{
+  display: grid;
+  grid-template-columns: 3fr 5fr;
+  padding: 10px;
+  background-color: #7a7a7a;
+  transition: all 0.5s;
+  border-radius: 10px;
+}
+a.card:hover{
+  transition: all 0.5s;
+  box-shadow: black 0 0 21px 2px;
+  transform: scale(1.02)
+}
+img.card{
+  width: 100%;
+}
+a.card>div{
+  padding: 10px;
+  font-size: 20px;
+}
+img.backimg{
+  height: 50px;
+  width: auto;
+}

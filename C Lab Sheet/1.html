@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Engineering Junction</title>
+    <link
+      rel="shortcut icon"
+      href="../logo_transparent-cutout.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <div class="topbar">
+      <div class="barbar topbarimg item1">
+        <a href="../index.html"
+          ><img src="../facebook_cover_psssshoto_2-cutout.png" alt=""
+        /></a>
+      </div>
+      <div class="barbar item2">
+        <a class="aftereffect" href="../index.html">Home</a>
+      </div>
+      <div class="barbar item3">
+        <a class="aftereffect" href="../notes.html">Notes</a>
+      </div>
+      <div class="barbar item4">
+        <a class="aftereffect" href="../subject.html">Subject</a>
+      </div>
+      <div class="barbar item5">
+        <a class="aftereffect" href="../bank.html">Question Bank</a>
+      </div>
+      <div class="barbar item6">
+        <a class="aftereffect" href="../contact.html">Contact</a>
+      </div>
+    </div>
+    <div class="mainbody">
+      <h1 class="mainhead">Lab Sheet No.1 - To be familiar with C-Programming</h1>
+      <hr />
+      <a href="../LabSheet.html" class="back_button"><img class="backimg" src="../Thumbnails/back.png" alt=""></a>
+    </div>
+    <div class="code55">
+      <div id="question55" class="question55">
+        1. WAP to display hello world.
+      </div>
+      <div id="answer55" class="code-container">
+        <pre class="code">
+        <code>
+    #include&lt;stdio.h>
+    void main(){
+       printf("Hello World");
+    }
+        </code>
+        </pre>
+      </div>
+      <div id="output55" class="output55">
+        OUTPUT:- <br />
+        Hello World
+      </div>
+
+      <br />
+
+      <div id="question55" class="question55">
+        2. WAP to display your name, roll number and address.
+      </div>
+      <div id="answer55" class="code-container">
+        <pre class="code">
+            <code>
+    #include&lt;stdio.h>
+    void main(){
+        printf("Name: John Smith");
+        printf("Roll no.: 90");
+        printf("Address: London");
+    }
+            </code>
+            </pre>
+      </div>
+      <div id="output55" class="output55">
+        OUTPUT:- <br />
+        Name: John Smith<br />
+        Roll no.: 90<br />
+        Address: London
+      </div>
+
+      <br />
+
+
+
+      <div id="question55" class="question55">
+        3. WAP to add two integer variables and print sum.
+      </div>
+      <div id="answer55" class="code-container">
+        <pre class="code">
+              <code>
+    #include &lt;stdio.h>
+    void main(){
+      int a,b,sum;
+      printf("Enter two numbers: ");
+      scanf("%d%d", &a, &b);
+      sum = a+b;
+      printf("The sum is %d",sum);
+    }
+              </code>
+              </pre>
+      </div>
+      <div id="output55" class="output55">
+        OUTPUT:- <br />
+        Enter two numbers: 2 3 <br />
+        The sum is 5
+      </div>
+      <br />
+
+
+    <div id="question55" class="question55">
+        4. WAP to multiply two integer variables and print product.
+      </div>
+      <div id="answer55" class="code-container">
+        <pre class="code">
+              <code>
+    #include &lt;stdio.h>
+    void main(){
+      int a,b,product;
+      printf("Enter two numbers: ");
+      scanf("%d%d", &a, &b);
+      product = a*b;
+      printf("The product is %d",product);
+    }
+              </code>
+              </pre>
+      </div>
+      <div id="output55" class="output55">
+        OUTPUT:- <br />
+        Enter two numbers: 2 3 <br />
+        The product is 6
+      </div>
+      <br />
+
+
+
+
+      <div class="question55" id="question55">
+        5. WAP to calculate and display the simple interest.
+      </div>
+      <div class="code-container" id="answer55">
+        <pre class="code"><code>
+    #include<stdio.h>
+    void main(){
+        float p,t,r,SI;
+        printf("Enter Principle, Time and Rate: ");
+        scanf("%f%f%f",&p,&t,&r);
+        SI = (p*t*r)/100;
+        printf("The Simple Interest is %f",SI);
+    }
+                    
+                </code></pre>
+      </div>
+      <div class="output55" id="output55">
+        OUTPUT:- <br />
+        Enter Principle, Time and Rate: 2000 3 4 <br>
+The Simple Interest is 240.000000
+      </div>
+
+<br>
+
+      <div class="question55" id="question55">
+        6. WAP to calculate the area of the circle.
+      </div>
+      <div class="code-container" id="answer55">
+        <pre class="code"><code>
+    #include<stdio.h>
+    #define pi 3.1415
+    void main(){
+        float rad, area;
+        printf("Enter the radius: ");   
+        scanf("%f",&rad);
+        area = pi * rad * rad;
+        printf("The area is %f",area);
+    }
+                    
+                </code></pre>
+      </div>
+      <div class="output55" id="output55">
+        OUTPUT:- <br />
+        Enter the radius: 7 <br>
+The area is 153.933502
+      </div>
+
+
+
+    </div>
+  </body>
+</html>
