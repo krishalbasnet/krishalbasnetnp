@@ -143,6 +143,7 @@ a.card:hover{
 }
 img.card{
   width: 100%;
+  border-radius: 10px;
 }
 a.card>div{
   padding: 10px;

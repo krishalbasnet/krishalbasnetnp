@@ -38,7 +38,9 @@
     <div class="mainbody">
       <h1 class="mainhead">Lab Sheet No.5 - To be familiar with LOOPS</h1>
       <hr />
-      <a href="../LabSheet.html" class="back_button"><img class="backimg" src="../Thumbnails/back.png" alt=""></a>
+      <a href="../LabSheet.html" class="back_button"
+        ><img class="backimg" src="../Thumbnails/back.png" alt=""
+      /></a>
     </div>
     <div class="code55">
       <div id="question55" class="question55">
@@ -165,6 +167,31 @@
         OUTPUT:- <br />
         Enter the value of n: 10 <br />
         The sum is 2.928968
+      </div>
+      <br />
+      <div class="question55" id="question55">
+        10. WAP to display the number in reverse order.
+      </div>
+      <div id="answer55" class="code-container">
+        <pre class="code"><code>
+    #include&lt;stdio.h>
+    void main(){
+      printf("Enter a multi digit number: ");
+      scanf("%d",&num);
+      original = num;
+      reverse = 0;
+      while(num!=0){
+        reverse = reverse * 10 + (num%10);
+        num/10 = 0;
+      }
+      printf("The reverse of %d id %d.",original,reverse);
+    }
+        </code></pre>
+      </div>
+      <div class="output55" id="output55">
+        OUTPUT:- <br />
+        Enter a multi digit number: 12345 <br />
+        The reverse of 12345 is 54321.
       </div>
     </div>
   </body>
