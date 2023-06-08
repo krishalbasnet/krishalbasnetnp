@@ -44,6 +44,208 @@
         ><img class="backimg" src="../Thumbnails/back.png" alt=""
       /></a>
     </div>
-    <div class="code55"></div>
+    <div class="code55">
+      <div class="question55" id="question55">1. WAP to check whether a number is negative, positive or zero.</div>
+      <div id="answer55" class="code-container">
+        <pre class="code"><code></code></pre>
+      </div>
+      <div class="output55" id="output55"></div>
+      <br>
+      <div class="question55" id="question55">2. WAP to find maximum between three numbers entered by the user.</div>
+      <div id="answer55" class="code-container">
+        <pre class="code"><code></code></pre>
+      </div>
+      <div class="output55" id="output55"></div>
+      <br>
+      <div class="question55" id="question55">
+        3. WAP to input a character from the user and check whether the
+        character is vowel or consonant.
+      </div>
+      <div id="answer55" class="code-container">
+        <pre class="code"><code>
+    #include&lt;stdio.h>
+    void main(){
+      char letter;
+      printf("Enter a character: ");
+      scanf("%c",&letter);
+      if(letter == 'a' || letter =='e' || letter =='i' || letter =='o' || letter =='u' || letter =='A' || letter =='E' || letter =='I' || letter =='O' || letter =='U'){
+        printf("Vowel");
+      }
+      else{
+        printf("Consonant");
+      }
+    }
+        </code></pre>
+      </div>
+      <div class="output55" id="output55">
+        OUTPUT:- <br />
+        Enter a character: a <br />
+        Vowel
+      </div>
+      <br>
+      <div class="question55" id="question55">4. WAP to input a character from the user and check whether the character is Alphabet
+        or not. If the character is Alphabet then show whether it is uppercase or lowercase.</div>
+      <div id="answer55" class="code-container">
+        <pre class="code"><code></code></pre>
+      </div>
+      <div class="output55" id="output55"></div>
+      <br>
+      <div class="question55" id="question55">5. WAP to check whether the year entered by the user is leap year or not.</div>
+      <div id="answer55" class="code-container">
+        <pre class="code"><code>
+    #include<stdio.h>
+    void main()
+    {
+      int year;
+      printf("Enter a year: ");
+      scanf("%d",&year);
+      if(year%400==0){
+        printf("%d is a leap year",year);
+      }
+      else if(year%100==0){
+        printf("%d is not a leap year",year);
+      }
+      else if(year%4==0){
+        printf("%d is a leap year",year);
+      }
+      else{
+        printf("%d is not a leap year",year);
+      }
+    }
+        </code></pre>
+      </div>
+      <div class="output55" id="output55">
+        OUTPUT:- <br>
+        Enter a year: 2080 <br>
+2080 is a leap year
+      </div>
+      <br>
+      <div class="question55" id="question55">6. WAP to check whether the number entered by the user is divisible by 5 and 11 or not.</div>
+      <div id="answer55" class="code-container">
+        <pre class="code"><code>
+    #include<stdio.h>
+    void main()
+    {
+      int a;
+      printf("Enter a number: ");
+      scanf("%d",&a);
+      if(a%5==0 && a%11==0){
+        printf("%d is divisible by 5 and 11.",a);
+      }
+      else{
+        printf("%d is not divisiblr by 5 and 11",a);
+      }
+    }
+        </code></pre>
+      </div>
+      <div class="output55" id="output55">
+        OUTPUT:- <br>
+        Enter a number: 55 <br>
+55 is divisible by 5 and 11.
+      </div>
+      <br>
+      <div class="question55" id="question55">7. WAP to find the all the roots of a quadratic equation.</div>
+      <div id="answer55" class="code-container">
+        <pre class="code"><code>
+          #include<stdio.h>
+    #include<math.h>
+    void main()
+    {
+        float a,b,c,d,e,f,g;
+        printf("Enter the value of a,b and c. \n");
+        scanf("%f%f%f",&a,&b,&c);
+        d = (b*b-4*a*c);
+        if(d==0){
+            printf("The roots are real and same. \n");
+            e = (-b/2*a)+(sqrt(d)/2*a);
+            printf("The root is %f \n",e);
+        }
+        else if(d>0){
+            printf("The roots are real and different. \n");
+            e=(-b/2*a)+(sqrt(d)/2*a);
+            f=(-b/2*a)-(sqrt(d)/2*a);
+            printf("The roots are %f and %f",e,f);
+        }
+        else{
+            printf("The roots are imaginary");
+            e=(-b/2*a);
+            g=(sqrt(-(d))/2*a);
+            printf("The root is %f + %f i \n",e,g);
+            printf("The root is %f - %f i \n",e,g);
+        }
+    }
+        </code></pre>
+      </div>
+      <div class="output55" id="output55">
+        Enter the value of a,b and c. <br>
+2 5 3 <br>
+The roots are real and different.    <br>
+The roots are -4.000000 and -6.000000
+      </div>
+      <br>
+      <div class="question55" id="question55">8. WAP to input two numbers and operator among [ + , - ,* , / ]. If user enters + then the
+        program should perform the addition of the number and display the sum. If user enters
+        – then the program should perform subtraction of number and display the difference
+        and so on for * and /.</div>
+      <div id="answer55" class="code-container">
+        <pre class="code"><code>
+    #include&lt;stdio.h>
+    void main(){
+      int a,b,op;
+      printf("Enter two numbers: ");
+      scanf("%d%d",&a,&b);
+      printf("Enter the operator as follow:\n1.Add\n2.Substraction\n3.Multiplication\n4.Divide\n");
+      scanf("%d",&op);
+      switch(op){
+        case 1: printf("The sum is %d",a+b);
+                break;
+        case 2: printf("The difference is %d",a-b);
+                break;
+        case 3: printf("The product is %d",a*b);
+                break;
+        case 4: printf("The dividend is %d",a/b);
+                break;
+        default:printf("Error");
+      }
+    }
+        </code></pre>
+      </div>
+      <div class="output55" id="output55">
+        OUTPUT:- <br>
+        Enter two numbers: 5 2 <br>
+        Enter the operator as follow:
+        1.Add <br>
+        2.Substraction <br>
+        3.Multiplication <br>
+        4.Divide <br>
+        2
+        The difference is 3
+      </div>
+      <br>
+      <div class="question55" id="question55">9. WAP in C to input marks of five subjects C-programming, Physics, Maths, Applied
+        Mechanics and Basic electrical. Display whether the student passed or failed. Take
+        F.M=100 and P.M.=40 For passed students calculate percentage and grade according
+        to following: <br>
+        Percentage >= 90% : A <br>
+        Percentage >=80% : B <br>
+        Percentage >= 70% : C <br>
+        Percentage >= 60% : D <br>
+        Percentage >= 40% : E</div>
+      <div id="answer55" class="code-container">
+        <pre class="code"><code></code></pre>
+      </div>
+      <div class="output55" id="output55"></div>        
+      <br>
+      <div class="question55" id="question55">10. WAP to input a number from user. If user enters a number less than or equal to zero
+        then program should just display the number. If user enters 1 the program should
+        display output as neither prime nor composite, if user enters 2 the program should
+        display output as smallest and only even prime number. If user enters any number
+        greater than 2 the program should check whether the number is prime or not, also if
+        the number is not prime the program should display whether it is even or odd.</div>
+      <div id="answer55" class="code-container">
+        <pre class="code"><code></code></pre>
+      </div>
+      <div class="output55" id="output55"></div>          
+    </div>
   </body>
 </html>
