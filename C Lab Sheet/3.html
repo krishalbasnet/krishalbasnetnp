@@ -47,15 +47,55 @@
     <div class="code55">
       <div class="question55" id="question55">1. WAP to check whether a number is negative, positive or zero.</div>
       <div id="answer55" class="code-container">
-        <pre class="code"><code></code></pre>
+        <pre class="code"><code>
+    #include&lt;stdio.h>
+    void main(){
+      int a;
+      printf("Enter a number: ");
+      scanf("%d",&a);
+      if(a>0){
+        printf("Positive");
+      }
+      else if(a==0){
+        printf("Zero");
+      }
+      else{
+        printf("Negative");
+      }
+    }
+        </code></pre>
       </div>
-      <div class="output55" id="output55"></div>
+      <div class="output55" id="output55">
+        OUTPUT:- <br>
+        Enter a value: 3 <br>
+        Positive
+      </div>
       <br>
       <div class="question55" id="question55">2. WAP to find maximum between three numbers entered by the user.</div>
       <div id="answer55" class="code-container">
-        <pre class="code"><code></code></pre>
+        <pre class="code"><code>
+    #include&lt;stdio.h>
+    void main(){
+      int a,b,c;
+      printf("Enter three numbers: ");
+      scanf("%d%d%d",&a,&b,&c);
+      if(a>b && a>c){
+        printf("%d is the greatest.",a);
+      }
+      else if(b>c){
+        printf("%d is the greatest.",b);
+      }
+      else{
+        printf("%d is the greatest.",c);
+      }
+    }
+        </code></pre>
       </div>
-      <div class="output55" id="output55"></div>
+      <div class="output55" id="output55">
+        OUTPUT:- <br>
+        Enter three numbers: 12 32 11 <br>
+        32 is the greatest.
+      </div>
       <br>
       <div class="question55" id="question55">
         3. WAP to input a character from the user and check whether the

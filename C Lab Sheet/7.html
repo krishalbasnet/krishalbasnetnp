@@ -36,14 +36,109 @@
       </div>
     </div>
     <div class="mainbody">
-      <h1 class="mainhead">
-        LAB SHEET NO.7 - To be familiar with Array
-      </h1>
+      <h1 class="mainhead">LAB SHEET NO.7 - To be familiar with Array</h1>
       <hr />
       <a href="../LabSheet.html" class="back_button"
         ><img class="backimg" src="../Thumbnails/back.png" alt=""
       /></a>
     </div>
-    <div class="code55"></div>
+    <div class="code55">
+      <div class="question55" id="question55">1. WAP to store 10 integer elements in an array and print it.</div>
+      <div id="answer55" class="code-container">
+        <pre class="code"><code>
+    #include&lt;stdio.h>
+    void main(){
+      int i, num[10];
+      printf("Enter 10 numbers: ");
+      for(i=0;i&lt;10;i++){
+        scanf("%d",&num[i]);
+      }
+      printf("The numbers are: ");
+      for(i=0;i&lt;10;i++){
+        printf("%d ",num[i]);
+      }
+    }
+        </code></pre>
+      </div>
+      <div class="output55" id="output55">
+        OUTPUT:- <br>
+        Enter 10 numbers: 0 1 2 3 4 5 6 7 8 9 <br>
+        The numbers are: 0 1 2 3 4 5 6 7 8 9
+      </div>
+      <br />
+      <div class="question55" id="question55">2. WAP to calculate and print the sum and average of n elements of array.</div>
+      <div id="answer55" class="code-container">
+        <pre class="code"><code></code></pre>
+      </div>
+      <div class="output55" id="output55"></div>
+      <br />
+      <div class="question55" id="question55">3. WAP to sort n elements of array in descending order.</div>
+      <div id="answer55" class="code-container">
+        <pre class="code"><code>
+    #include&lt;stdio.h>
+    void main(){
+      int i,j,num[100],temp;
+      printf("Enter the number of elements in the array: ");
+      scanf("%d ",&n);
+      printf("Enter the numbers: ");
+      for(i=0li&lt;n;i++){
+        scanf("%d ",&num[i]);
+      }
+      for(i=0;i&lt;n-1;i++){
+        for(j=1+i;i&lt;n;j++){
+          temp = num[i];
+          num[i] = num[j];
+          num[j] = temp;
+        }
+      }
+      printf("The rearranged values are: ");
+      for(i=0;i&lt;n;i++){
+        printf("%d",num[i]);
+      }
+    }
+        </code></pre>
+      </div>
+      <div class="output55" id="output55">
+        OUTPUT:- <br>
+        Enter the number of elements in the array: 10 <br>
+        Enter the numbers: 34 56 32 4 67 45 78 77 10 <br>
+        The rearranged value are: 78 77 67 56 45 34 4 1 0   
+      </div>
+      <br />
+      <div class="question55" id="question55">4. WAP to count the frequency of the elements in an array.</div>
+      <div id="answer55" class="code-container">
+        <pre class="code"><code></code></pre>
+      </div>
+      <div class="output55" id="output55"></div>
+      <br />
+      <div class="question55" id="question55">5. WAP to pass 1D array to the minmax() function. The function should calculate the
+        maximum and minimum among the elements of the array. Print the maximum and
+        minimum in the main() function.</div>
+      <div id="answer55" class="code-container">
+        <pre class="code"><code></code></pre>
+      </div>
+      <div class="output55" id="output55"></div>
+      <br />
+
+      <div class="question55" id="question55">6. WAP to multiply matrix of different size if possible using 2D array.</div>
+      <div id="answer55" class="code-container">
+        <pre class="code"><code></code></pre>
+      </div>
+      <div class="output55" id="output55"></div>
+      <br />
+
+      <div class="question55" id="question55">7. WAP to find the transpose of the matrix.</div>
+      <div id="answer55" class="code-container">
+        <pre class="code"><code></code></pre>
+      </div>
+      <div class="output55" id="output55"></div>
+      <br />
+      <div class="question55" id="question55">8. WAP to find the sum of the rows and column of the matrix.</div>
+      <div id="answer55" class="code-container">
+        <pre class="code"><code></code></pre>
+      </div>
+      <div class="output55" id="output55"></div>
+      <br />
+    </div>
   </body>
 </html>

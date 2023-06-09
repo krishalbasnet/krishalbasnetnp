@@ -197,8 +197,8 @@
       <div class="question55" id="question55">8. WAP to display weather a number is Armstrong or not.</div>
       <div id="answer55" class="code-container">
         <pre class="code"><code>
-    #include<stdio.h>
-    #include<math.h>
+    #include&lt;stdio.h>
+    #include&lt;math.h>
     void main(){
       int a,b=0,c,n;
       printf("Enter a number: ");
@@ -255,6 +255,35 @@ It is a armstrong number.
         OUTPUT:- <br />
         Enter a multi digit number: 12345 <br />
         The reverse of 12345 is 54321.
+      </div>
+      <br>
+      <div class="question55" id="question55">11. WAP to check whether a number is a palindrome or not.</div>
+      <div id="answer55" class="code-container">
+        <pre class="code"><code>
+    #include&lt;stdio.h>
+    void main(){
+      int num, original, reverse;
+      printf("Enter a number: ");
+      scanf("%d",&num);
+      original = num;
+      reverse = 0;
+      while(num!-0){
+        reverse=reverse*10+(num%10);
+        num = num/10;
+      }
+      if(original == reverse){
+        printf("Palindrome");
+      }
+      else{
+        printf("Not a Palindrome");
+      }
+    }
+        </code></pre>
+      </div>
+      <div class="output55" id="output55">
+        OUTPUT:- <br>
+        Enter a number: 12321 <br>
+        Palindrome
       </div>
     </div>
   </body>

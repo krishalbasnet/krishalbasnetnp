@@ -47,9 +47,26 @@
     <div class="code55">
       <div class="question55" id="question55">1. WAP to get your name, address and display using unformatted I/O.</div>
       <div id="answer55" class="code-container">
-        <pre class="code"><code></code></pre>
+        <pre class="code"><code>
+    #include&lt;stdio.h>
+    void main(){
+      char name[20],add[20];
+      printf("Enter your name and address: ");
+      gets(name);
+      gets(add);
+      printf("Name and address are: ");
+      puts(name);
+      puts(add);
+    }
+        </code></pre>
       </div>
-      <div class="output55" id="output55"></div>
+      <div class="output55" id="output55">
+        OUTPUT:- <br>
+        Enter your name and address: John; <br>
+        Itahari <br>
+        Name and address are: John <br>
+        Itahari
+      </div>
       <br>
       <div class="question55" id="question55">2. WAP to get a character form the user using unformatted I/O and display the ASCII
         value of the entered character.</div>
