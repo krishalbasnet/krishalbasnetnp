@@ -56,15 +56,6 @@ hr{
     margin-top: 0;
     height: 1px;
 }
-div.footertab{
-    background-color: rgb(37, 37, 37);
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    text-align: center;
-    color: rgb(224, 224, 224);
-    padding: 10px;
-    gap: 10px;
-}
 div.copyrighttab{
     background-color: rgb(83, 83, 83);
     display: grid;
@@ -72,6 +63,8 @@ div.copyrighttab{
     text-align: center;
     font-family: 'Kanit', sans-serif;
     color: rgb(224, 224, 224);
+    width: 100%;
+    display: none;  /*Remove later*/
 }
 .inter76{
   display: grid;
@@ -152,4 +145,18 @@ a.card>div{
 img.backimg{
   height: 50px;
   width: auto;
+}
+@media screen and (max-width: 700px) {
+  div.topbar{
+    grid-template-columns: 1fr;
+  }
+  div.cardholder{
+    grid-template-columns: 1fr;
+  }
+  .mainhead{
+    font-size: 20px;
+  }
+  div.item1{
+    text-align: center;
+  }
 }
