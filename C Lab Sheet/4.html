@@ -71,9 +71,21 @@
       <div class="question55" id="question55">2. WAP to get a character form the user using unformatted I/O and display the ASCII
         value of the entered character.</div>
       <div id="answer55" class="code-container">
-        <pre class="code"><code></code></pre>
+        <pre class="code"><code>
+    #include <stdio.h>
+    void main(){
+      char c;
+      printf("Enter the character: ");
+      scanf("%c",&c);
+      printf("The ASCII value of %c is %d.",c,c);
+    }
+        </code></pre>
       </div>
-      <div class="output55" id="output55"></div>
+      <div class="output55" id="output55">
+        OUTPUT:- <br>
+        Enter the character: a <br>
+The ASCII value of a is 97.
+      </div>
       <br>
       <div class="question55" id="question55">3. WAP to display the output as [take a=15, b=20.43, c=35]: 
         <pre>
@@ -96,7 +108,15 @@
     }
         </code></pre>
       </div>
-      <div class="output55" id="output55"></div>
+      <div class="output55" id="output55">
+        <pre>
+        <code>
+          A = 15|15    |    15|15    |    15|15    |    15|15    |    15|15    | <br>
+          B = 20.43    | 20.43|20.43 | 20.43|20.43 | 20.43|20.43 | 20.43|20.43 | <br>
+          C = 35|35    |    35|35    |    35|35    |    35|35    |    35|35    |
+        </code>
+        </pre>
+      </div>
       <br>
       <div class="question55" id="question55">4. WAP to display the output as below using formatted I/O [take char a[]=”I Love
         Nepal”]. <br> 
@@ -111,9 +131,36 @@
         I LOVE NEPA <br>
         I LOVE NEPAL</div>
       <div id="answer55" class="code-container">
-        <pre class="code"><code></code></pre>
+        <pre class="code"><code>
+    #include&lt;stdio.h>
+    void main(){
+      char a[]="I LOVE NEPAL";
+      printf("%.1s\n",a);
+      printf("%.3s\n",a);
+      printf("%.4s\n",a);
+      printf("%.5s\n",a);
+      printf("%.6s\n",a);
+      printf("%.8s\n",a);
+      printf("%.9s\n",a);
+      printf("%.10s\n",a);
+      printf("%.11s\n",a);
+      printf("%.12s\n",a);
+    }
+        </code></pre>
       </div>
-      <div class="output55" id="output55"></div>
+      <div class="output55" id="output55">
+        OUTPUT:- <br>
+        I <br>
+        I L <br>
+        I LO <br>
+        I LOV <br>
+        I LOVE <br>
+        I LOVE N <br>
+        I LOVE NE <br>
+        I LOVE NEP <br>
+        I LOVE NEPA <br>
+        I LOVE NEPAL
+      </div>
       <br>
     </div>
   </body>
