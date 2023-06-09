@@ -126,9 +126,29 @@
       <div class="question55" id="question55">4. WAP to input a character from the user and check whether the character is Alphabet
         or not. If the character is Alphabet then show whether it is uppercase or lowercase.</div>
       <div id="answer55" class="code-container">
-        <pre class="code"><code></code></pre>
+        <pre class="code"><code>
+    #include&lt;stdio.h>
+    void main(){
+      char ch;
+      printf("Enter the character: ");
+      scanf("%c",&ch);
+      if((ch>='a' && ch&lt;='z')){
+        printf("%c is Lowercase alphabet",ch);
+      }
+      else if(ch>='A' && ch &lt;= 'Z'){
+        printf("%c is Uppercase alphabet",ch);
+      }
+      else{
+        printf("%c is not alphabet",ch);
+      }
+    }
+        </code></pre>
       </div>
-      <div class="output55" id="output55"></div>
+      <div class="output55" id="output55">
+        OUTPUT :- <br>
+        Enter the character: A <br>
+A is Uppercase alphabet
+      </div>
       <br>
       <div class="question55" id="question55">5. WAP to check whether the year entered by the user is leap year or not.</div>
       <div id="answer55" class="code-container">
@@ -272,9 +292,41 @@ The roots are -4.000000 and -6.000000
         Percentage >= 60% : D <br>
         Percentage >= 40% : E</div>
       <div id="answer55" class="code-container">
-        <pre class="code"><code></code></pre>
+        <pre class="code"><code>
+    #include&lt;stdio.h>
+    void main(){
+      float c,phy,mat,app,ele,per;
+      printf("Enter the marks of C-programming, Physics, Maths, Applied Mechanics and Basic electrical: ");
+      scanf("%f%f%f%f%f",&c,&phy,&mat,&app,&ele);
+      per = (c+phy+mat+app+ele+per)/5;
+      printf("Percentage: %f\n",per);
+      if(per>=90){
+        printf("You have scored A");
+      }
+      else if(per>=80){
+        printf("You have scored B");
+      }
+      else if(per>=70){
+        printf("You have scored C");
+      }
+      else if(per>=60){
+        printf("You have scored D");
+      }
+      else if(per>=40){
+        printf("You have scored E");
+      }
+      else{
+        printf("You've failed");
+      }
+    }
+        </code></pre>
       </div>
-      <div class="output55" id="output55"></div>        
+      <div class="output55" id="output55">
+        OUTPUT :-  <br>
+        Enter the marks of C-programming, Physics, Maths, Applied Mechanics and Basic electrical: 20 30 40 50 60 <br>
+Percentage: 40.000000 <br>
+You have scored E
+      </div>        
       <br>
       <div class="question55" id="question55">10. WAP to input a number from user. If user enters a number less than or equal to zero
         then program should just display the number. If user enters 1 the program should
@@ -283,9 +335,35 @@ The roots are -4.000000 and -6.000000
         greater than 2 the program should check whether the number is prime or not, also if
         the number is not prime the program should display whether it is even or odd.</div>
       <div id="answer55" class="code-container">
-        <pre class="code"><code></code></pre>
+        <pre class="code"><code>
+    #include &lt;stdio.h>
+    void main(){
+      int a,i,b=1;
+      printf("Enter a number: ");
+      scanf("%d", &a);
+      if (a == 1){
+        printf("Neither Prime nor Composite.");
+      }else if (a == 2){
+        printf("Smallest and only evem prime number.");
+      }else{
+        for(i=2;i&lt;a;i++){
+          if(a%i==0){
+            b = 0;
+            break;
+          }}
+          if (b) {
+            printf("%d is a prime number.\n", a);
+          }else {
+            printf("%d is not a prime number.\n", a);
+    }}}
+
+        </code></pre>
       </div>
-      <div class="output55" id="output55"></div>          
+      <div class="output55" id="output55">
+        OUTPUT:- <br>
+        Enter a number: 7 <br>
+        7 is a prime number.
+      </div>          
     </div>
   </body>
 </html>
