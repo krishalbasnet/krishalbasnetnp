@@ -36,14 +36,118 @@
       </div>
     </div>
     <div class="mainbody">
-      <h1 class="mainhead">
-        LAB SHEET NO.6 - To be familiar with Functions
-      </h1>
+      <h1 class="mainhead">LAB SHEET NO.6 - To be familiar with Functions</h1>
       <hr />
       <a href="../LabSheet.html" class="back_button"
         ><img class="backimg" src="../Thumbnails/back.png" alt=""
       /></a>
     </div>
-    <div class="code55"></div>
+    <div class="code55">
+
+
+      <div class="question55" id="question55">1. Write a program to add, subtract, multiply and divide two integers using user defined
+        function add(), sub(), mul() and div().</div>
+      <div id="answer55" class="code-container">
+        <pre class="code"><code></code></pre>
+      </div>
+      <div class="output55" id="output55">OUTPUT:- <br /></div>
+      <br />
+      <div class="question55" id="question55">2. WAP to display sum of series: x + x2
+        /2! + x3
+        /3! + x4
+        /4! + x5
+        /5! ... xn
+        /n!. User defined
+        function factorial() and power() should be used to calculate the factorial and power.</div>
+      <div id="answer55" class="code-container">
+        <pre class="code"><code></code></pre>
+      </div>
+      <div class="output55" id="output55">OUTPUT:- <br /></div>
+      <br />
+      <div class="question55" id="question55">3. WAP to calculate factorial using Recursion.</div>
+      <div id="answer55" class="code-container">
+        <pre class="code"><code>
+    #include&lt;stdio.h>
+    int factorial(int x);
+    void main(){
+      int n;
+      printf("Enter the number: ");
+      scanf("%d",&n);
+      printf("The factorial of %d is %d.",n,factorial(n));
+    }
+    int factorial(int x){
+      int fact=1 ;
+      if(x>1){
+        fact = x * factorial(x-1);
+      }else{
+        return fact;
+      }
+    }
+        </code></pre>
+      </div>
+      <div class="output55" id="output55">OUTPUT:- <br />
+        Enter the number: 4 <br>
+The factorial of 4 is 24.
+      </div>
+      <br />
+      <div class="question55" id="question55">4. WAP to display the n<sup>th</sup> Fibonacci number using recursion.</div>
+      <div id="answer55" class="code-container">
+        <pre class="code"><code>
+    #include&lt;stdio.h>
+    int fibonacci(int x);
+    void main(){
+      int n;
+      printf("Enter the number: ");
+      scanf("%d",&n);
+      printf("The fibonacci of %d is %d.",n,fibonacci(n));
+    }
+    int fibonacci(int x){
+      int fib=0 ;
+      if(x>0){
+        fib = x + fibonacci(x-1);
+      }else{
+        return fib;
+      }
+    } 
+        </code></pre>
+      </div>
+      <div class="output55" id="output55">OUTPUT:- <br />
+        Enter the number: 5 <br>
+The fibonacci of 5 is 15.
+      </div>
+      <br />
+      <div class="question55" id="question55">5. WAP to take two numbers in main(). Write a function Swap() to swap the values of
+        the variables. Print the swapped values in main().</div>
+      <div id="answer55" class="code-container">
+        <pre class="code"><code></code></pre>
+      </div>
+      <div class="output55" id="output55">OUTPUT:- <br /></div>
+      <br />
+      <div class="question55" id="question55">6. WAP to take two float number in main(). Write a function single user define function
+        calculator() to perform the addition, subtraction and multiplication. The sum,
+        difference and product should be displayed from the main() function. [Use the
+        concept of pass by reference.].</div>
+      <div id="answer55" class="code-container">
+        <pre class="code"><code></code></pre>
+      </div>
+      <div class="output55" id="output55">OUTPUT:- <br /></div>
+      <br />
+      <div class="question55" id="question55">7. WAP to input a integer number in main(). Write a user define function isPrime() to
+        calculate whether the number is prime of not. Print whether the number is prime or
+        not from the main().</div>
+      <div id="answer55" class="code-container">
+        <pre class="code"><code></code></pre>
+      </div>
+      <div class="output55" id="output55">OUTPUT:- <br /></div>
+      <br />
+      <div class="question55" id="question55">8. WAP to illustrate the concept of global and static variables.</div>
+      <div id="answer55" class="code-container">
+        <pre class="code"><code></code></pre>
+      </div>
+      <div class="output55" id="output55">OUTPUT:- <br /></div>
+      <br />
+
+
+    </div>
   </body>
 </html>

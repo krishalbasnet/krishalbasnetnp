@@ -1,7 +1,14 @@
-#include <stdio.h>
+// find fibonacchi using recursion
+#include<stdio.h>
 void main(){
-    char c;
-    printf("Enter the character: ");
-    scanf("%c",&c);
-    printf("The ASCII value of %c is %d.",c,c);
+    int n;
+    printf("Enter the number: ");
+    scanf("%d",&n);
+    int fib=0 ;
+    if(x>0){
+        fib = x + fibonacci(x-1);
+    }else{
+        return fib;
+    }
+    printf("The fibonacci of %d is %d.",n,fibonacci(n));
 }

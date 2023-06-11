@@ -68,9 +68,29 @@
       <br />
       <div class="question55" id="question55">2. WAP to calculate and print the sum and average of n elements of array.</div>
       <div id="answer55" class="code-container">
-        <pre class="code"><code></code></pre>
+        <pre class="code"><code>
+    #include&lt;stdio.h>
+    void main(){
+      int n,i, num[100], sum=0;
+      float ave;
+      printf("Enter the number of terms: ");
+      scanf("%d",&n);
+      printf("Enter numbers:");
+      for(i=0;i&lt;n;i++){
+        scanf("%d",&num[i]);
+        sum = sum + num[i];
+      }
+      ave = sum / (float)n;
+      printf("The sum is %d and average is %f",sum,ave);
+    }
+        </code></pre>
       </div>
-      <div class="output55" id="output55"></div>
+      <div class="output55" id="output55">
+        OUTPUT:- <br>
+        Enter the number of terms: 5  <br>
+Enter numbers:1 2 3 4 5  <br>
+The sum is 15 and average is 3.000000
+      </div>
       <br />
       <div class="question55" id="question55">3. WAP to sort n elements of array in descending order.</div>
       <div id="answer55" class="code-container">
