@@ -149,9 +149,40 @@ The sum is 15 and average is 3.000000
 
       <div class="question55" id="question55">7. WAP to find the transpose of the matrix.</div>
       <div id="answer55" class="code-container">
-        <pre class="code"><code></code></pre>
+        <pre class="code"><code>
+    #include&lt;stdio.h>
+    void main(){
+      int matrix[30][30], i, j, m, n;
+      printf("Enter the no of rows and columns: ");
+      scanf("%d%d",&m,&n);
+      printf("Enter the data of the matrix: \n");
+      for(i=0;i&lt;m;i++){   
+        for(j=0;j&lt;n;j++){
+          scanf("%d",&matrix[i][j]);
+        }
+      }
+      printf("The transpose is:\n");
+      for(i=0;i&lt;m;i++){   
+          for(j=0;j&lt;n;j++){
+            printf("%d\t",matrix[j][i]);
+          }
+          printf("\n");
+      }
+    }
+        </code></pre>
       </div>
-      <div class="output55" id="output55"></div>
+      <div class="output55" id="output55">
+        OUTPUT:-    <br>
+        Enter the no of rows and columns: 3 3   <br>
+        Enter the data of the matrix:   <br>
+        1 &ensp; &ensp; 2 &ensp; &ensp; 3  <br>
+        4 &ensp; &ensp; 5 &ensp; &ensp; 6  <br>
+        7 &ensp; &ensp; 8 &ensp; &ensp; 9  <br>
+        The transpose is:  <br>
+        1       &ensp; &ensp; 4       &ensp; &ensp; 7  <br>
+        2       &ensp; &ensp; 5       &ensp; &ensp; 8  <br>
+        3       &ensp; &ensp; 6       &ensp; &ensp; 9  <br>
+      </div>
       <br />
       <div class="question55" id="question55">8. WAP to find the sum of the rows and column of the matrix.</div>
       <div id="answer55" class="code-container">
