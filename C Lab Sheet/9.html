@@ -49,15 +49,62 @@
       <div class="question55" id="question55">1. WAP to store and print the employee number, name, address and salary of the n
           employee using the structure.</div>
       <div id="answer55" class="code-container">
-        <pre class="code"><code></code></pre>
+        <pre class="code"><code>
+    #include&lt;stdio.h>
+    struct employeee{
+      int empno, salary;
+      char name[20], add[20];
+    }emp[30];
+    void main(){
+      int n, i;
+      printf("Enter the value of n:");
+      scanf("%d",&n);
+      for(i=0;i&lt;n;i++){
+        printf("Enter employee no., name, address and salary: ");
+        scanf("%d%s%s%d",&emp[i].empno,&emp[i].name,&emp[i].add,&emp[i].salary);
+      }printf("employee no., name, address and salary:\n");
+      for(i=0;i&lt;n;i++){
+        printf("%d %s %s %d\n",emp[i].empno,emp[i].name,emp[i].add,emp[i].salary);
+    }}
+        </code></pre>
       </div>
-      <div class="output55" id="output55">OUTPUT:- <br></div> <br>
+      <div class="output55" id="output55">OUTPUT:- <br>
+        Enter employee no., name, address and salary: 1 <br>
+        Krishal <br>
+        Itahari <br>
+        20000 <br>
+        Enter employee no., name, address and salary: 2 <br>
+        Ram <br>
+        Dharan <br>
+        30000 <br>
+        employee no., name, address and salary: <br>
+        1 Krishal Itahari 20000 <br>
+        2 Ram Dharan 30000
+      </div> <br>
 
       <div class="question55" id="question55">2. WAP to add two distance (feet-inch) using the structure.</div>
       <div id="answer55" class="code-container">
-        <pre class="code"><code></code></pre>
+        <pre class="code"><code>
+    #include<stdio.h>
+    struct feet{
+      int foot, inch;
+    } d,d1,d2;
+    void main(){
+      printf("Enter the 1st distance in foot inch format: ");
+      scanf("%d%d",&d1.foot,&d1.inch);
+      printf("Enter the 2nd distance in foot inch format: ");
+      scanf("%d%d",&d2.foot,&d2.inch);
+      d.foot = (d1.foot + d2.foot)+(d1.inch+d2.inch)/12;
+      d.inch = (d1.inch+d2.inch)%12;
+      printf("The sum is %d foot and %d inch.",d.foot,d.inch);
+    }
+        </code></pre>
       </div>
-      <div class="output55" id="output55">OUTPUT:- <br></div> <br>
+      <div class="output55" id="output55">OUTPUT:- <br>
+        Enter the 1st distance in foot inch format: 2 10 <br>
+Enter the 2nd distance in foot inch format: 3 10 <br>
+The sum is 6 foot and 8 inch. <br>
+      </div> <br>
 
       <div class="question55" id="question55">3. WAP to read and print the values of structure using pointer to structure.</div>
       <div id="answer55" class="code-container">

@@ -1,20 +1,9 @@
-//transpose of matrix
+// WAP to take two numbers in main(). Write a function Swap() to swap the values of the variables. Print the swapped values in main().
 #include<stdio.h>
 void main(){
-    int matrix[30][30], i, j, m, n;
-    printf("Enter the no of rows and columns: ");
-    scanf("%d%d",&m,&n);
-    printf("Enter the data of the matrix: \n");
-    for(i=0;i<m;i++){   
-        for(j=0;j<n;j++){
-            scanf("%d",&matrix[i][j]);
-        }
-    }
-    printf("The transpose is:\n");
-    for(i=0;i<m;i++){   
-        for(j=0;j<n;j++){
-            printf("%d\t",matrix[j][i]);
-        }
-        printf("\n");
-    }
+  int a,b;
+  printf("Enter two numbers: ");
+  scanf("%d %d",&a,&b);
+  printf("Before swapping: %d %d",a,b);
+  printf("After swapping: %d %d",a,b);
 }
