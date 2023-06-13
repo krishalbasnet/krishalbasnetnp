@@ -171,3 +171,13 @@ a.card>div{
   background-color: rgb(66, 66, 66);
 
 } 
+.contactbody{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+.contactleft{
+  text-align: center;
+}
+.contactleft>*{
+  margin: 1px;
+}

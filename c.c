@@ -1,9 +1,19 @@
-// WAP to take two numbers in main(). Write a function Swap() to swap the values of the variables. Print the swapped values in main().
-#include<stdio.h>
-void main(){
-  int a,b;
-  printf("Enter two numbers: ");
-  scanf("%d %d",&a,&b);
-  printf("Before swapping: %d %d",a,b);
-  printf("After swapping: %d %d",a,b);
-}
+#include <stdio.h>
+    #include <math.h>
+    void main(){
+      int n=30, fact = 1, i, j,sign=1;
+      float sum,x;
+      printf("Enter the degree: ");
+      scanf("%f", &x);
+      x=x*3.1415/180;
+      sum = 0.00;
+      for (i = 0; i <= n; i+=2){
+        fact = 1.00;
+        for (j = i; j > 0; j--){
+          fact = fact * j;
+        }
+        sum = sum + sign*(pow(x,i) / (float)fact);
+        sign = sign * -1;
+      }
+      printf("The sum is: %f", sum);
+    }
