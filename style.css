@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Yatra+One&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap');
 body {
   background-color: rgb(224, 224, 224);
   margin: 0;
@@ -115,11 +116,19 @@ div.copyrighttab{
   background-color: #7a7a7a;
   border-radius: 0 0 20px 20px;
 }
+div.fourone{
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  gap: 10px;
+}
 div.cardholder{
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 2fr 2fr;
   gap: 20px;
   margin-top: 25px;
+}
+.sidebar{
+  border-left: solid black 1px;
 }
 a.card{
   display: grid;
@@ -180,4 +189,9 @@ a.card>div{
 }
 .contactleft>*{
   margin: 1px;
+}
+li>a{
+  text-decoration: underline;
+  font-family: 'Lora', serif;
+  font-size: 16px;
 }
