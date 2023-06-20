@@ -127,9 +127,33 @@ The sum is 15 and average is 3.000000
       <br />
       <div class="question55" id="question55">4. WAP to count the frequency of the elements in an array.</div>
       <div id="answer55" class="code-container">
-        <pre class="code"><code></code></pre>
+        <pre class="code"><code>
+    #include&lt;stdio.h>
+    void main(){
+      int array[100],n,i,count=0,d;
+      printf("Enter the number of terms in the array: ");
+      scanf("%d",&n);
+      printf("Enter the numbers in array: ");
+      for(i=0;i&lt;n;i++){
+        scanf("%d",&array[i]);
+      }
+      printf("Enter the number to check: ");
+      scanf("%d",&d);
+      for(i=0;i&lt;n;i++){
+        if(d==array[i]){
+          count++;
+        }}
+      printf("%d is repeated %d times...",d,count);
+    }
+        </code></pre>
       </div>
-      <div class="output55" id="output55"></div>
+      <div class="output55" id="output55">
+        OUTPUT:- <br>
+        Enter the number of terms in the array: 10 <br>
+Enter the numbers in array: 1 2 3 4 5 3 7 2 7 1 <br>
+Enter the number to check: 1        <br>
+1 is repeated 2 times...
+      </div>
       <br />
       <div class="question55" id="question55">5. WAP to pass 1D array to the minmax() function. The function should calculate the
         maximum and minimum among the elements of the array. Print the maximum and

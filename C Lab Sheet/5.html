@@ -257,14 +257,14 @@ The sum is: 6.266667 <br>
         sum = sum + sign*(pow(x,i) / (float)fact);
         sign = sign * -1;
       }
-      printf("The sum is: %f", sum);
+      printf("The value is: %f", sum);
     }
         </code></pre>
       </div>
       <div class="output55" id="output55">
         OUTPUT:- <br>
         Enter the degree: 47 <br>
-The sum is: 0.682016 <br>
+The value is: 0.682016 <br>
       </div>
       <br />
       <br />
@@ -449,7 +449,7 @@ The LCM is 60
       <br />
       
       <div class="question55" id="question55">13(b). WAP to print the following patterns: <br>
-        1 2 3 4 5 <br> 1 2 3 4<br>
+        1 2 3 4 5 <br> 1 2 3 4<br>  
          1 2 3 <br>
          1 2  <br>
          1  
@@ -557,21 +557,21 @@ The LCM is 60
       </div>
       <div id="answer55" class="code-container">
         <pre class="code"><code>
-          #include&lt;stdio.h>
-            void main(){
-              int i,j,r=5;
-              for(i=r;i>0;i--){
-                printf("\n");
-                for (j = 1; j &lt;= (r - i)*2; j++) {
-                printf(" ");
-                }
-                for (j = 1; j &lt;= i; j++) {
-                printf("%d ",j);
-                }
-                for (j = i-1; j >= 1; j--) {
-                printf("%d ",j);
-                }
-            }}
+    #include&lt;stdio.h>
+    void main(){
+      int i,j,r=5;
+      for(i=r;i>0;i--){
+        printf("\n");
+        for (j = 1; j &lt;= (r - i)*2; j++) {
+        printf(" ");
+        }
+        for (j = 1; j &lt;= i; j++) {
+        printf("%d ",j);
+        }
+        for (j = i-1; j >= 1; j--) {
+        printf("%d ",j);
+        }
+    }}
         </code></pre>
       </div>
       <div class="output55" id="output55">
