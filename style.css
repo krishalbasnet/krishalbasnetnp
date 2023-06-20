@@ -167,9 +167,19 @@ a.card>div{
   .mainhead{
     font-size: 20px;  
   }
-    div.item1{
-      text-align: center;
-    }
+  div.item1{
+    text-align: center;
+  }
+  div.fourone{
+    grid-template-columns: 1fr;
+  }
+  .sidebar{
+    border: none;
+    border-top: 1px solid black;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+  }
 }
 ::-webkit-scrollbar{
   background-color: rgb(129, 129, 129);
