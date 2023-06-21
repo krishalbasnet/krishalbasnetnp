@@ -1,0 +1,18 @@
+body {
+  background-color: rgb(224, 224, 224);
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+img {
+  width: 60%;
+  height: auto;
+}
+
+hr{
+    background-color: black;
+    margin-top: 0;
+    height: 1px;
+}

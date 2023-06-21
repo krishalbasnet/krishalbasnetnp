@@ -3,48 +3,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600&display=swap');
-body {
-  background-color: rgb(224, 224, 224);
-  margin: 0;
-}
-a {
-  text-decoration: none;
-  color: black;
-}
-div.topbar {
-  display: grid;
-  grid-template-columns: 5fr repeat(5, 1fr);
-  width: 90%;
-  margin: auto;
-  font-family: "Yatra One", cursive;
-  gap: 10px;
-  font-size: 16px;
-  margin-top: 8px;
-}
-img {
-  width: 60%;
-  height: auto;
-}
-div.topbar > div:not(.topbarimg) {
-  text-align: center;
-  margin: auto;
-  position: relative;
-}
-.aftereffect::after{
-    content: "";
-    position: absolute;
-    background-color: rgb(77, 77, 77);
-    width: 100%;
-    height: 2px;
-    left: 0;
-    bottom: 0;
-    transition: 0.3s;
-    transform: scaleX(0);
-}
-.aftereffect:hover::after{
-    transform: scale(1);
-    transition: 0.3s;
-  }
+/*Footer*/
+@import url('style/footer.css');
+@import url('style/general.css');
+@import url('style/navbar.css');
   div.mainbody{
     width: 95%;
     margin: auto;
@@ -52,21 +14,6 @@ div.topbar > div:not(.topbarimg) {
 .mainhead{
     font-family: 'Roboto Condensed', sans-serif;
     margin-bottom: 0;
-}
-hr{
-    background-color: black;
-    margin-top: 0;
-    height: 1px;
-}
-div.copyrighttab{
-    background-color: rgb(83, 83, 83);
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    text-align: center;
-    font-family: 'Kanit', sans-serif;
-    color: rgb(224, 224, 224);
-    width: 100%;
-    display: none;  /*Remove later*/
 }
 .inter76{
   display: grid;

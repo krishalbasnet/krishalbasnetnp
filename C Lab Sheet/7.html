@@ -159,16 +159,92 @@ Enter the number to check: 1        <br>
         maximum and minimum among the elements of the array. Print the maximum and
         minimum in the main() function.</div>
       <div id="answer55" class="code-container">
-        <pre class="code"><code></code></pre>
+        <pre class="code"><code>
+    #include&lt;stdio.h>
+    int minmax(int *x, int *y,int arrayy){
+        if(*x>arrayy){
+            *x = arrayy;
+        }
+        if(*y&lt;arrayy){
+            *y = arrayy;
+        }
+
+    }
+    void main(){
+        int array[50],n,min,max;
+        printf("Enter the number of term in array: ");
+        scanf("%d",&n);
+        printf("Enter the numbers in the array:\n");
+        for(int i =0; i&lt;n;i++){
+            scanf("%d",&array[i]);
+        }
+        min=max=array[0];
+        for(int i =0; i&lt;n;i++){
+            minmax(&min,&max,array[i]);
+        }
+        printf("The minimum is %d and maximum is %d",min,max);
+    }
+        </code></pre>
       </div>
-      <div class="output55" id="output55"></div>
+      <div class="output55" id="output55">
+        OUTPUT:-  <br>
+        Enter the number of term in array: 10 <br>
+Enter the numbers in the array: <br>
+5 98 2 15 0 69 356 12 587 56 <br>
+The minimum is 0 and maximum is 587 <br>
+      </div>
       <br />
 
       <div class="question55" id="question55">6. WAP to multiply matrix of different size if possible using 2D array.</div>
       <div id="answer55" class="code-container">
-        <pre class="code"><code></code></pre>
+        <pre class="code"><code>
+    #include&lt;stdio.h>
+    void main(){
+        int r1,c1,r2,c2,i,mat1[50][50],mat2[50][50],mul[50][50],j,k;
+        printf("Enter the no of rows and columns of 1st matrix: ");
+        scanf("%d%d",&r1,&c1);
+        printf("Enter the no of rows and columns of 2nd matrix: ");
+        scanf("%d%d",&r2,&c2);
+        printf("Enter the elements of the 1st matrix:");
+        for(i=0;i&lt;r1;i++){
+            for(j=0;j&lt;c1;j++){
+                scanf("%d",&mat1[i][j]);
+            }
+        }
+        printf("Enter the elements of the 2nd matrix:");
+        for(i=0;i&lt;r2;i++){
+            for(j=0;j&lt;c2;j++){
+                scanf("%d",&mat2[i][j]);
+            }
+        }
+        if(c1==r2){
+            for(i=0;i&lt;r1;i++){    
+                for(j=0;j&lt;c2;j++){    
+                    mul[i][j]=0;    
+                    for(k=0;k&lt;c2;k++){    
+                        mul[i][j]+=mat1[i][k]*mat2[k][j];    
+                    }    
+                }    
+            }    
+        }
+        for(i=0;i&lt;r2;i++){
+            for(j=0;j&lt;c2;j++){
+                printf("%5d",mul[i][j]);
+            }
+            printf("\n");
+        }
+    }
+        </code></pre>
       </div>
-      <div class="output55" id="output55"></div>
+      <div class="output55" id="output55">
+        OUTPUT:- <br>
+        Enter the no of rows and columns of 1st matrix: 2 2 <br>
+Enter the no of rows and columns of 2nd matrix: 2 2 <br>
+Enter the elements of the 1st matrix:1 2 3 4 <br>
+Enter the elements of the 2nd matrix:5 6 7 8 <br>
+   19   22 <br>
+   43   50 <br>
+      </div>
       <br />
 
       <div class="question55" id="question55">7. WAP to find the transpose of the matrix.</div>
@@ -215,5 +291,13 @@ Enter the number to check: 1        <br>
       <div class="output55" id="output55"></div>
       <br />
     </div>
+    <footer>
+      <div class="copyrighttab">
+        <div class="cp1">
+          © 2023 The Engineering Junction. All Rights Reserved.
+        </div>
+        <div class="cp2">Designed & Developed By: Krishal Basnet</div>
+      </div>
+    </footer>
   </body>
 </html>
