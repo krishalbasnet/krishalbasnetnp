@@ -9,7 +9,7 @@ void main(){
 int fibonacci(int x){
     int fib = 0;
     if(x==1){
-        return 1;
+        return 0;
     }
     else if(x==2){
         return 1;
