@@ -229,7 +229,7 @@ The 5th fibonacci number is 3.
 Enter the second number:20 <br> Before swapping: num1 = 10, num2 = 20 <br>
 After swapping: num1 = 20, num2 = 10
       </div>
-      <br /><!-- 
+      <br />
       <div class="question55" id="question55">6. WAP to take two float number in main(). Write a function single user define function
         calculator() to perform the addition, subtraction and multiplication. The sum,
         difference and product should be displayed from the main() function. [Use the
@@ -237,36 +237,27 @@ After swapping: num1 = 20, num2 = 10
       <div id="answer55" class="code-container">
         <pre class="code"><code>
     #include&lt;stdio.h>
-    float calculator(int *p, int *q, char *t);
+    void calc(int x, int y,int *a,int *b,int *c){
+        *a=x+y;
+        *b=x-y;
+        *c=x*y;
+    }
     void main(){
-      int num1,num2;
-      char ch;
-      printf("Enter two numbers: ");
-      scanf("%d%d",&num1,&num2);
-      printf("Enter the operator: ");
-      scanf(" %c",&ch);
-      if(ch=='+'||ch=='-'||ch=='*'||ch=='/'){
-        printf("%d %c %d = %f",num1,ch,num2,calculator(&num1,&num2,&ch));
-      }
-      else{
-        printf("ERROR");
-      }
+        int a,b,sum,diff,pro;
+        printf("Enter 2 numbers: ");
+        scanf("%d%d",&a,&b);
+        calc(a,b,&sum,&diff,&pro);
+        printf("\nSum: %d \n Difference: %d \n Product: %d \n ",sum,diff,pro);
     }
-    float calculator(int *p, int *q, char *t){
-      switch(*t){
-        case '+': return *p+*q;
-                  break;
-        case '-': return *p-*q;
-                  break;
-        case '*': return *p * *q;
-                  break;
-        case '/': return *p/ *q;
-                  break;
-    }
-    }
-        </code></pre>
+        </code></pre> 
       </div>
-      <div class="output55" id="output55">OUTPUT:- <br /></div>
+      <div class="output55" id="output55">OUTPUT:- <br />
+        Enter 2 numbers: 25 20 <br>
+
+Sum: 45 <br>
+ Difference: 5 <br>
+ Product: 500 <br>
+      </div>
       <br />
       <div class="question55" id="question55">7. WAP to input a integer number in main(). Write a user define function isPrime() to
         calculate whether the number is prime of not. Print whether the number is prime or
@@ -309,7 +300,7 @@ After swapping: num1 = 20, num2 = 10
         Enter a number: 23 <br>
 PRIME
       </div>
-      <br />
+      <br /><!--
       <div class="question55" id="question55">8. WAP to illustrate the concept of global and static variables.</div>
       <div id="answer55" class="code-container">
         <pre class="code"><code>
