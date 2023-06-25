@@ -267,7 +267,7 @@ Sum: 45 <br>
     #include &lt;stdio.h>
     int isPrime(int y);
     void main(){
-      int a,i,b=1;
+      int a,i;  
       printf("Enter a number: ");
       scanf("%d", &a);
       if(isPrime(a)==0){
@@ -278,7 +278,7 @@ Sum: 45 <br>
       }
     }
     int isPrime(int y){
-      int i,b;
+      int i,b=1;
       if (y == 1){
         return 1;
       }else if (y == 2){
@@ -300,11 +300,11 @@ Sum: 45 <br>
         Enter a number: 23 <br>
 PRIME
       </div>
-      <br /><!--
+      <br />
       <div class="question55" id="question55">8. WAP to illustrate the concept of global and static variables.</div>
       <div id="answer55" class="code-container">
         <pre class="code"><code>
-    #include<stdio.h>
+    #include&lt;stdio.h>
     int a = 20;
     int func1(){
         static int a1=4;
@@ -335,8 +335,6 @@ From main() a: 2 <br>
 From func2() a: 2
       </div>
       <br />
-
--->
     </div>
     <footer>
       <div class="copyrighttab">
