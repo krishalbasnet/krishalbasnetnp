@@ -1,31 +1,15 @@
- #include <stdio.h>
-    int isPrime(int y);
+ #include<stdio.h>
     void main(){
-      int a,i;  
-      printf("Enter a number: ");
-      scanf("%d", &a);
-      if(isPrime(a)==0){
-        printf("PRIME");
+      int n,i, num[100], sum=0;
+      float ave;
+      printf("Enter the number of terms: ");
+      scanf("%d",&n);
+      printf("Enter numbers:");
+      for(i=0;i<n;i++){
+        scanf("%d",&num[i]);
+        sum = sum + num[i];
       }
-      else{
-        printf("NOT PRIME");
-      }
+      ave = sum / (float)n;
+      printf("The sum is %d and average is %f",sum,ave);
     }
-    int isPrime(int y){
-      int i,b=1;
-      if (y == 1){
-        return 1;
-      }else if (y == 2){
-        printf("Smallest and only even prime number.\n");
-        b=0;
-      }else{
-        for(i=2;i<y;i++){
-          if(y%i==0){
-            b = 0;
-            break;
-          }}
-          if (b) {
-            return 0;
-          }else {
-            return 1;
-    }}}
+        
