@@ -1,4 +1,4 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -50,18 +50,51 @@
 
       <div class="question55" id="question55">1. WAP to find the sum and difference of two number using pointers</div>
       <div id="answer55" class="code-container">
-        <pre class="code"><code></code></pre>
+        <pre class="code"><code>
+    #include&lt;stdio.h>
+    void main(){
+      int a,b,sum,*x,*y;
+      x=&amp;a;
+      y=&amp;b;
+      printf("Enter the value of a and b: ");
+      scanf("%d%d",&a,&b);
+      printf("The sum is %d",*x+*y);
+    }
+        </code></pre>
       </div>
-      <div class="output55" id="output55">OUTPUT:-</div><br>
+      <div class="output55" id="output55">OUTPUT:- <br>
+        Enter the value of a and b: 2 3 <br>
+The sum is 5
+      </div><br>
       
       <div class="question55" id="question55">2. WAP to read two values from the user in main(). Write a function calculate() to
         calculate sum, product, difference and quotient of the numbers. Print the sum,
         product, difference and quotient in the main function using pass by reference
         concept.</div>
       <div id="answer55" class="code-container">
-        <pre class="code"><code></code></pre>
+        <pre class="code"><code>
+    #include&lt;stdio.h>
+    void calculate(int a, int b,int *p, int *q,int *r, float *s){
+      *p = a + b;
+      *q = a - b;
+      *r = a * b;
+      *s = (float)a / b;
+    }
+    void main(){
+      int a,b,sum,sub,mul;
+      float div;
+      printf("Enter two numbers: ");
+      scanf("%d%d",&a,&b);
+      calculate(a,b,&sum,&sub,&mul,&div);
+      printf("Sum:%d\tDifference:%d\tProduct:%d\tQuotient:%f",sum,sub,mul,div);
+    }
+        </code></pre>
       </div>
-      <div class="output55" id="output55">OUTPUT:-</div><br>
+      <div class="output55" id="output55">
+        OUTPUT:- <br>
+        Enter two numbers: 1 2 <br>
+Sum:3   Difference:-1   Product:2       Quotient:0.500000
+      </div><br>
       
       <div class="question55" id="question55">3. WAP to access the elements of the array using the pointers.</div>
       <div id="answer55" class="code-container">
@@ -85,4 +118,4 @@
       </div>
     </footer>
   </body>
-</html> -->
+</html> 

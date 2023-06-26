@@ -196,7 +196,7 @@ Enter the numbers in the array: <br>
 The minimum is 0 and maximum is 587 <br>
       </div>
       <br />
-<!--
+
       <div class="question55" id="question55">6. WAP to multiply matrix of different size if possible using 2D array.</div>
       <div id="answer55" class="code-container">
         <pre class="code"><code>
@@ -288,10 +288,30 @@ Enter the elements of the 2nd matrix:5 6 7 8 <br>
       <br />
       <div class="question55" id="question55">8. WAP to find the sum of the rows and column of the matrix.</div>
       <div id="answer55" class="code-container">
-        <pre class="code"><code></code></pre>
+        <pre class="code"><code>
+    #include&lt;stdio.h>
+    void main(){
+      int row,i, num[100][100], sum=0,j,col;
+      printf("Enter the number of row and column: ");
+      scanf("%d%d",&row,&col);
+      printf("Enter numbers:");
+      for(i=0;i&lt;row;i++){
+        for(j=0;j&lt;col;j++){
+        scanf("%d",&num[i][j]);
+        sum = sum + num[i][j];
+        }
+      }
+      printf("The sum is %d",sum);
+    }
+        </code></pre>
       </div>
-      <div class="output55" id="output55"></div>
-      <br />-->
+      <div class="output55" id="output55">
+        OUTPUT:-  <br>
+        Enter the number of row and column: 2 2 <br>
+Enter numbers:1 2 3 4 <br>
+The sum is 10
+      </div>
+      <br />
     </div>
     <footer>
       <div class="copyrighttab">
