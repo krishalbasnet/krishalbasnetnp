@@ -98,15 +98,70 @@ Sum:3   Difference:-1   Product:2       Quotient:0.500000
       
       <div class="question55" id="question55">3. WAP to access the elements of the array using the pointers.</div>
       <div id="answer55" class="code-container">
-        <pre class="code"><code></code></pre>
+        <pre class="code"><code>
+    #include &lt;stdio.h>
+    int main() {
+        int data[5];
+        printf("Enter elements: ");
+        for (int i = 0; i &lt; 5; ++i)
+            scanf("%d", data + i);
+        printf("You entered: \n");
+        for (int i = 0; i &lt; 5; ++i)
+            printf("%d\n", *(data + i));
+        return 0;
+    }
+        </code></pre>
       </div>
-      <div class="output55" id="output55">OUTPUT:-</div><br>
+      <div class="output55" id="output55">
+        OUTPUT:- <br>
+        Enter elements: 1 2 3 4 5 <br>
+        You entered:  <br>
+        1 <br>
+        2 <br>
+        3 <br>
+        4 <br>
+        5 <br>
+      </div><br>
       
       <div class="question55" id="question55">4. WAP to illustrate the concept of array of pointers and pointer to the array.</div>
       <div id="answer55" class="code-container">
-        <pre class="code"><code></code></pre>
+        <pre class="code"><code>
+    #include &lt;stdio.h>
+    void main() {
+        int arr[] = {1, 2, 3, 4, 5};
+        int* ptrArr[5];
+        int(*ptrToArr)[5];           
+        for (int i = 0; i &lt; 5; i++) {
+            ptrArr[i] = &arr[i];
+        }
+        ptrToArr = &amp;arr; 
+        printf("Accessing elements using the array of pointers:\n");
+        for (int i = 0; i &lt; 5; i++) {
+            printf("Value at index %d: %d\n", i, *ptrArr[i]);
+        }
+        printf("\nAccessing elements using the pointer to the array:\n");
+        for (int i = 0; i &lt; 5; i++) {
+            printf("Value at index %d: %d\n", i, (*ptrToArr)[i]);
+        }
+    }
+        </code></pre>
       </div>
-      <div class="output55" id="output55">OUTPUT:-</div><br>
+      <div class="output55" id="output55">
+        OUTPUT:- <br>
+        Accessing elements using the array of pointers: <br>
+        Value at index 0: 1 <br>
+        Value at index 1: 2 <br>
+        Value at index 2: 3 <br>
+        Value at index 3: 4 <br>
+        Value at index 4: 5 <br>
+        
+        Accessing elements using the pointer to the array: <br>
+        Value at index 0: 1 <br>
+        Value at index 1: 2 <br>
+        Value at index 2: 3 <br>
+        Value at index 3: 4 <br>
+        Value at index 4: 5
+      </div><br>
       
     </div>
     <footer>
