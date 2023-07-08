@@ -200,52 +200,60 @@ The minimum is 0 and maximum is 587 <br>
       <div class="question55" id="question55">6. WAP to multiply matrix of different size if possible using 2D array.</div>
       <div id="answer55" class="code-container">
         <pre class="code"><code>
-    #include&lt;stdio.h>
+    #include &lt;stdio.h>
     void main(){
-        int r1,c1,r2,c2,i,mat1[50][50],mat2[50][50],mul[50][50],j,k;
+        int r1, c1, r2, c2, i, mat1[50][50], mat2[50][50], mul[50][50], j, k;
         printf("Enter the no of rows and columns of 1st matrix: ");
-        scanf("%d%d",&r1,&c1);
+        scanf("%d%d", &r1, &c1);
         printf("Enter the no of rows and columns of 2nd matrix: ");
-        scanf("%d%d",&r2,&c2);
-        printf("Enter the elements of the 1st matrix:");
-        for(i=0;i&lt;r1;i++){
-            for(j=0;j&lt;c1;j++){
-                scanf("%d",&mat1[i][j]);
+        scanf("%d%d", &r2, &c2);
+        if (c1 == r2){
+            printf("Enter the elements of the 1st matrix:");
+            for (i = 0; i &lt; r1; i++){
+                for (j = 0; j &lt; c1; j++){
+                    scanf("%d", &mat1[i][j]);
+                }
+            }
+            printf("Enter the elements of the 2nd matrix:");
+            for (i = 0; i &lt; r2; i++){
+                for (j = 0; j &lt; c2; j++){
+                    scanf("%d", &mat2[i][j]);
+                }
+            }
+            for (i = 0; i &lt; r1; i++){
+                for (j = 0; j &lt; c2; j++){
+                    mul[i][j] = 0;
+                    for (k = 0; k &lt; c2; k++){
+                        mul[i][j] += mat1[i][k] * mat2[k][j];
+                    }
+                }
+            }
+            for (i = 0; i &lt; r2; i++){
+                for (j = 0; j &lt; c2; j++){
+                    printf("%5d", mul[i][j]);
+                }
+                printf("\n");
             }
         }
-        printf("Enter the elements of the 2nd matrix:");
-        for(i=0;i&lt;r2;i++){
-            for(j=0;j&lt;c2;j++){
-                scanf("%d",&mat2[i][j]);
-            }
-        }
-        if(c1==r2){
-            for(i=0;i&lt;r1;i++){    
-                for(j=0;j&lt;c2;j++){    
-                    mul[i][j]=0;    
-                    for(k=0;k&lt;c2;k++){    
-                        mul[i][j]+=mat1[i][k]*mat2[k][j];    
-                    }    
-                }    
-            }    
-        }
-        for(i=0;i&lt;r2;i++){
-            for(j=0;j&lt;c2;j++){
-                printf("%5d",mul[i][j]);
-            }
-            printf("\n");
+        else{
+            printf("Matrix cannot be multiplied.");
         }
     }
         </code></pre>
       </div>
       <div class="output55" id="output55">
         OUTPUT:- <br>
-        Enter the no of rows and columns of 1st matrix: 2 2 <br>
-Enter the no of rows and columns of 2nd matrix: 2 2 <br>
-Enter the elements of the 1st matrix:1 2 3 4 <br>
-Enter the elements of the 2nd matrix:5 6 7 8 <br>
-   19   22 <br>
-   43   50 <br>
+        Enter the no of rows and columns of 1st matrix: 3 3 <br>
+Enter the no of rows and columns of 2nd matrix: 3 3 <br>
+Enter the elements of the 1st matrix:1 2 3 <br>
+4 5 6 <br>
+7 8 9 <br>
+Enter the elements of the 2nd matrix:1 2 3 <br>
+4 5 6 <br>
+7 8 9 <br>
+   30   36   42 <br>
+   66   81   96 <br>
+  102  126  150 <br>
       </div>
       <br />
 
