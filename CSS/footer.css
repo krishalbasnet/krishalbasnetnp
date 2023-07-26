@@ -1,0 +1,9 @@
+footer{
+    background-color: rgb(116, 116, 116);
+    color: rgb(230, 230, 230);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    text-align: center;
+    padding: 2px 0px;
+    font-family: "Yatra One", cursive;
+}

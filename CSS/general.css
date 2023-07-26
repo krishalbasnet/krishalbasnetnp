@@ -1,0 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Yatra+One&display=swap");
+body{
+    margin: 0;
+    margin-top: 10px;
+    background-color: rgb(230, 230, 230);
+}
+a{
+    text-decoration: none;
+    color: black;
+}

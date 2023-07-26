@@ -1,0 +1,12 @@
+h1{
+    margin: 0;
+}
+.mainbody{
+    width: 95%;
+    margin: auto;
+    margin-top: 20px;
+}
+hr{
+    border-width: 1px;
+    border-color: black;
+}

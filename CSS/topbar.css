@@ -1,0 +1,37 @@
+.topbar{
+    display: grid;
+    grid-template-columns: 5fr 1fr 1fr 1fr 1fr 1fr;
+    margin-top: 20px;
+    width: 90%;
+    margin: auto;
+    gap: 10px;
+    font-family: "Yatra One", cursive;
+}
+.topbarlogo{
+    width: 62%;
+}
+.baritem:not(.topbaraimg){
+    margin: auto;
+}
+.baritem{
+    position: relative;
+}
+.topbara:not(.topbaraimg){
+    padding: 5px;
+    text-align: center;
+}
+a.topbara:not(.topbaraimg)::before{
+    content: "";
+    background-color: rgb(97, 97, 97);
+    width: 100%;
+    position: absolute;
+    height: 2px;
+    bottom: -1px;
+    left: 0;
+    scale: 0;
+    transition: 0.4s;
+}
+a.topbara:not(.topbaraimg):hover::before{
+    transition: 0.4s;
+    scale: 1;
+}
