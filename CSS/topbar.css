@@ -17,17 +17,18 @@
     position: relative;
 }
 .topbara:not(.topbaraimg){
-    padding: 5px;
     text-align: center;
 }
 a.topbara:not(.topbaraimg)::before{
     content: "";
     background-color: rgb(97, 97, 97);
-    width: 100%;
+    width: 50%;
     position: absolute;
     height: 2px;
+    margin: auto;
+    left: 25%;
+    border-radius: 50%;
     bottom: -1px;
-    left: 0;
     scale: 0;
     transition: 0.4s;
 }

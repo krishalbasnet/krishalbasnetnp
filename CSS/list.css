@@ -1,0 +1,16 @@
+.list{
+width: 60%;
+margin: auto;
+}
+a.lista{
+    background-color: rgb(168, 168, 168);
+    display: block;
+    border-radius: 30px;
+    padding: 20px;
+}
+.listbody{
+    margin-top: 25px;
+    text-align: center;
+    font-family: 'Galdeano', sans-serif;
+    font-size: 22px;
+}
