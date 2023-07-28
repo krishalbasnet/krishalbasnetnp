@@ -1,6 +1,6 @@
 .fourone{
     display: grid;
-    grid-template-columns: 11fr 3fr;
+    grid-template-columns: 12fr 4fr;
 }
 .tworow{
     display: grid;
