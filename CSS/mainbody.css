@@ -16,7 +16,8 @@ hr{
     text-align: center;
 }
 .sidebar>*:not(h2){
-    font-size: 18px;
+    font-size: 16px;
+    line-height: 30px;
 }
 .sidebar{
     background-color: rgba(161, 161, 161, 0.76);
