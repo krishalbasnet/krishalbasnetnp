@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9200097242455912"
+     crossorigin="anonymous"></script>
+    <title>The Engineering Junction</title>
+    <link
+      rel="shortcut icon"
+      href="../logo_transparent-cutout.png"
+      type="image/x-icon"
+    />
+   <link rel="stylesheet" href="../style.css">
+  </head>
+  <body>
+    <div class="topbar">
+      <div class="bitem1 baritem">
+        <a class="topbara topbaraimg" href="../index.html"
+          ><img class="topbarlogo" src="../Image/Topbarlogo.png" alt=""
+        /></a>
+      </div>
+      <div class="bitem2 baritem">
+        <a class="topbara" href="../index.html">Home</a>
+      </div>
+      <div class="bitem3 baritem">
+        <a class="topbara" href="../solution.html">Solutions</a>
+      </div>
+      <div class="bitem4 baritem">
+        <a class="topbara" href="../pastpaper.html">Past Paper</a>
+      </div>
+      <div class="bitem5 baritem">
+        <a class="topbara" href="../notes.html">Notes</a>
+      </div>
+      <div class="bitem6 baritem">
+        <a class="topbara" href="../questions.html">Questions</a>
+      </div>
+      <div class="bitem7 baritem">
+        <a class="topbara" href="../contact.html">Contact</a>
+      </div>
+    </div>
+    <div class="mainbody">
+      <h1 class="mainhead">
+        LAB SHEET NO.11 -  To be familiar with File Handling
+      </h1>
+      <hr />
+      <a href="../LabSheet.html" class="back_button"
+        ><img class="backimg" src="../Thumbnails/back.png" alt=""
+      /></a>
+    <div class="code55">
+
+      <div class="question55" id="question55">1. WAP to create and store string using in a text file. Also display the string from the
+        text file.</div>
+      <div id="answer55" class="code-container">
+        <pre class="code"><code>
+    #include&lt;stdio.h>
+    void main(){
+        FILE *fp;
+        char str[50];
+        fp = fopen("newfile.txt","w");
+        printf("Enter a string: ");
+        scanf("%s",str);
+        fprintf(fp,"%s",str);
+        fclose(fp);
+        fp = fopen("newfile.txt","r");
+        fscanf(fp,"%s",str);
+        fclose(fp);
+        printf("The string is %s",str);
+    }
+        </code></pre>
+      </div>
+      <div class="output55" id="output55">OUTPUT:- <br>
+        Enter a string: NEPAL <br>
+The string is NEPAL
+      </div> <br>
+
+      <div class="question55" id="question55">2. WAP to illustrate the use of single character input/output in file (fgetc() and fputc()).</div>
+      <div id="answer55" class="code-container">
+        <pre class="code"><code>
+    #include&lt;stdio.h>
+    void main(){
+        FILE *fp;
+        char ch;
+        fp = fopen("newfile.txt","w");
+        printf("Enter a chararcter: ");
+        scanf("%c",&ch);
+        fputc(ch,fp);
+        fclose(fp);
+        fp = fopen("newfile.txt","r");
+        ch = fgetc(fp);
+        printf("You enetered %c",ch);
+        fclose(fp);
+    }
+        </code></pre>
+      </div>
+      <div class="output55" id="output55">OUTPUT:- <br>
+        Enter a chararcter: k <br>
+You enetered k
+      </div> <br>
+
+      <div class="question55" id="question55">3. WAP to illustrate the use of fscanf() and fprintf().</div>
+      <div id="answer55" class="code-container">
+        <pre class="code"><code>
+    #include&lt;stdio.h>
+    void main(){
+        FILE *fp;
+        char ch;
+        fp = fopen("newfile.txt","w");
+        printf("Enter a chararcter: ");
+        scanf("%c",&ch);
+        fputc(ch,fp);
+        fclose(fp);
+        fp = fopen("newfile.txt","r");
+        ch = fgetc(fp);
+        printf("You enetered %c",ch);
+        fclose(fp);
+    }
+      
+        </code></pre>
+      </div>
+      <div class="output55" id="output55">OUTPUT:- <br>
+        Enter a string: NEPAL <br>
+The string is NEPAL
+      </div> <br>
+
+      <div class="question55" id="question55">4. WAP to define a structure employee with members empno, name, salary and
+        address. Main() should always ask input for the particular function call until user
+        exits the program. Create binary file employee.dat and functions as below:  <br>
+        a. AddRecord(): To add record of employee in the file. <br>
+        b. DisplayRecord(): To display all the records from the file. <br>
+        c. UpdateRecord(): To update the particular salary of the employee in the file. <br>
+        d. DeleteRecord(): To delete the particular record of employee from the file.</div>
+      <div id="answer55" class="code-container">
+        <pre class="code"><code></code></pre>
+      </div>
+      <div class="output55" id="output55">OUTPUT:- <br></div> <br>
+
+    </div></div>
+    <footer>
+      <div class="copyrighttab">
+        <div class="cp1">
+          © 2023 The Engineering Junction. All Rights Reserved.
+        </div>
+        <div class="cp2">Designed & Developed By: Krishal Basnet</div>
+      </div>
+    </footer>
+  </body>
+</html>
