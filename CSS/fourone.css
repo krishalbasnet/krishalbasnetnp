@@ -1,23 +1,29 @@
-.fourone{
-    display: grid;
-    grid-template-columns: 12fr 4fr;
+.fourone {
+  display: grid;
+  grid-template-columns: 12fr 4fr;
 }
-.tworow{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
+.tworow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
 }
-.card{
-    display: grid;
-    grid-template-columns: 2fr 3fr;
-    padding: 10px;
-    background-color: rgb(133, 133, 133);
-    border-radius: 15px;
+.card {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  padding: 10px;
+  background-color: rgb(133, 133, 133);
+  border-radius: 15px;
+  height: fit-content;
 }
-.cardimg{
-    border-radius: 8px;
-    width: 100%;
+.cardimg {
+  border-radius: 8px;
+  width: 100%;
+  margin: auto;
 }
-.carddetail{
-    text-align: center;
+.carddetail {
+  text-align: center;
+}
+.carddetail > h3 {
+  width: 100%;
+  text-align: center;
 }
