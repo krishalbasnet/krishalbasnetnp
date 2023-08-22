@@ -1,19 +1,19 @@
-.list{
-width: 60%;
-margin: auto;
+.list {
+  width: 60%;
+  margin: auto;
 }
-a.lista{
-    background-color: rgb(116, 116, 116);
-    display: block;
-    border-radius: 30px;
-    padding: 20px;
+a.lista {
+  background-color: rgb(116, 116, 116);
+  display: block;
+  border-radius: 30px;
+  padding: 20px;
 }
-.listbody{
-    margin-top: 25px;
-    text-align: center;
-    font-family: 'Galdeano', sans-serif;
-    font-size: 22px;
+.listbody {
+  margin-top: 25px;
+  text-align: center;
+  font-family: "Galdeano", sans-serif;
+  font-size: 22px;
 }
-a.lista:hover{
-    box-shadow: black 3px 3px 10px 1px;
+a.lista:hover {
+  box-shadow: black 3px 3px 10px 1px;
 }

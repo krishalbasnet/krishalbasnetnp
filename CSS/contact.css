@@ -1,30 +1,30 @@
-.contactwholebody{
-    border: 4px solid rgb(139, 139, 139);
-    padding: 20px;
-    border-radius: 20px;
-    display: grid;
-    grid-template-columns: 3.5fr 2fr;
-    background-image: url("../Image/erc.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: white;
-    font-family: 'Alfa Slab One', cursive;
-    font-size: 250%;
-    line-height: 50px;
+.contactwholebody {
+  border: 4px solid rgb(139, 139, 139);
+  padding: 20px;
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: 3.5fr 2fr;
+  background-image: url("../Image/erc.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  font-family: "Alfa Slab One", cursive;
+  font-size: 250%;
+  line-height: 50px;
 }
-.contactimage{
-    text-align: center;
+.contactimage {
+  text-align: center;
 }
-.contactimage>img{
-    width: 90%;
-    border: rgb(80, 80, 80) solid 3px;
-    border-radius: 20px;
+.contactimage > img {
+  width: 90%;
+  border: rgb(80, 80, 80) solid 3px;
+  border-radius: 20px;
 }
-.maincontactbody{
-    text-align: center;
+.maincontactbody {
+  text-align: center;
 }
-.centervertcalandhorizontal{
-    padding: 90px;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
+.centervertcalandhorizontal {
+  padding: 90px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
 }

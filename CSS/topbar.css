@@ -1,38 +1,43 @@
-.topbar{
-    display: grid;
-    grid-template-columns: 4fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    margin-top: 20px;
-    width: 90%;
-    margin: auto;
-    gap: 10px;
-    font-family: "Yatra One", cursive;
+.topbar {
+  display: grid;
+  grid-template-columns: 4fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  margin-top: 20px;
+  width: 90%;
+  margin: auto;
+  gap: 10px;
+  font-family: "Yatra One", cursive;
 }
-.topbarlogo{
-    width: 62%;
+.topbarlogo {
+  width: 62%;
 }
-.baritem:not(.topbaraimg){
-    margin: auto;
+.baritem:not(.topbaraimg) {
+  margin: auto;
 }
-.baritem{
-    position: relative;
+.baritem {
+  position: relative;
 }
-.topbara:not(.topbaraimg){
-    text-align: center;
+.topbara:not(.topbaraimg) {
+  text-align: center;
 }
-a.topbara:not(.topbaraimg)::before{
-    content: "";
-    background-color: rgb(97, 97, 97);
-    width: 50%;
-    position: absolute;
-    height: 2px;
-    margin: auto;
-    left: 25%;
-    border-radius: 50%;
-    bottom: -1px;
-    scale: 0;
-    transition: 0.4s;
+a.topbara:not(.topbaraimg)::before {
+  content: "";
+  background-color: rgb(97, 97, 97);
+  width: 50%;
+  position: absolute;
+  height: 2px;
+  margin: auto;
+  left: 25%;
+  border-radius: 50%;
+  bottom: -1px;
+  scale: 0;
+  transition: 0.4s;
 }
-a.topbara:not(.topbaraimg):hover::before{
-    transition: 0.4s;
-    scale: 1;
+a.topbara:not(.topbaraimg):hover::before {
+  transition: 0.4s;
+  scale: 1;
+}
+@media screen and (max-width: 720px) {
+  .topbar{
+    grid-template-columns: auto;
+  }
 }
