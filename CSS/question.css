@@ -13,8 +13,13 @@
   font-weight: 900;
   text-align: center;
 }
+.questionquestion{
+  position: relative;
+}
 ol.questionquestion > p::before {
   content: "→";
+  position: absolute;
+  left: 15px;
 }
 hr.purple {
   border: rgb(209, 55, 8) 1px solid;
