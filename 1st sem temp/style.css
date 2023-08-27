@@ -1,0 +1,31 @@
+body {
+  background-color: rgb(124, 124, 124);
+}
+.mainbody{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    text-align: center;
+    gap: 5px;
+}
+.day{
+    border: 1px solid rgb(0, 0, 0);
+    display: grid;
+    gap: 5px;
+    background-color: rgb(85, 85, 85);
+    padding: 25px 10px;
+    border-radius: 10px;
+}
+.date{
+    border-radius: 10px;
+    background-color: rgb(65, 136, 218);
+    height: fit-content;
+}
+.exam{
+    border-radius: 10px;
+    background-color: rgb(255, 115, 0);
+}
+.plan{
+    border-radius: 10px;
+    background-color: rgb(45, 105, 37);
+    overflow-wrap: break-word;
+}
