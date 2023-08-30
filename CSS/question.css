@@ -29,3 +29,11 @@ ol.questionquestion > li {
   font-family: "Bricolage Grotesque", sans-serif;
   font-weight: bolder;
 }
+div.back{
+  width: 80%;
+  margin: auto;
+}
+img.back{
+  height: 30px;
+  width: auto;
+}
