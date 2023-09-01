@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="../../toptoptoplogo.png"
+      type="image/x-icon"
+    />
+    <title>The Engineering Junction</title>
+    <link rel="stylesheet" href="../../style.css" />
+  </head>
+  <body>
+    <div class="topbar">
+      <div class="bitem1 baritem">
+        <a class="topbara topbaraimg" href="../../index.html"
+          ><img class="topbarlogo" src="../../Image/Topbarlogo.png" alt=""
+        /></a>
+      </div>
+      <div class="bitem2 baritem">
+        <a class="topbara" href="../../index.html">Home</a>
+      </div>
+      <div class="bitem3 baritem">
+        <a class="topbara" href="../../solution.html">Solutions</a>
+      </div>
+      <div class="bitem4 baritem">
+        <a class="topbara" href="../../pastpaper.html">Past Paper</a>
+      </div>
+      <div class="bitem5 baritem">
+        <a class="topbara" href="../../notes.html">Notes</a>
+      </div>
+      <div class="bitem6 baritem">
+        <a class="topbara" href="../../questions.html">Questions</a>
+      </div>
+      <div class="bitem7 baritem">
+        <a class="topbara" href="../../contact.html">Contact</a>
+      </div>
+    </div>
+    <div class="mainbody">
+      <h1>The Engineering Junction - Past Papers - Chemistry I/I</h1>
+      <hr />
+      <div class="back">
+        <a class="back" href="../I-I.html"
+          ><img class="back" src="../../Image/back.png" alt=""
+        /></a>
+      </div>
+      <div class="labele">
+        <label for="pdfSelector">Choose the set:</label>
+        <select id="pdfSelector">
+          <option value="1 (4).pdf">2078 Kartik</option>
+          <option value="1 (3).pdf">2078 Bhadra</option>
+          <option value="1 (2).pdf">2079 Bhadra</option>
+          <option value="1 (1).pdf">2080 Baishakh</option>
+        </select>
+      </div>
+      <div class="pdfembedd">
+        <embed
+          class="embeddedpdf"
+          id="pdfEmbed"
+          src="Chemistry I-I/1 (1).pdf"
+          type="application/pdf"
+        />
+      </div>
+    </div>
+    <footer>
+      <div>© 2023 The Engineering Junction. All Rights Reserved.</div>
+      <div>
+        Suggest us:
+        <a
+          style="color: rgb(230, 230, 230)"
+          href="../mailto:079bce052@ioepc.edu.np"
+          >079bce052@ioepc.edu.np</a
+        >
+      </div>
+      <div>Designed & Developed By: Krishal Basnet</div>
+    </footer>
+    <script>
+      const pdfSelector = document.getElementById("pdfSelector");
+      const pdfEmbed = document.getElementById("pdfEmbed");
+
+      pdfSelector.addEventListener("change", function () {
+        const selectedPdf = pdfSelector.value;
+        const pdfPath = "Chemistry I-I/" + selectedPdf;
+        pdfEmbed.src = pdfPath;
+      });
+    </script>
+  </body>
+</html>

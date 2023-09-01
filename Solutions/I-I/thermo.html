@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="../../toptoptoplogo.png"
+      type="image/x-icon"
+    />
+    <style>
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        border: 1px solid black;
+      }
+
+      th,
+      td {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: left;
+      }
+    </style>
+    <title>The Engineering Junction</title>
+    <link rel="stylesheet" href="../../style.css" />
+  </head>
+  <body>
+    <div class="topbar">
+      <div class="bitem1 baritem">
+        <a class="topbara topbaraimg" href="../../index.html"
+          ><img class="topbarlogo" src="../../Image/Topbarlogo.png" alt=""
+        /></a>
+      </div>
+      <div class="bitem2 baritem">
+        <a class="topbara" href="../../index.html">Home</a>
+      </div>
+      <div class="bitem3 baritem">
+        <a class="topbara" href="../../solution.html">Solutions</a>
+      </div>
+      <div class="bitem4 baritem">
+        <a class="topbara" href="../../pastpaper.html">Past Paper</a>
+      </div>
+      <div class="bitem5 baritem">
+        <a class="topbara" href="../../notes.html">Notes</a>
+      </div>
+      <div class="bitem6 baritem">
+        <a class="topbara" href="../../questions.html">Questions</a>
+      </div>
+      <div class="bitem7 baritem">
+        <a class="topbara" href="../../contact.html">Contact</a>
+      </div>
+    </div>
+    <div class="mainbody">
+      <h1>THE ENGINEERING JUNCTION - NOTES - FORTRAN</h1>
+      <hr />
+
+      <div class="questionmain">
+        <div class="questionchapter">
+          <div class="questionheader">1.Introduction to Thermodynamics</div>
+          <ol class="questionquestion">
+            <li>Define Thermodynamics.</li>
+            <p>
+              Thermodynamics is the branch of science that deals with the
+              concepts of heat and temperature and the inter-conversion of heat
+              and other forms of energy
+            </p>
+            <hr class="purple" />
+            <li>Define Thermodynamics Process.</li>
+            <p>
+              A thermodynamic process refers to the changes that a system
+              undergoes in terms of its properties, such as temperature,
+              pressure, volume, and energy, as it transitions from one
+              equilibrium state to another.
+            </p>
+            <hr class="purple" />
+            <li>Define Thermodynamic property.</li>
+            <p>
+              A thermodynamic property is a measurable characteristic of a
+              system that helps define its state and behavior. These properties,
+              such as temperature, pressure, and energy, provide essential
+              information for describing and analyzing thermodynamic processes
+              and interactions.
+            </p>
+            <hr class="purple" />
+            <li>List important features of thermodynamic property.</li>
+            <p>Some important features of thermodynamic properties:</p>
+            <ul>
+              <li>
+                State Defining: Thermodynamic properties help define the state
+                of a system at a particular moment, providing information about
+                its condition.
+              </li>
+              <li>
+                Measurable: Thermodynamic properties are quantifiable and can be
+                measured using appropriate instruments and techniques.
+              </li>
+              <li>
+                Intrinsic Characteristics: Intensive properties are inherent to
+                the substance and remain unchanged regardless of the system's
+                size, while extensive properties depend on the quantity of
+                matter.
+              </li>
+              <li>
+                Thermodynamic Equilibrium: Properties are meaningful when the
+                system is in thermodynamic equilibrium, where no macroscopic
+                changes are occurring.
+              </li>
+              <li>
+                Conservation: In a closed system, some properties, such as
+                energy and mass, are conserved during thermodynamic processes.
+              </li>
+              <li>
+                Equation of State: Thermodynamic properties are often related
+                through equations of state, allowing for predictions of system
+                behavior.
+              </li>
+            </ul>
+            <br />
+            <hr class="purple" />
+            <li>Define Thermodynamic state.</li>
+            <p>
+              A thermodynamic state refers to the specific condition of a system
+              at a particular moment, characterized by a set of thermodynamic
+              properties that collectively describe its physical properties and
+              behavior.
+            </p>
+            <hr class="purple" />
+            <li>
+              Define thermodynamic system, surrounding, Boundary & Universe.
+            </li>
+            <p>
+              A thermodynamic system is a distinct portion of the universe that
+              is chosen for analysis. It can be a physical or conceptual region
+              containing matter and energy under study. The system is separated
+              from its surroundings by a boundary, which can be real or
+              imaginary. The system's properties and behavior are of interest in
+              thermodynamic analyses.
+            </p>
+            <p>
+              he surroundings of a thermodynamic system encompass everything
+              outside the system, with which it can exchange energy or matter.
+            </p>
+            <p>
+              The boundary of a thermodynamic system is the real or imaginary
+              interface that separates the system from its surroundings.
+            </p>
+            <p>
+              In the context of thermodynamics, the universe refers to the
+              entirety of all matter and energy in existence.
+            </p>
+            <hr class="purple" />
+            <li>Define thermodynamic equilibrium.</li>
+            <p>
+              Thermodynamic equilibrium is a state of a system in which its
+              macroscopic properties remain constant over time and no
+              spontaneous changes occur without the influence of external
+              factors.
+            </p>
+            <hr class="purple" />
+            <li>
+              Differentiate control mass and control volume with examples.
+            </li>
+            <p>Difference between control mass and control volume:</p>
+            <table>
+              <tr>
+                <th>Control Mass</th>
+                <th>Control Volume</th>
+              </tr>
+              <tr>
+                <td>
+                  A fixed amount of mass enclosed by a boundary, and its
+                  properties are observed as it interacts with its surroundings.
+                </td>
+                <td>
+                  A fixed region in space through which mass and energy can
+                  flow, and its properties are analyzed as mass crosses its
+                  boundaries.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Emphasizes changes in the mass and energy content of a
+                  specific substance.
+                </td>
+                <td>
+                  Emphasizes analyzing the flow of mass and energy in a defined
+                  spatial region.
+                </td>
+              </tr>
+              <tr>
+                <td>Mass remains constant within the boundary.</td>
+                <td>Mass can flow into or out of the boundary.</td>
+              </tr>
+              <tr>
+                <td>
+                  Observing the temperature change in a sealed container of
+                  water as it's heated.
+                </td>
+                <td>
+                  Analyzing the airflow through a nozzle in a jet engine to
+                  determine the thrust produced.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  In terms of a control mass, the mass remains constant, and the
+                  focus is on changes in energy.
+                </td>
+                <td>
+                  In terms of a control volume, mass and energy flows are
+                  considered across the boundaries.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  A closed system where only energy crosses the boundary as heat
+                  or work.
+                </td>
+                <td>
+                  An open system with a defined inlet and outlet for mass and
+                  energy.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Mass is a fixed quantity; conservation of energy and momentum
+                  are analyzed.
+                </td>
+                <td>
+                  Mass flow rate and heat transfer are key factors; conservation
+                  of mass, energy, and momentum are considered.
+                </td>
+              </tr>
+              <tr>
+                <td>Steam flowing through a turbine blade.</td>
+                <td>Air passing through the blades of a fan.</td>
+              </tr>
+            </table>
+            <br />
+            <hr class="purple" />
+            <li>
+              How will you find out whether a given variable is a thermodynamic
+              property?
+            </li>
+            <p>
+              A given quantity is a thermodynamic property if it can be expressed as an exact differential. Since, the thermodynamic 
+              property depends on the end states and not on the path followed. It is a point function and a point function is always
+              expressed as an exact differential.
+            </p>
+            
+            <br />
+            <hr class="purple" />
+            <li>How are thermodynamic properties classified?</li>
+            <p>
+              Thermodynamic properties are classified based on various
+              characteristics that describe their behavior and how they interact
+              with a system. They can be broadly classified into two main
+              categories: intensive properties and extensive properties.:
+            </p>
+            <ul>
+              <li>
+                <strong>Intensive Properties:</strong>: Intensive properties are
+                independent of the size or quantity of the system. They are
+                intrinsic to the substance and remain the same regardless of the
+                system's size. Intensive properties provide information about
+                the state of a system at a specific point and are often denoted
+                by lowercase letters. Examples of intensive properties include:
+                Temperature (T) Pressure (P) Density (ρ) Specific volume (v)
+                Temperature-dependent material properties (e.g., specific heat
+                capacity, thermal conductivity)
+              </li>
+              <li>
+                <strong>Extensive Properties</strong>:Extensive properties
+                depend on the size or quantity of the system. They are additive
+                and scale with the system's size. Extensive properties provide
+                information about the total amount of a property within a
+                system. Extensive properties are often denoted by uppercase
+                letters. Examples of extensive properties include: Mass (m)
+                Volume (V) Total energy (U) Total entropy (S) Total internal
+                energy (E)
+              </li>
+            </ul>
+            <br />
+            <hr class="purple" />
+            <li>
+              Differentiate between a path function and state function (point
+              function).
+            </li>
+            <p>
+              Difference between a path function and state function (point
+              function):
+            </p>
+            <table>
+              <tr>
+                <th>Path Function</th>
+                <th>State Function</th>
+              </tr>
+              <tr>
+                <td>Depends on the path taken during a process.</td>
+                <td>
+                  Depends only on the initial and final states of the system,
+                  regardless of the path.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Measures the amount of work or heat exchanged along a specific
+                  process path.
+                </td>
+                <td>
+                  Measures the difference in values between the initial and
+                  final states, irrespective of how the change occurred.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Value is not uniquely determined by the initial and final
+                  states; it depends on the process history.
+                </td>
+                <td>
+                  Value is uniquely determined by the initial and final states;
+                  it remains the same regardless of the process path.
+                </td>
+              </tr>
+              <tr>
+                <td>Work done during expansion or compression.</td>
+                <td>
+                  Internal energy, enthalpy, entropy, temperature, pressure.
+                </td>
+              </tr>
+              <tr>
+                <td>Not additive; depends on the specific path taken.</td>
+                <td>
+                  Additive; the property of a system is the sum of its parts.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Path functions appear in equations describing energy
+                  conservation (First Law) and work done.
+                </td>
+                <td>
+                  State functions appear in equations describing changes in
+                  energy (First Law), heat transfer, and other thermodynamic
+                  relationships.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Can vary when the process is reversible or irreversible.
+                </td>
+                <td>
+                  Remains the same regardless of whether the process is
+                  reversible or irreversible.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Calculating the work done during an irreversible expansion
+                  using the path-specific integral of pressure and volume
+                  changes.
+                </td>
+                <td>
+                  Calculating the change in internal energy between two states
+                  using the difference in state function values.
+                </td>
+              </tr>
+            </table>
+            <br />
+            <hr class="purple" />
+            <li>State and explain the equality of temperature.</li>
+            <p>
+              The principle of the equality of temperature is a fundamental
+              concept in thermodynamics that states that when two systems are
+              each in thermal equilibrium with a third system, they are in
+              thermal equilibrium with each other. In simpler terms, if two
+              systems are separately in thermal equilibrium with a third system,
+              then they are also in thermal equilibrium with each other.
+              <br />
+              This principle can be stated as follows:
+              <br />
+              "If two systems are each in thermal equilibrium with a third
+              system, then they are in thermal equilibrium with each other."
+              <br />
+              This principle is a consequence of the zeroth law of
+              thermodynamics, which establishes the concept of temperature and
+              provides a basis for temperature measurement and comparison. The
+              zeroth law essentially introduces the concept of temperature
+              equivalence: if two systems A and B are each separately in thermal
+              equilibrium with a third system C, then systems A and B are also
+              in thermal equilibrium with each other.
+              <br />
+              This principle of the equality of temperature is crucial because
+              it allows us to define temperature scales and establish a basis
+              for measuring temperature. It ensures that temperature can be used
+              as a reliable indicator of a system's thermal state, and it forms
+              the foundation for concepts like the Kelvin and Celsius
+              temperature scales.
+              <br />
+
+              The equality of temperature is also used in the construction of
+              thermometers and temperature measurement devices, which are
+              calibrated based on the behavior of substances that exhibit
+              consistent temperature-quantity relationships, such as the
+              expansion of a liquid in a thermometer bulb.
+              <br />
+              In summary, the equality of temperature is a key principle in
+              thermodynamics that underpins the concept of thermal equilibrium,
+              enabling the reliable measurement and comparison of temperature
+              across different systems.
+            </p>
+            <hr class="purple" />
+            <li>
+              Differentiate between microscopic and macroscopic view point in
+              thermodynamic with example.
+            </li>
+            <p>
+              Difference between microscopic and macroscopic view point in
+              thermodynamic:
+            </p>
+
+            <table>
+              <tr>
+                <th>Microscopic Viewpoint</th>
+                <th>Macroscopic Viewpoint</th>
+              </tr>
+              <tr>
+                <td>
+                  Focuses on the behavior and interactions of individual
+                  particles or molecules in a system.
+                </td>
+                <td>
+                  Focuses on overall system properties and behaviors without
+                  considering individual particles.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Deals with extremely small scales, at the level of individual
+                  particles.
+                </td>
+                <td>
+                  Deals with large scales, considering the collective behavior
+                  of a vast number of particles.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Provides insights into molecular-level processes and
+                  interactions.
+                </td>
+                <td>
+                  Analyzes observable properties, often averaged over a large
+                  number of particles.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Studying individual particle movements, collisions, and
+                  interactions in a gas.
+                </td>
+                <td>
+                  Analyzing the overall pressure, temperature, and volume
+                  changes in a gas.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Requires detailed knowledge of molecular behavior,
+                  interactions, and statistical mechanics.
+                </td>
+                <td>
+                  Requires macroscopic measurements and properties, often
+                  involving averages and aggregates.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Involves complex calculations and modeling of molecular
+                  interactions.
+                </td>
+                <td>
+                  Involves simplified and averaged descriptions that disregard
+                  molecular details.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Applied in molecular dynamics simulations, kinetic theory, and
+                  statistical mechanics.
+                </td>
+                <td>
+                  Applied in engineering analyses, thermodynamic processes, and
+                  system-level modeling.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Emphasizes understanding emergent properties from individual
+                  particle behaviors.
+                </td>
+                <td>
+                  Emphasizes understanding overall system behavior without
+                  delving into molecular details.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  May be computationally intensive and challenging to apply to
+                  real-world systems.
+                </td>
+                <td>
+                  Averages may not capture fine-grained information and may
+                  overlook molecular-level phenomena.
+                </td>
+              </tr>
+            </table>
+
+            <br />
+            <hr class="purple" />
+            <li>
+              State and explain zeroth law of thermodynamic. Also write its
+              application.
+            </li>
+            <p>
+              The Zeroth Law of Thermodynamics states that if two systems are
+              each in thermal equilibrium with a third system, then they are in
+              thermal equilibrium with each other. In simpler terms, this law
+              establishes the concept of temperature equivalence: if two systems
+              have the same temperature as a third system, then they have the
+              same temperature as each other.
+              <br />
+              This law is called the "zeroth" law because it was recognized
+              after the first and second laws of thermodynamics had already been
+              established. The zeroth law is fundamental to the concept of
+              temperature and provides a foundation for temperature measurement
+              and comparison.
+              <br />
+              Explanation: <br />
+              The zeroth law can be stated as follows: <br />
+              <br />
+              "If two systems A and B are each in thermal equilibrium with a
+              third system C, then systems A and B are also in thermal
+              equilibrium with each other."
+              <br />
+              This law is crucial because it allows us to define temperature
+              scales and establish a basis for measuring temperature. It implies
+              that temperature is a property that can be used to compare the
+              thermal states of different systems. The zeroth law also enables
+              the construction of thermometers and temperature measurement
+              devices, as they are calibrated based on the behavior of
+              substances that exhibit consistent temperature-quantity
+              relationships.
+              <br />
+              The Zeroth Law finds applications in temperature scales (e.g.,
+              Kelvin, Celsius), thermometer construction, determining thermal
+              contact, thermal processes analysis, and temperature control
+              systems.
+            </p>
+            <hr class="purple" />
+            <li>
+              Explain reversible and irreversible processes with reference
+              nature of intermediate states. Also mention their features.
+            </li>
+
+            <p>
+              <strong>Reversible Process:</strong> <br />
+
+              A reversible process is a theoretical idealization in which a
+              system undergoes changes between equilibrium states such that the
+              process can be reversed by an infinitesimal change in a property.
+              In other words, the system can return to its initial state without
+              leaving any trace of having undergone the process. Reversible
+              processes are considered as a reference point for analyzing the
+              behavior of actual, practical processes. <br />
+
+              <strong>Features of Reversible Processes:</strong> <br />
+            </p>
+
+            <ul>
+              <li>
+                <strong>Quasi-Static Equilibrium:</strong> Reversible processes
+                occur in a sequence of equilibrium states, with the system
+                remaining in quasi-static equilibrium at all times.
+              </li>
+              <li>
+                <strong>Infinitesimal Changes:</strong> Each step of a
+                reversible process involves infinitesimal changes in properties,
+                allowing the process to be reversed by reversing these changes.
+              </li>
+              <li>
+                <strong>No Dissipation of Energy: </strong>There is no
+                dissipation of energy as heat in a reversible process; energy is
+                transferred as work without any loss.
+              </li>
+              <li>
+                <strong>Time Reversibility:</strong> Reversible processes can be
+                reversed in time, and the system retraces the same path
+                backward.
+              </li>
+              <li>
+                <strong>Idealization:</strong> Reversible processes are
+                theoretical constructs used as benchmarks to understand the
+                limits of system behavior.
+              </li>
+            </ul>
+            <strong>Irreversible Process:</strong>
+            <br />An irreversible process is one in which the system undergoes
+            changes that cannot be exactly reversed by an infinitesimal change
+            in a property. The system does not return to its initial state after
+            the process, and irreversible processes are associated with
+            dissipative effects like friction, heat transfer through finite
+            temperature differences, and irreversibilities in real-world
+            systems.
+            <br />
+            <strong>Features of Irreversible Processes:</strong>
+            <ul>
+              <li>
+                <strong>Departure from Equilibrium:</strong> Irreversible
+                processes involve deviations from equilibrium states, and the
+                system doesn't have time to adjust to infinitesimal changes.
+              </li>
+              <li>
+                <strong>Energy Dissipation:</strong> Energy is dissipated as
+                heat due to non-quasi-static changes and irreversibilities in
+                the process.
+              </li>
+              <li>
+                <strong>Arrow of Time:</strong> Irreversible processes follow a
+                unidirectional flow of time, and they can't be retraced backward
+                in the same way as reversible processes.
+              </li>
+              <li>
+                <strong>Realistic Behavior:</strong> Most natural processes in
+                the universe are irreversible due to the presence of friction,
+                heat transfer, and other irreversible phenomena.
+              </li>
+            </ul>
+
+            <hr class="purple" />
+            <li>Explain different types of thermodynamic system.</li>
+            <p>Different types of thermodynamic system:</p>
+            <ul>
+              <li>
+                <strong>Isolated System:</strong><br />An isolated system is a
+                system that does not exchange energy or matter with its
+                surroundings. In other words, it is completely isolated from its
+                environment. No heat, work, or mass crosses the boundary of an
+                isolated system. Isolated systems are theoretical constructs
+                used to study idealized scenarios.
+              </li>
+              <li>
+                <strong>Closed System:</strong><br />A closed system, also known
+                as a control mass, is a system that can exchange energy with its
+                surroundings in the form of heat and work, but it does not
+                exchange matter. The boundary of a closed system is fixed, and
+                only energy interactions occur across the boundary.
+              </li>
+              <li>
+                <strong>Open System:</strong><br />An open system, also known as
+                a control volume, is a system that can exchange both energy and
+                matter with its surroundings. Open systems have specified inlet
+                and outlet boundaries through which mass can flow in and out,
+                and energy interactions can occur.
+              </li>
+            </ul>
+            <hr class="purple" />
+            <li>Define Quasi-equilibrium process.</li>
+            <p>
+              A quasi-equilibrium process, also known as a quasi-static process,
+              is a thermodynamic process in which a system undergoes changes
+              while remaining in approximate equilibrium at each step of the
+              process.
+            </p>
+            <hr class="purple" />
+            <li>Differentiate between heat and work.</li>
+            <p>Difference between heat and work:</p>
+            <table>
+              <tr>
+                <th>Aspect</th>
+                <th>Heat</th>
+                <th>Work</th>
+              </tr>
+              <tr>
+                <td>Mechanism</td>
+                <td>
+                  Transfer of energy due to a temperature difference between a
+                  system and its surroundings.
+                </td>
+                <td>
+                  Transfer of energy due to a force acting on a system and
+                  causing a displacement.
+                </td>
+              </tr>
+              <tr>
+                <td>Direction</td>
+                <td>
+                  Spontaneously flows from higher temperature to lower
+                  temperature regions.
+                </td>
+                <td>
+                  Applied to or done by a system depending on the direction of
+                  the force and the displacement.
+                </td>
+              </tr>
+              <tr>
+                <td>Type of Transfer</td>
+                <td>
+                  Energy transfer through thermal contact (molecular
+                  collisions).
+                </td>
+                <td>
+                  Energy transfer through mechanical interactions (force applied
+                  over a distance).
+                </td>
+              </tr>
+              <tr>
+                <td>Symbol</td>
+                <td>Q</td>
+                <td>W</td>
+              </tr>
+              <tr>
+                <td>Path Dependence</td>
+                <td>
+                  Generally path independent; depends on initial and final
+                  states.
+                </td>
+                <td>
+                  Path dependent; depends on the specific process or path taken.
+                </td>
+              </tr>
+              <tr>
+                <td>Form of Energy</td>
+                <td>
+                  Energy transferred due to temperature differences; can change
+                  internal energy.
+                </td>
+                <td>
+                  Energy transferred due to mechanical interactions; can change
+                  kinetic or potential energy.
+                </td>
+              </tr>
+              <tr>
+                <td>Measured in</td>
+                <td>Joules (J) or calories (cal)</td>
+                <td>Joules (J)</td>
+              </tr>
+              <tr>
+                <td>Sign Convention</td>
+                <td>
+                  Positive if heat is added to the system; negative if heat is
+                  lost by the system.
+                </td>
+                <td>
+                  Positive if work is done by the system on the surroundings;
+                  negative if work is done on the system by the surroundings.
+                </td>
+              </tr>
+              <tr>
+                <td>Irreversibilities</td>
+                <td>
+                  Heat transfer can lead to entropy increase (irreversible
+                  process).
+                </td>
+                <td>
+                  Work can involve mechanical friction or other dissipative
+                  processes.
+                </td>
+              </tr>
+            </table>
+            <hr class="purple" />
+            <li>Similarities of heat and work.</li>
+            <p>Similarities of heat and work:</p>
+            <ul>
+              <li>
+                <strong>Energy Transfer:</strong> Both heat and work are forms
+                of energy transfer. They involve the transfer of energy from one
+                system to another or between different parts of a system.
+              </li>
+              <li>
+                <strong>Affect on System:</strong> Both heat and work can change
+                the thermodynamic state of a system. They can alter the internal
+                energy of a system, affecting its temperature, pressure, and
+                other properties.
+              </li>
+              <li>
+                <strong>Path Dependence:</strong> Both heat and work can be
+                path-dependent. The amount of heat transferred or work done can
+                vary depending on the specific process or path taken during the
+                energy transfer.
+              </li>
+              <li>
+                <strong>Units:</strong> Both heat and work are measured in the
+                same unit, joules (J), in the International System of Units
+                (SI). In some contexts, heat can also be measured in calories
+                (cal) or other energy units.
+              </li>
+              <li>
+                <strong>Thermodynamic Processes:</strong> Both heat and work
+                play crucial roles in various thermodynamic processes, such as
+                isothermal, adiabatic, and isobaric processes. These processes
+                often involve the transfer of energy in the form of heat and
+                work.
+              </li>
+              <li>
+                <strong>Role in First Law:</strong> Both heat and work are terms
+                in the First Law of Thermodynamics, which states that the change
+                in internal energy of a system is equal to the sum of the heat
+                added to the system and the work done on the system.
+              </li>
+              <li>
+                <strong>Energy Conservation:</strong> Both heat and work are
+                forms of energy, and their transfer is subject to the principles
+                of energy conservation. The total energy of an isolated system
+                remains constant.
+              </li>
+              <li>
+                <strong>Conversion:</strong> Heat can be converted into work and
+                vice versa in various processes, such as heat engines and
+                refrigerators. These processes illustrate the interconversion of
+                heat and work based on the principles of thermodynamics.
+              </li>
+            </ul>
+            <hr class="purple" />
+            <li>
+              Define atmospheric pressure, gauge pressure and absolute pressure.
+              Also write the relation between them.
+            </li>
+            <p>
+              <strong>Atmospheric Pressure:</strong><br />Atmospheric pressure
+              is the force exerted per unit area by the weight of the Earth's
+              atmosphere above a certain point. <br />
+              <strong>Gauge Pressure:</strong><br />Gauge pressure is the
+              pressure measured relative to atmospheric pressure.<br />
+              <strong>Absolute Pressure:</strong><br />Absolute pressure is the
+              total pressure at a certain point, including both atmospheric
+              pressure and any additional pressure applied. It is the sum of the
+              atmospheric pressure and the gauge pressure at that location.<br />
+              The relation between these pressure concepts can be expressed as
+              follows:
+              <br />
+              Absolute Pressure = Atmospheric Pressure + Gauge Pressure
+            </p>
+            <hr class="purple" />
+            <li>Define vaccum gauge.</li>
+            <p>
+              A vacuum gauge is an instrument used to measure the pressure of
+              gases in a vacuum, which is a region of space with very low
+              pressure compared to atmospheric pressure.
+            </p>
+          </ol>
+        </div>
+        <div class="questionchapter">
+          <div class="questionheader">2. Energy and Energy Transfer</div>
+          <ol class="questionquestion">
+            <li>Define enegy and power.</li>
+            <p>
+              <strong>Energy</strong> is the quantitative property that is
+              transferred to a body or to a physical system, recognizable in the
+              performance of work and in the form of heat and light.
+            </p>
+            <p>
+              <strong>Power</strong> is the amount of energy transferred or
+              converted per unit time.
+            </p>
+            <hr class="purple" />
+            <li>Define work transfer and heat transfer with example.</li>
+            <p>
+              <strong>Work transfer</strong> refers to the process of energy
+              being transferred from one system to another due to the
+              application of a force over a distance. I
+            </p>
+            <p>
+              <strong>Heat Transfer</strong> involves the transfer of thermal
+              energy from a region of higher temperature to a region of lower
+              temperature.
+            </p>
+            <hr class="purple" />
+            <li>
+              Derive the equation for heat and work for adiabatic process.
+            </li>
+            <hr class="purple">
+            <li>Define transient energy with salient features.</li>
+            <hr class="purple">
+            <li>
+              Differentiate between molecular potential energy and macroscopic
+              potential energy of a system.
+            </li>
+            <hr class="purple">
+            <li>Explain 3 types of thermodynamic system.</li>
+            <hr class="purple">
+            <li>
+              Define Polytropic process and Polytropic index. Find the value for
+              Polytropic index for isochoric reduction.
+            </li>
+            <hr class="purple">
+            <li>
+              Derive the expression for the displacement work transfer in a
+              piston cylinder device. Also reduce it for an ideal gas undergoing
+              isothermal process.
+            </li>
+            <hr class="purple">
+            <li>
+              Differentiate between transient energy and stored energy with
+              example.
+            </li>
+            <hr class="purple">
+            <li>
+              Derive expression for work transfer for a polytropic process.
+            </li>
+            <hr class="purple">
+            <li>
+              Define internal energy, potential energy, kinetic energy amd total
+              energy of a thermodynamic system.
+            </li>
+            <hr class="purple">
+            <li>Prove that work is a path function.</li>
+            <hr class="purple">
+            <li>Differentiate between heat transfer and work transfer.</li>
+          </ol>
+        </div>
+        <div class="questionchapter">
+          <div class="questionheader">
+            3. Properties of Compressible Substance
+          </div>
+          <ol class="questionquestion">
+            <li>
+              Define pure substance. State property rules and give example.
+            </li>
+            <hr class="purple">
+            <li>State why property tables and charts are necessary.</li>
+            <hr class="purple">
+            <li>State and explain state postulate.</li>
+            <hr class="purple">
+            <li>Define moisture content.</li>
+            <hr class="purple">
+            <li>
+              What is an equation of state? Derive an expression for equation of
+              state of an ideal gas.
+            </li>
+            <hr class="purple">
+            <li>Saturation curve - Tv graph</li>
+            <hr class="purple">
+            <li>Saturation curve - Pv graph</li>
+            <hr class="purple">
+            <li>
+              Define Saturated pressure, superheated vapor, critical point,
+              degree of superheat, saturated temperature.
+            </li>
+            <hr class="purple">
+            <li>What is quality. Why is it necessary?</li>
+            <hr class="purple">
+            <li>
+              Derive an expression for specific volume of a two phase mixture in
+              terms of quality.
+            </li>
+            <hr class="purple">
+            <li>
+              At a point on saturated liquid curve substance is saturated with
+              respect to vapor and on saturated vapor curve the substance is
+              saturated with respect to liquid. Justify your answer
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div>© 2023 The Engineering Junction. All Rights Reserved.</div>
+      <div>
+        Suggest us:
+        <a
+          style="color: rgb(230, 230, 230)"
+          href="mailto:079bce052@ioepc.edu.np"
+          >079bce052@ioepc.edu.np</a
+        >
+      </div>
+      <div>Designed & Developed By: Krishal Basnet</div>
+    </footer>
+  </body>
+</html>
