@@ -1,0 +1,339 @@
+ <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9200097242455912"
+     crossorigin="anonymous"></script>  
+    <title>The Engineering Junction</title>
+    <link
+      rel="shortcut icon"
+      href="../logo_transparent-cutout.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <div class="topbar">
+      <div class="bitem1 baritem">
+        <a class="topbara topbaraimg" href="../index.html"
+          ><img class="topbarlogo" src="../Image/Topbarlogo.png" alt=""
+        /></a>
+      </div>
+      <div class="bitem2 baritem">
+        <a class="topbara" href="../index.html">Home</a>
+      </div>
+      <div class="bitem3 baritem">
+        <a class="topbara" href="../solution.html">Solutions</a>
+      </div>
+      <div class="bitem4 baritem">
+        <a class="topbara" href="../pastpaper.html">Past Paper</a>
+      </div>
+      <div class="bitem5 baritem">
+        <a class="topbara" href="../notes.html">Notes</a>
+      </div>
+      <div class="bitem6 baritem">
+        <a class="topbara" href="../questions.html">Questions</a>
+      </div>
+      <div class="bitem7 baritem">
+        <a class="topbara" href="../contact.html">Contact</a>
+      </div>
+    </div>
+    <div class="mainbody">
+      <h1 class="mainhead">LAB SHEET NO.7 - To be familiar with Array</h1>
+      <hr />
+      <a href="../LabSheet.html" class="back_button"
+        ><img class="backimg" src="../Thumbnails/back.png" alt=""
+      /></a>
+    <div class="code55">
+      <div class="question55" id="question55">1. WAP to store 10 integer elements in an array and print it.</div>
+      <div id="answer55" class="code-container">
+        <pre class="code"><code>
+    #include&lt;stdio.h>
+    void main(){
+      int i, num[10];
+      printf("Enter 10 numbers: ");
+      for(i=0;i&lt;10;i++){
+        scanf("%d",&num[i]);
+      }
+      printf("The numbers are: ");
+      for(i=0;i&lt;10;i++){
+        printf("%d ",num[i]);
+      }
+    }
+        </code></pre>
+      </div>
+      <div class="output55" id="output55">
+        OUTPUT:- <br>
+        Enter 10 numbers: 0 1 2 3 4 5 6 7 8 9 <br>
+        The numbers are: 0 1 2 3 4 5 6 7 8 9
+      </div>
+      <br />
+      <div class="question55" id="question55">2. WAP to calculate and print the sum and average of n elements of array.</div>
+      <div id="answer55" class="code-container">
+        <pre class="code"><code>
+    #include&lt;stdio.h>
+    void main(){
+      int n,i, num[100], sum=0;
+      float ave;
+      printf("Enter the number of terms: ");
+      scanf("%d",&n);
+      printf("Enter numbers:");
+      for(i=0;i&lt;n;i++){
+        scanf("%d",&num[i]);
+        sum = sum + num[i];
+      }
+      ave = sum / (float)n;
+      printf("The sum is %d and average is %f",sum,ave);
+    }
+        </code></pre>
+      </div>
+      <div class="output55" id="output55">
+        OUTPUT:- <br>
+        Enter the number of terms: 5  <br>
+Enter numbers:1 2 3 4 5  <br>
+The sum is 15 and average is 3.000000
+      </div>
+      <br />
+      <div class="question55" id="question55">3. WAP to sort n elements of array in descending order.</div>
+      <div id="answer55" class="code-container">
+        <pre class="code"><code>
+    #include&lt;stdio.h>
+    void main(){
+      int i,j,num[100],temp;
+      printf("Enter the number of elements in the array: ");
+      scanf("%d ",&n);
+      printf("Enter the numbers: ");
+      for(i=0li&lt;n;i++){
+        scanf("%d ",&num[i]);
+      }
+      for(i=0;i&lt;n-1;i++){
+        for(j=1+i;i&lt;n;j++){
+          temp = num[i];
+          num[i] = num[j];
+          num[j] = temp;
+        }
+      }
+      printf("The rearranged values are: ");
+      for(i=0;i&lt;n;i++){
+        printf("%d",num[i]);
+      }
+    }
+        </code></pre>
+      </div>
+      <div class="output55" id="output55">
+        OUTPUT:- <br>
+        Enter the number of elements in the array: 10 <br>
+        Enter the numbers: 34 56 32 4 67 45 78 77 10 <br>
+        The rearranged value are: 78 77 67 56 45 34 4 1 0   
+      </div>
+      <br />
+      <div class="question55" id="question55">4. WAP to count the frequency of the elements in an array.</div>
+      <div id="answer55" class="code-container">
+        <pre class="code"><code>
+    #include&lt;stdio.h>
+    void main(){
+      int array[100],n,i,count=0,d;
+      printf("Enter the number of terms in the array: ");
+      scanf("%d",&n);
+      printf("Enter the numbers in array: ");
+      for(i=0;i&lt;n;i++){
+        scanf("%d",&array[i]);
+      }
+      printf("Enter the number to check: ");
+      scanf("%d",&d);
+      for(i=0;i&lt;n;i++){
+        if(d==array[i]){
+          count++;
+        }}
+      printf("%d is repeated %d times...",d,count);
+    }
+        </code></pre>
+      </div>
+      <div class="output55" id="output55">
+        OUTPUT:- <br>
+        Enter the number of terms in the array: 10 <br>
+Enter the numbers in array: 1 2 3 4 5 3 7 2 7 1 <br>
+Enter the number to check: 1        <br>
+1 is repeated 2 times...
+      </div>
+      <br />
+      <div class="question55" id="question55">5. WAP to pass 1D array to the minmax() function. The function should calculate the
+        maximum and minimum among the elements of the array. Print the maximum and
+        minimum in the main() function.</div>
+      <div id="answer55" class="code-container">
+        <pre class="code"><code>
+    #include&lt;stdio.h>
+    int minmax(int *x, int *y,int arrayy){
+        if(*x>arrayy){
+            *x = arrayy;
+        }
+        if(*y&lt;arrayy){
+            *y = arrayy;
+        }
+
+    }
+    void main(){
+        int array[50],n,min,max;
+        printf("Enter the number of term in array: ");
+        scanf("%d",&n);
+        printf("Enter the numbers in the array:\n");
+        for(int i =0; i&lt;n;i++){
+            scanf("%d",&array[i]);
+        }
+        min=max=array[0];
+        for(int i =0; i&lt;n;i++){
+            minmax(&min,&max,array[i]);
+        }
+        printf("The minimum is %d and maximum is %d",min,max);
+    }
+        </code></pre>
+      </div>
+      <div class="output55" id="output55">
+        OUTPUT:-  <br>
+        Enter the number of term in array: 10 <br>
+Enter the numbers in the array: <br>
+5 98 2 15 0 69 356 12 587 56 <br>
+The minimum is 0 and maximum is 587 <br>
+      </div>
+      <br />
+
+      <div class="question55" id="question55">6. WAP to multiply matrix of different size if possible using 2D array.</div>
+      <div id="answer55" class="code-container">
+        <pre class="code"><code>
+    #include &lt;stdio.h>
+    void main(){
+        int r1, c1, r2, c2, i, mat1[50][50], mat2[50][50], mul[50][50], j, k;
+        printf("Enter the no of rows and columns of 1st matrix: ");
+        scanf("%d%d", &r1, &c1);
+        printf("Enter the no of rows and columns of 2nd matrix: ");
+        scanf("%d%d", &r2, &c2);
+        if (c1 == r2){
+            printf("Enter the elements of the 1st matrix:");
+            for (i = 0; i &lt; r1; i++){
+                for (j = 0; j &lt; c1; j++){
+                    scanf("%d", &mat1[i][j]);
+                }
+            }
+            printf("Enter the elements of the 2nd matrix:");
+            for (i = 0; i &lt; r2; i++){
+                for (j = 0; j &lt; c2; j++){
+                    scanf("%d", &mat2[i][j]);
+                }
+            }
+            for (i = 0; i &lt; r1; i++){
+                for (j = 0; j &lt; c2; j++){
+                    mul[i][j] = 0;
+                    for (k = 0; k &lt; c2; k++){
+                        mul[i][j] += mat1[i][k] * mat2[k][j];
+                    }
+                }
+            }
+            for (i = 0; i &lt; r2; i++){
+                for (j = 0; j &lt; c2; j++){
+                    printf("%5d", mul[i][j]);
+                }
+                printf("\n");
+            }
+        }
+        else{
+            printf("Matrix cannot be multiplied.");
+        }
+    }
+        </code></pre>
+      </div>
+      <div class="output55" id="output55">
+        OUTPUT:- <br>
+        Enter the no of rows and columns of 1st matrix: 3 3 <br>
+Enter the no of rows and columns of 2nd matrix: 3 3 <br>
+Enter the elements of the 1st matrix:1 2 3 <br>
+4 5 6 <br>
+7 8 9 <br>
+Enter the elements of the 2nd matrix:1 2 3 <br>
+4 5 6 <br>
+7 8 9 <br>
+   30   36   42 <br>
+   66   81   96 <br>
+  102  126  150 <br>
+      </div>
+      <br />
+
+      <div class="question55" id="question55">7. WAP to find the transpose of the matrix.</div>
+      <div id="answer55" class="code-container">
+        <pre class="code"><code>
+    #include&lt;stdio.h>
+    void main(){
+      int matrix[30][30], i, j, m, n;
+      printf("Enter the no of rows and columns: ");
+      scanf("%d%d",&m,&n);
+      printf("Enter the data of the matrix: \n");
+      for(i=0;i&lt;m;i++){   
+        for(j=0;j&lt;n;j++){
+          scanf("%d",&matrix[i][j]);
+        }
+      }
+      printf("The transpose is:\n");
+      for(i=0;i&lt;m;i++){   
+          for(j=0;j&lt;n;j++){
+            printf("%d\t",matrix[j][i]);
+          }
+          printf("\n");
+      }
+    }
+        </code></pre>
+      </div>
+      <div class="output55" id="output55">
+        OUTPUT:-    <br>
+        Enter the no of rows and columns: 3 3   <br>
+        Enter the data of the matrix:   <br>
+        1 &ensp; &ensp; 2 &ensp; &ensp; 3  <br>
+        4 &ensp; &ensp; 5 &ensp; &ensp; 6  <br>
+        7 &ensp; &ensp; 8 &ensp; &ensp; 9  <br>
+        The transpose is:  <br>
+        1       &ensp; &ensp; 4       &ensp; &ensp; 7  <br>
+        2       &ensp; &ensp; 5       &ensp; &ensp; 8  <br>
+        3       &ensp; &ensp; 6       &ensp; &ensp; 9  <br>
+      </div>
+      <br />
+      <div class="question55" id="question55">8. WAP to find the sum of the rows and column of the matrix.</div>
+      <div id="answer55" class="code-container">
+        <pre class="code"><code>
+    #include&lt;stdio.h>
+    void main(){
+      int row,i, num[100][100], sum=0,j,col;
+      printf("Enter the number of row and column: ");
+      scanf("%d%d",&row,&col);
+      printf("Enter numbers:");
+      for(i=0;i&lt;row;i++){
+        for(j=0;j&lt;col;j++){
+        scanf("%d",&num[i][j]);
+        sum = sum + num[i][j];
+        }
+      }
+      printf("The sum is %d",sum);
+    }
+        </code></pre>
+      </div>
+      <div class="output55" id="output55">
+        OUTPUT:-  <br>
+        Enter the number of row and column: 2 2 <br>
+Enter numbers:1 2 3 4 <br>
+The sum is 10
+      </div>
+      <br />
+    </div></div>
+    <footer>
+      <div>© 2023 The Engineering Junction. All Rights Reserved.</div>
+      <div>
+        Suggest us:
+        <a
+          style="color: rgb(230, 230, 230)"
+          href="mailto:079bce052@ioepc.edu.np"
+          >079bce052@ioepc.edu.np</a
+        >
+      </div>
+      <div>Designed & Developed By: Krishal Basnet</div>
+    </footer>
+  </body>
+</html> 

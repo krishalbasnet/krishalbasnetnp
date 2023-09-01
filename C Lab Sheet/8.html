@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Engineering Junction</title>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9200097242455912"
+     crossorigin="anonymous"></script>
+    <link
+      rel="shortcut icon"
+      href="../logo_transparent-cutout.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <div class="topbar">
+      <div class="bitem1 baritem">
+        <a class="topbara topbaraimg" href="../index.html"
+          ><img class="topbarlogo" src="../Image/Topbarlogo.png" alt=""
+        /></a>
+      </div>
+      <div class="bitem2 baritem">
+        <a class="topbara" href="../index.html">Home</a>
+      </div>
+      <div class="bitem3 baritem">
+        <a class="topbara" href="../solution.html">Solutions</a>
+      </div>
+      <div class="bitem4 baritem">
+        <a class="topbara" href="../pastpaper.html">Past Paper</a>
+      </div>
+      <div class="bitem5 baritem">
+        <a class="topbara" href="../notes.html">Notes</a>
+      </div>
+      <div class="bitem6 baritem">
+        <a class="topbara" href="../questions.html">Questions</a>
+      </div>
+      <div class="bitem7 baritem">
+        <a class="topbara" href="../contact.html">Contact</a>
+      </div>
+    </div>
+    <div class="mainbody">
+      <h1 class="mainhead">
+        LAB SHEET NO.8 - To be familiar with Pointers
+      </h1>
+      <hr />
+      <a href="../LabSheet.html" class="back_button"
+        ><img class="backimg" src="../Thumbnails/back.png" alt=""
+      /></a>
+    <div class="code55">
+
+      <div class="question55" id="question55">1. WAP to find the sum and difference of two number using pointers</div>
+      <div id="answer55" class="code-container">
+        <pre class="code"><code>
+    #include&lt;stdio.h>
+    void main(){
+      int a,b,sum,*x,*y;
+      x=&amp;a;
+      y=&amp;b;
+      printf("Enter the value of a and b: ");
+      scanf("%d%d",&a,&b);
+      printf("The sum is %d",*x+*y);
+    }
+        </code></pre>
+      </div>
+      <div class="output55" id="output55">OUTPUT:- <br>
+        Enter the value of a and b: 2 3 <br>
+The sum is 5
+      </div><br>
+      
+      <div class="question55" id="question55">2. WAP to read two values from the user in main(). Write a function calculate() to
+        calculate sum, product, difference and quotient of the numbers. Print the sum,
+        product, difference and quotient in the main function using pass by reference
+        concept.</div>
+      <div id="answer55" class="code-container">
+        <pre class="code"><code>
+    #include&lt;stdio.h>
+    void calculate(int a, int b,int *p, int *q,int *r, float *s){
+      *p = a + b;
+      *q = a - b;
+      *r = a * b;
+      *s = (float)a / b;
+    }
+    void main(){
+      int a,b,sum,sub,mul;
+      float div;
+      printf("Enter two numbers: ");
+      scanf("%d%d",&a,&b);
+      calculate(a,b,&sum,&sub,&mul,&div);
+      printf("Sum:%d\tDifference:%d\tProduct:%d\tQuotient:%f",sum,sub,mul,div);
+    }
+        </code></pre>
+      </div>
+      <div class="output55" id="output55">
+        OUTPUT:- <br>
+        Enter two numbers: 1 2 <br>
+Sum:3   Difference:-1   Product:2       Quotient:0.500000
+      </div><br>
+      
+      <div class="question55" id="question55">3. WAP to access the elements of the array using the pointers.</div>
+      <div id="answer55" class="code-container">
+        <pre class="code"><code>
+    #include &lt;stdio.h>
+    int main() {
+        int data[5];
+        printf("Enter elements: ");
+        for (int i = 0; i &lt; 5; ++i)
+            scanf("%d", data + i);
+        printf("You entered: \n");
+        for (int i = 0; i &lt; 5; ++i)
+            printf("%d\n", *(data + i));
+        return 0;
+    }
+        </code></pre>
+      </div>
+      <div class="output55" id="output55">
+        OUTPUT:- <br>
+        Enter elements: 1 2 3 4 5 <br>
+        You entered:  <br>
+        1 <br>
+        2 <br>
+        3 <br>
+        4 <br>
+        5 <br>
+      </div><br>
+      
+      <div class="question55" id="question55">4. WAP to illustrate the concept of array of pointers and pointer to the array.</div>
+      <div id="answer55" class="code-container">
+        <pre class="code"><code>
+    #include &lt;stdio.h>
+    void main() {
+        int arr[] = {1, 2, 3, 4, 5};
+        int* ptrArr[5];
+        int(*ptrToArr)[5];           
+        for (int i = 0; i &lt; 5; i++) {
+            ptrArr[i] = &arr[i];
+        }
+        ptrToArr = &amp;arr; 
+        printf("Accessing elements using the array of pointers:\n");
+        for (int i = 0; i &lt; 5; i++) {
+            printf("Value at index %d: %d\n", i, *ptrArr[i]);
+        }
+        printf("\nAccessing elements using the pointer to the array:\n");
+        for (int i = 0; i &lt; 5; i++) {
+            printf("Value at index %d: %d\n", i, (*ptrToArr)[i]);
+        }
+    }
+        </code></pre>
+      </div>
+      <div class="output55" id="output55">
+        OUTPUT:- <br>
+        Accessing elements using the array of pointers: <br>
+        Value at index 0: 1 <br>
+        Value at index 1: 2 <br>
+        Value at index 2: 3 <br>
+        Value at index 3: 4 <br>
+        Value at index 4: 5 <br>
+        
+        Accessing elements using the pointer to the array: <br>
+        Value at index 0: 1 <br>
+        Value at index 1: 2 <br>
+        Value at index 2: 3 <br>
+        Value at index 3: 4 <br>
+        Value at index 4: 5
+      </div><br>
+      </div>
+    </div>
+    <footer>
+      <div>© 2023 The Engineering Junction. All Rights Reserved.</div>
+      <div>
+        Suggest us:
+        <a
+          style="color: rgb(230, 230, 230)"
+          href="mailto:079bce052@ioepc.edu.np"
+          >079bce052@ioepc.edu.np</a
+        >
+      </div>
+      <div>Designed & Developed By: Krishal Basnet</div>
+    </footer>
+  </body>
+</html> 

@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9200097242455912"
+     crossorigin="anonymous"></script>
+    <title>The Engineering Junction</title>
+    <link
+      rel="shortcut icon"
+      href="../logo_transparent-cutout.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <div class="topbar">
+      <div class="bitem1 baritem">
+        <a class="topbara topbaraimg" href="../index.html"
+          ><img class="topbarlogo" src="../Image/Topbarlogo.png" alt=""
+        /></a>
+      </div>
+      <div class="bitem2 baritem">
+        <a class="topbara" href="../index.html">Home</a>
+      </div>
+      <div class="bitem3 baritem">
+        <a class="topbara" href="../solution.html">Solutions</a>
+      </div>
+      <div class="bitem4 baritem">
+        <a class="topbara" href="../pastpaper.html">Past Paper</a>
+      </div>
+      <div class="bitem5 baritem">
+        <a class="topbara" href="../notes.html">Notes</a>
+      </div>
+      <div class="bitem6 baritem">
+        <a class="topbara" href="../questions.html">Questions</a>
+      </div>
+      <div class="bitem7 baritem">
+        <a class="topbara" href="../contact.html">Contact</a>
+      </div>
+    </div>
+    <div class="mainbody">
+      <h1 class="mainhead">Lab Sheet No.5 - To be familiar with LOOPS</h1>
+      <hr />
+      <a href="../LabSheet.html" class="back_button"
+        ><img class="backimg" src="../Thumbnails/back.png" alt=""
+      /></a>
+    <div class="code55">
+      <div id="question55" class="question55">
+        1. WAP to read 10 numbers from user and find their sum and average.
+      </div>
+      <div id="answer55" class="code-container">
+        <pre class="code">
+        <code>
+    #include&lt;stdio.h>
+    void main(){
+        int i,a,sum=0;
+        float ave;
+        printf("Enter 10 numbers: ");
+        for(i=0;i&lt;10;i++){
+            scanf("%d",&a);
+            sum = sum + a;
+        }
+        ave = sum/10.00;
+        printf("The sum is %d and average is %f",sum,ave);
+    }
+        </code>
+        </pre>
+      </div>
+      <div id="output55" class="output55">
+        OUTPUT:- <br />
+        Enter 10 numbers: 1 2 3 4 5 6 7 8 9 0 <br />
+        The sum is 45 and average is 4.500000
+      </div>
+
+      <br />
+
+      <div id="question55" class="question55">
+        2. WAP to display the multiplication table of integer given by the user.
+      </div>
+      <div id="answer55" class="code-container">
+        <pre class="code">
+            <code>
+    #include&lt;stdio.h>
+    void main(){
+        int n,i;
+        printf("Enter the number: ");
+        scanf("%d",&n);
+        for(i=1;i&lt;=10;i++){
+            printf("%d * %d = %d\n",n,i,n*i);
+        }
+    }
+            </code>
+            </pre>
+      </div>
+      <div id="output55" class="output55">
+        OUTPUT:- <br />
+        Enter the number: 9 <br />
+        9 * 1 = 9<br />
+        9 * 2 = 18<br />
+        9 * 3 = 27<br />
+        9 * 4 = 36<br />
+        9 * 5 = 45<br />
+        9 * 6 = 54<br />
+        9 * 7 = 63<br />
+        9 * 8 = 72<br />
+        9 * 9 = 81 <br />
+        9 * 10 = 90
+      </div>
+
+      <br />
+
+      <div id="question55" class="question55">
+        3. WAP to input two integer values from the user and print the even
+        number between the range of integers. Also count the even number and
+        display the count as well [Hint: if user enters 10 and 100. The program
+        should print and count even numbers between 10 and 100].
+      </div>
+      <div id="answer55" class="code-container">
+        <pre class="code">
+              <code>
+    #include &lt;stdio.h>
+    void main(){
+      int a,b,count=0,i;
+      printf("Enter two numbers: ");
+      scanf("%d%d", &a, &b);
+      if (a &lt; b){
+        for (i = a; i &lt;= b; i++){
+          if(i%2==0){
+            printf("%d ",i);
+            count = count + 1;
+          }
+        }
+      }
+      else{
+          printf("Enter lower number first.");
+      }
+      printf("Total even numbers: %d",count);
+    }
+              </code>
+              </pre>
+      </div>
+      <div id="output55" class="output55">
+        OUTPUT:- <br />
+        Enter two numbers: 2 10 <br />
+        2 4 6 8 10 Total even numbers: 5
+      </div>
+      <br />
+
+      <div class="question55" id="question55">
+        4. WAP to display sum of series: 1 + 1/2 + 1/3 + 1/4 + 1/5 ... 1/n
+      </div>
+      <div class="code-container" id="answer55">
+        <pre class="code"><code>
+    #include &lt;stdio.h>
+    void main(){
+      int n, i;
+      float sum=0.00;
+      printf("Enter the value of n: ");
+      scanf("%d",&n);
+      for(i=1;i&lt;=n;i++){
+          sum = sum + 1.00/i;
+      }
+      printf("The sum is %f",sum);
+    }
+                    
+                </code></pre>
+      </div>
+      <div class="output55" id="output55">
+        OUTPUT:- <br />
+        Enter the value of n: 10 <br />
+        The sum is 2.928968
+      </div>
+      <br />
+      <div class="question55" id="question55">
+        5. WAP to display sum of series: 1 + 1/2! + 1/3! + 1/4! + 1/5! ... 1/n!
+      </div>
+      <div id="answer55" class="code-container">
+        <pre class="code"><code>
+    #include&lt;stdio.h>
+    void main(){
+      int n, fact=1, i,j;
+      float sum;
+      printf("Enter the value of n: ");
+      scanf("%d",&n);
+      sum = 0.00;
+      for(i=1;i&lt;=n;i++){
+        fact = 1.00;
+        for(j=i;j>0;j--){
+          fact = fact * j;
+        }
+        sum = sum+ (1 / (float)fact);
+      }
+      printf("The sum is: %f",sum);
+    }
+        </code></pre>
+      </div>
+      <div class="output55" id="output55">
+        OUTPUT:- <br>
+        Enter the value of n: 5 <br>
+The sum is: 1.716667
+      </div>
+      <br />
+      <div class="question55" id="question55">
+        6. WAP to display sum of series: x + x<sup>2</sup> /2! + x<sup>3</sup>
+        /3! + x<sup>4</sup> /4! + x<sup>5</sup>
+        /5! ... x
+        <sup>n</sup>
+        /n!
+      </div>
+      <div id="answer55" class="code-container">
+        <pre class="code"><code>
+    #include &lt;stdio.h>
+    #include &lt;math.h>
+    void main(){
+      int n, fact = 1, i, j,x;
+      float sum;
+      printf("Enter the value of n: ");
+      scanf("%d", &n);
+      printf("Enter the value of x: ");
+      scanf("%d", &x);
+      sum = 0.00;
+      for (i = 1; i &lt;= n; i++){
+        fact = 1.00;
+        for (j = i; j > 0; j--){
+          fact = fact * j;
+        }
+        sum = sum + (pow(x,i) / (float)fact);
+      }
+      printf("The sum is: %f", sum);
+    }
+        </code></pre>
+      </div>
+      <div class="output55" id="output55">
+        OUTPUT:- <br>
+        Enter the value of n: 5  <br>
+Enter the value of x: 2 <br>
+The sum is: 6.266667 <br>
+      </div>
+      <br />
+      <div class="question55" id="question55">
+        7. WAP to find the value cos(x) without using cos(x) library function.
+      </div>
+      <div id="answer55" class="code-container">
+        <pre class="code"><code>
+    #include &lt;stdio.h>
+    #include &lt;math.h>
+    void main(){
+      int n=30, fact = 1, i, j,sign=1;
+      float sum,x;
+      printf("Enter the degree: ");
+      scanf("%f", &x);
+      x=x*3.1415/180;
+      sum = 0.00;
+      for (i = 0; i &lt;= n; i+=2){
+        fact = 1.00;
+        for (j = i; j > 0; j--){
+          fact = fact * j;
+        }
+        sum = sum + sign*(pow(x,i) / (float)fact);
+        sign = sign * -1;
+      }
+      printf("The value is: %f", sum);
+    }
+        </code></pre>
+      </div>
+      <div class="output55" id="output55">
+        OUTPUT:- <br>
+        Enter the degree: 47 <br>
+The value is: 0.682016 <br>
+      </div>
+      <br />
+      <br />
+      <div class="question55" id="question55">
+        8. WAP to display weather a number is Armstrong or not.
+      </div>
+      <div id="answer55" class="code-container">
+        <pre class="code"><code>
+    #include&lt;stdio.h>
+    #include&lt;math.h>
+    void main(){
+      int a,b=0,c,n;
+      printf("Enter a number: ");
+      scanf("%d",&a);
+      c=a;
+      for(n=0;a!=0;n++){
+        a/=10;
+      }
+      a=c;
+      for(a=a;a!=0;a/=10){
+        b = b + pow(a%10,n) ;
+      }
+      if(c==b){
+        printf("It is a armstrong number.");
+      }
+      else{
+        printf("It is not an armstrong number.");
+      }
+    }
+        </code></pre>
+      </div>
+      <div class="output55" id="output55">
+        OUTPUT:- <br />
+        Enter a number: 153 <br />
+        It is a armstrong number.
+      </div>
+      <br />
+      <div class="question55" id="question55">
+        9. WAP to display the first n terms of Fibonacci series.
+      </div>
+      <div id="answer55" class="code-container">
+        <pre class="code"><code>
+    #include&lt;stdio.h>
+    void main(){
+      int n,t1 = 0, t2=1,nextTerm,i;
+      printf("Enter the number of terms: ");
+      scanf("%d",&n);
+      printf("Fibonacci Series: %d, %d, ",t1, t2);
+      nextTerm = t1+t2;
+      for(i=3;i&lt;=n;i++){
+        printf("%d, ",nextTerm);
+        t1=t2;
+        t2=nextTerm;
+        nextTerm=t1+t2;
+      }
+    }
+        </code></pre>
+      </div>
+      <div class="output55" id="output55">
+        OUTPUT:- <br>
+        Enter the number of terms: 10 <br>
+Fibonacci Series: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34,
+      </div>
+      <br />
+      <div class="question55" id="question55">
+        10. WAP to display the number in reverse order.
+      </div>
+      <div id="answer55" class="code-container">
+        <pre class="code"><code>
+    #include&lt;stdio.h>
+    void main(){
+      printf("Enter a multi digit number: ");
+      scanf("%d",&num);
+      original = num;
+      reverse = 0;
+      while(num!=0){
+        reverse = reverse * 10 + (num%10);
+        num/10 = 0;
+      }
+      printf("The reverse of %d id %d.",original,reverse);
+    }
+        </code></pre>
+      </div>
+      <div class="output55" id="output55">
+        OUTPUT:- <br />
+        Enter a multi digit number: 12345 <br />
+        The reverse of 12345 is 54321.
+      </div>
+      <br />
+      <div class="question55" id="question55">
+        11. WAP to check whether a number is a palindrome or not.
+      </div>
+      <div id="answer55" class="code-container">
+        <pre class="code"><code>
+    #include&lt;stdio.h>
+    void main(){
+      int num, original, reverse;
+      printf("Enter a number: ");
+      scanf("%d",&num);
+      original = num;
+      reverse = 0;
+      while(num!-0){
+        reverse=reverse*10+(num%10);
+        num = num/10;
+      }
+      if(original == reverse){
+        printf("Palindrome");
+      }
+      else{
+        printf("Not a Palindrome");
+      }
+    }
+        </code></pre>
+      </div>
+      <div class="output55" id="output55">
+        OUTPUT:- <br />
+        Enter a number: 12321 <br />
+        Palindrome
+      </div> <br>
+      <div class="question55" id="question55">12. WAP to find HCF and LCM of two numbers.</div>
+      <div id="answer55" class="code-container">
+        <pre class="code"><code>
+    #include&lt;stdio.h>
+    void main(){
+      int i,num1,num2;
+      printf("Enter 2 numbers: ");
+      scanf("%d%d",&num1,&num2);
+      if(num2>num1){
+        for(i=num1;i>0;i--){
+          if(num1%i==0 && num2%i ==0){
+            printf("The HCF is %d\n",i);
+            break;
+          }
+        }
+        for(i=num2;;i+=num2){
+          if(i%num1==0 && i%num2 ==0){
+            printf("The LCM is %d",i);
+          break;
+          }
+        }
+      }
+      else{
+        printf("Enter the lower number first.");
+      }
+    }
+        </code></pre>
+      </div>
+      <div class="output55" id="output55">
+        OUTPUT:- <br>
+        Enter 2 numbers: 10 12 <br>
+The HCF is 2 <br>
+The LCM is 60
+      </div>
+      <br />
+      <div class="question55" id="question55">13(a). WAP to print the following patterns: <br>
+        1 <br> 1 2 <br>
+         1 2 3 <br>
+         1 2 3 4 <br>
+         1 2 3 4 5 
+      </div>
+      <div id="answer55" class="code-container">
+        <pre class="code"><code>
+    #include&lt;stdio.h>
+    void main(){
+      int i,j;
+      for(i=1;i&lt;6;i++){
+        for(j=1;j&lt;=i;j++){
+          printf("%d ",j);
+          }
+        printf("\n");
+      }
+    }
+        </code></pre>
+      </div>
+      <div class="output55" id="output55">
+        OUTPUT:- <br>
+        1 <br> 1 2 <br>
+         1 2 3 <br>
+         1 2 3 4 <br>
+         1 2 3 4 5 
+      </div>
+      <br />
+      
+      <div class="question55" id="question55">13(b). WAP to print the following patterns: <br>
+        1 2 3 4 5 <br> 1 2 3 4<br>  
+         1 2 3 <br>
+         1 2  <br>
+         1  
+      </div>
+      <div id="answer55" class="code-container">
+        <pre class="code"><code>
+    #include&lt;stdio.h>
+    void main(){
+      int i,j;
+      for(i=5;i>0;i--){
+        for(j=1;j&lt;=i;j++){
+          printf("%d ",j);
+          }
+        printf("\n");
+      }
+    }
+        </code></pre>
+      </div>
+      <div class="output55" id="output55">
+        OUTPUT:-   <br>
+        1 2 3 4 5    <br>
+1 2 3 4      <br>
+1 2 3        <br>
+1 2          <br>
+1       <br>
+      </div>
+      <br />
+
+      <div class="question55" id="question55">13(c). WAP to print the following patterns: <br>
+        <pre>
+              *
+             ***
+            *****
+           *******
+          *********
+        </pre>
+      </div>
+      <div id="answer55" class="code-container">
+        <pre class="code"><code>
+    #include&lt;stdio.h>
+    void main(){
+      int i,j,r=5;
+      for(i=1;i&lt;=r;i++){
+        printf("\n");
+        for (j = 1; j &lt;= r - i; j++) {
+        printf(" ");
+        }
+        for (j = 1; j &lt;= 2 * i - 1; j++) {
+        printf("*");
+    }}}
+        </code></pre>
+      </div>
+      <div class="output55" id="output55">
+        OUTPUT:- <br>
+        <pre>
+          *
+         ***
+        *****
+       *******
+      *********
+    </pre>
+      </div>
+      <br />
+
+      <div class="question55" id="question55">13(d). WAP to print the following patterns: <br>
+        1 <br>
+        2 3 <br>
+        4 5 6 <br>
+        7 8 9 10 <br>
+        11 12 13 14 15
+      </div>
+      <div id="answer55" class="code-container">
+        <pre class="code"><code>
+    #include&lt;stdio.h>
+    void main(){
+      int i,j,k=1;
+      for(i=1;i&lt;6;i++){
+        for(j=1;j&lt;=i;j++){
+          printf("%d ",k);
+          k++;
+        }
+        printf("\n"); 
+      }
+    }
+        </code></pre>
+      </div>
+      <div class="output55" id="output55">
+        OUTPUT:- <br>
+        1 <br>
+        2 3 <br>
+        4 5 6 <br>
+        7 8 9 10 <br>
+        11 12 13 14 15
+      </div>
+      <br />
+
+      <div class="question55" id="question55">13(e). WAP to print the following patterns: <br>
+        <pre>
+          1 2 3 4 5 4 3 2 1
+            1 2 3 4 3 2 1
+              1 2 3 2 1
+                1 2 1
+                  1
+        </pre>
+      </div>
+      <div id="answer55" class="code-container">
+        <pre class="code"><code>
+    #include&lt;stdio.h>
+    void main(){
+      int i,j,r=5;
+      for(i=r;i>0;i--){
+        printf("\n");
+        for (j = 1; j &lt;= (r - i)*2; j++) {
+        printf(" ");
+        }
+        for (j = 1; j &lt;= i; j++) {
+        printf("%d ",j);
+        }
+        for (j = i-1; j >= 1; j--) {
+        printf("%d ",j);
+        }
+    }}
+        </code></pre>
+      </div>
+      <div class="output55" id="output55">
+        OUTPUT:- <br>
+        <pre>
+          1 2 3 4 5 4 3 2 1
+            1 2 3 4 3 2 1
+              1 2 3 2 1
+                1 2 1
+                  1
+        </pre>
+      </div>
+      <br />
+
+
+      <div class="question55" id="question55">13(f). WAP to print the following patterns: <br>
+        5 4 3 2 1 <br> 5 4 3 2<br>
+         5 4 3 <br>
+         5 4  <br>
+         5 
+      </div>
+      <div id="answer55" class="code-container">
+        <pre class="code"><code>
+    #include&lt;stdio.h>
+    void main(){
+      int i,j;
+      for(i=0;i&lt;5;i++){
+        for(j=5;j>i;j--){
+          printf("%d ",j);
+        }
+        printf("\n");
+      }
+    }
+        </code></pre>
+      </div>
+      <div class="output55" id="output55">
+        OUTPUT:- <br>
+        5 4 3 2 1 <br> 5 4 3 2<br>
+         5 4 3 <br>
+         5 4  <br>
+         5 
+      </div>
+      <br />
+    </div></div>
+    <footer>
+      <div>© 2023 The Engineering Junction. All Rights Reserved.</div>
+      <div>
+        Suggest us:
+        <a
+          style="color: rgb(230, 230, 230)"
+          href="mailto:079bce052@ioepc.edu.np"
+          >079bce052@ioepc.edu.np</a
+        >
+      </div>
+      <div>Designed & Developed By: Krishal Basnet</div>
+    </footer>
+  </body>
+</html>
