@@ -1,0 +1,12 @@
+img.loader{
+    width: min-content;
+    margin: auto;
+}
+div.loadingscreen{
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    background-color: #5381B3;
+    position: absolute;
+    z-index: 1000;
+}
