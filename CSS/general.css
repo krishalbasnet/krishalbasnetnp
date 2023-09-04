@@ -3,12 +3,10 @@
 }
 body {
   margin: 0;
+  margin-top: 10px;
   background-color: rgb(177, 177, 177);
 }
 a {
   text-decoration: none;
   color: black;
-}
-.zeromargin{
-  margin: 0;
 }
