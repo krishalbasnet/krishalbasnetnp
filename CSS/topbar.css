@@ -40,4 +40,7 @@ a.topbara:not(.topbaraimg):hover::before {
   .topbar{
     grid-template-columns: auto;
   }
+  .bitem1{
+    text-align: center;
+  }
 }
