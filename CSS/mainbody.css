@@ -31,4 +31,14 @@ hr {
     .questionchapter{
       padding: 0;
     }
+    .sidebar{
+      background-color: rgb(177, 177, 177);
+      border-top: 2px solid black;
+      border-radius: 0;
+    }
+    h1{
+      font-size: x-large;
+      position: relative;
+      left: 5px;
+    }
 }
