@@ -31,3 +31,13 @@
   width: 100%;
   text-align: center;
 }
+@media screen and (max-width: 720px){
+  .fourone{
+    grid-template-columns: auto;
+    gap: 10px;
+  }
+  .tworow{
+    grid-template-columns: auto;
+    padding: 10px;
+  }
+}
