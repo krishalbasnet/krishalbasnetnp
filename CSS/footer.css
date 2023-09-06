@@ -6,7 +6,7 @@ footer {
 }
 .fourfooter {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 2fr 1fr 1fr;
   text-align: center;
 }
 .footercopyrightcont {
@@ -19,6 +19,25 @@ footer {
   border-top: 2px rgb(219, 11, 11) solid;
   background-color: #342e37;
   margin-bottom: 5px;
+}
+.TEJcopysub > div {
+  text-align: left;
+}
+.TEJcopysub {
+  display: grid;
+  grid-template-columns: 10fr 1fr 10fr;
+  padding-left: 5px;
+  gap: 5px;
+  padding-left: 10px;
+  color: black;
+}
+.logofooter{
+  grid-row: 1/4;
+  padding: 10px;
+}
+.TEJcopysub > img {
+  width: 75%;
+  margin: auto;
 }
 @media screen and (max-width: 720px) {
   .footercopyrightcont {

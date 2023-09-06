@@ -22,6 +22,8 @@ hr {
 .sidebar {
   background-color: rgba(121, 121, 121, 0.76);
   border-radius: 20px;
+  position: sticky;
+  top: 10px;
 }
 
 @media screen and (max-width: 720px) {
