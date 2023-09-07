@@ -7,13 +7,13 @@ document.getElementById('footer').innerHTML = `
             THE ENGINEERING JUNCTION
           </h3>
           <div class="TEJcopysub">
-            <div class="logofooter"><img src="Image/Topbarlogo.png" alt=""></div>
-            <img src="Image/email.png" alt="" />
+            <div class="logofooter"><img src="https://krishalbasnet.com.np/Image/Topbarlogo.png" alt=""></div>
+            <img src="https://krishalbasnet.com.np/Image/email.png" alt="" />
             <div>
               Itahari, Sunsari <br />
               Koshi Pradesh
             </div>
-            <img src="Image/add.png" alt="" />
+            <img src="https://krishalbasnet.com.np/Image/add.png" alt="" />
             <div>079bce052@ioepc.edu.np</div>
           </div>
         </div>
