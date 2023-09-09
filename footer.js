@@ -13,6 +13,9 @@ document.getElementById("footer").innerHTML = `
                 <a target="_blank" href="https://www.facebook.com/profile.php?id=61550198021764">
                   <img class="logodowner" src="Image/fb.png">
                 </a>
+                <a target="_blank" href="https://www.youtube.com/channel/UCXr3XO7L2QmbErx35mpOPzg">
+                  <img class="logodowner" src="Image/yt.png">
+                </a>
               </div>
             </div>
             <img src="https://krishalbasnet.com.np/Image/email.png" alt="" />
