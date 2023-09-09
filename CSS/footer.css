@@ -1,5 +1,5 @@
 footer {
-  background-color: rgb(117, 117, 117);
+  background-color: #787F88;
   color: rgb(230, 230, 230);
   text-align: center;
   font-family: "Yatra One", cursive;
@@ -17,7 +17,7 @@ footer {
 }
 .footertopheader556 {
   border-top: 2px rgb(219, 11, 11) solid;
-  background-color: #342e37;
+  background-color: #3E4D5A;
   margin-bottom: 5px;
 }
 .TEJcopysub > div {
@@ -59,7 +59,6 @@ footer {
   }
   .footertopheader556 {
     border-top: 0px;
-    background-color: rgb(88, 88, 88);
     margin-bottom: 5px;
   }
 }
