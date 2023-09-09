@@ -11,7 +11,8 @@
   display: grid;
   grid-template-columns: 2fr 3fr;
   padding: 10px;
-  background-color: rgb(133, 133, 133);
+  background-color: #535C67 ;
+  color: #CDCFD2;
   border-radius: 15px;
   height: fit-content;
 }
