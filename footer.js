@@ -1,5 +1,5 @@
 // JavaScript code to display the provided HTML in the "footer" div
-document.getElementById('footer').innerHTML = `
+document.getElementById("footer").innerHTML = `
 <footer>
 <div class="fourfooter">
         <div>
@@ -7,11 +7,18 @@ document.getElementById('footer').innerHTML = `
             THE ENGINEERING JUNCTION
           </h3>
           <div class="TEJcopysub">
-            <div class="logofooter"><img src="https://krishalbasnet.com.np/Image/Topbarlogo.png" alt=""></div>
+            <div class="logofooter">
+              <img src="https://krishalbasnet.com.np/Image/Topbarlogo.png" alt="">
+              <div class="socialmediaicon">
+                <a target="_blank" href="https://www.facebook.com/profile.php?id=61550198021764">
+                  <img class="logodowner" src="Image/fb.png">
+                </a>
+              </div>
+            </div>
             <img src="https://krishalbasnet.com.np/Image/email.png" alt="" />
             <div>
               Itahari, Sunsari <br />
-              Koshi Pradesh
+              Koshi Province
             </div>
             <img src="https://krishalbasnet.com.np/Image/add.png" alt="" />
             <div>079bce052@ioepc.edu.np</div>
@@ -28,7 +35,9 @@ document.getElementById('footer').innerHTML = `
             >IOE Entrance</a
           >
           <br />
-          <a target="_blank" href="https://pcampus.edu.np/">Pulchowk Campus</a>
+          <a target="_blank" href="https://pcampus.edu.np/">
+            Pulchowk Campus
+          </a>
           <br />
           <a target="_blank" href="https://www.tcioe.edu.np/"
             >Thapathali Campus</a
