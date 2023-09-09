@@ -23,6 +23,12 @@ footer {
 .TEJcopysub > div {
   text-align: left;
 }
+.socialmediaicon {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 5px;
+  margin-top: 10px;
+}
 .TEJcopysub {
   display: grid;
   grid-template-columns: 10fr 2fr 10fr;
@@ -31,7 +37,7 @@ footer {
   padding-left: 10px;
   color: black;
 }
-.logofooter{
+.logofooter {
   grid-row: 1/4;
   padding: 10px;
 }
