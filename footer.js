@@ -11,10 +11,10 @@ document.getElementById("footer").innerHTML = `
               <img src="https://krishalbasnet.com.np/Image/Topbarlogo.png" alt="">
               <div class="socialmediaicon">
                 <a target="_blank" href="https://www.facebook.com/profile.php?id=61550198021764">
-                  <img class="logodowner" src="Image/fbno.png">
+                  <img class="logodowner" src="https://krishalbasnet.com.np/Image/fbno.png">
                 </a>
                 <a target="_blank" href="https://www.youtube.com/channel/UCXr3XO7L2QmbErx35mpOPzg">
-                  <img class="logodowner" src="Image/ytno.png">
+                  <img class="logodowner" src="https://krishalbasnet.com.np/Image/ytno.png">
                 </a>
               </div>
             </div>
