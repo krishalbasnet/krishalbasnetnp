@@ -3,6 +3,6 @@ function showPreloader() {
   load.style.display = "block";
   setTimeout(function () {
     load.style.display = "none";
-  }, 2000);
+  }, 1000);
 }
 window.addEventListener("load", showPreloader);
