@@ -30,7 +30,9 @@ document.getElementById("footer").innerHTML = `
         <div>
           <h3 class="footertopheader556 zeromargin">SHORTCUT</h3>
           <a href="https://krishalbasnet.com.np/syllabus.html">IOE Syllabus</a> <br>
-          <a href="https://krishalbasnet.com.np/LabSheet.html">C Lab Sheet</a>
+          <a href="https://krishalbasnet.com.np/LabSheet.html">C Lab Sheet</a><br>
+          <a href="https://krishalbasnet.com.np/futureplans.html">Future Plans of TEJ</a><br>
+          <!--<a href="https://krishalbasnet.com.np/TEJ.html">TEJ calender</a>-->
         </div>
         <div>
           <h3 class="footertopheader556 zeromargin">IMPORTANT LINK</h3>
