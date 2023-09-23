@@ -2,7 +2,7 @@
 document.getElementById('topbar').innerHTML = `
 <div class="topbar">
       <div class="bitem1 baritem">
-        <a class="topbara topbaraimg" href="index.html"
+        <a class="topbara topbaraimg" href="https://krishalbasnet.com.np/index.html"
           ><img class="topbarlogo" src="https://krishalbasnet.com.np/Image/Topbarlogo.png" alt=""
         /></a>
       </div>
@@ -16,13 +16,21 @@ document.getElementById('topbar').innerHTML = `
         <a class="topbara" href="https://krishalbasnet.com.np/pastpaper.html">Past Paper</a>
       </div>
       <div class="bitem5 baritem">
+        <a class="topbara" href="https://krishalbasnet.com.np/classes.html">Classes</a>
+      </div>
+      <div class="bitem8 baritem">
         <a class="topbara" href="https://krishalbasnet.com.np/notes.html">Notes</a>
       </div>
       <div class="bitem6 baritem">
         <a class="topbara" href="https://krishalbasnet.com.np/questions.html">Questions</a>
       </div>
       <div class="bitem7 baritem">
-        <a class="topbara" href="https://krishalbasnet.com.np/contact.html">Contact</a>
+        <a class="topbara" href="https://krishalbasnet.com.np/support.html">Support</a>
       </div>
     </div>
+    <center>
+      <h2 style="color:red">
+        PDF of past paper are not being accessed from Mobile. Conversion process has been started.
+      </h2>
+    </center>
 `;
