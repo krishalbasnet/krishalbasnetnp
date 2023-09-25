@@ -1,5 +1,6 @@
 .fourone {
   display: grid;
+  gap: 20px;
   grid-template-columns: 12fr 4fr;
 }
 .tworow {
