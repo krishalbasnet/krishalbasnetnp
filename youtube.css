@@ -4,3 +4,17 @@ body{
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+.youtubecard{
+  background-color: rgba(0, 0, 0, 0.8);
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  padding: 10px;
+  border-radius: 20px;
+}
+.textcardtubeimg{
+  border-radius: 10px;
+}
+.textcardtube{
+  
+}
