@@ -1,0 +1,29 @@
+.library {
+  background-color: rgba(44, 44, 44, 0.8);
+  border-radius: 10px;
+  padding: 10px 15px;
+  width: 80%;
+  text-align: center;
+  margin: auto;
+}
+.librarybookscontainer {
+  text-align: center;
+  width: 90%;
+  margin: auto;
+  display: grid;
+  gap: 5%;
+  grid-template-columns: repeat(6, 1fr);
+}
+.booklinklibrary,
+.booklibrary {
+  transition: 0.6s;
+  border-radius: 10px;
+}
+.booklinklibrary:hover {
+  translate: 0 -15px;
+  transition: 0.6s;
+}
+.booklibrary:hover {
+  transition: 0.6s;
+  box-shadow: rgb(0, 0, 0) 0 10px 20px 0;
+}
