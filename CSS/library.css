@@ -27,3 +27,9 @@
   transition: 0.6s;
   box-shadow: rgb(0, 0, 0) 0 10px 20px 0;
 }
+.textcardtubeimg{
+  aspect-ratio: 3/2 ;
+}
+.booklinklibrary{
+  position: relative;
+}
