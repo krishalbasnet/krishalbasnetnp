@@ -4,8 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9200097242455912"
-     crossorigin="anonymous"></script>
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9200097242455912"
+      crossorigin="anonymous"
+    ></script>
     <title>The Engineering Junction</title>
     <link
       rel="shortcut icon"
@@ -15,43 +18,26 @@
     <link rel="stylesheet" href="../style.css" />
   </head>
   <body>
-    <div class="topbar">
-      <div class="bitem1 baritem">
-        <a class="topbara topbaraimg" href="../index.html"
-          ><img class="topbarlogo" src="../Image/Topbarlogo.png" alt=""
-        /></a>
-      </div>
-      <div class="bitem2 baritem">
-        <a class="topbara" href="../index.html">Home</a>
-      </div>
-      <div class="bitem3 baritem">
-        <a class="topbara" href="../solution.html">Solutions</a>
-      </div>
-      <div class="bitem4 baritem">
-        <a class="topbara" href="../pastpaper.html">Past Paper</a>
-      </div>
-      <div class="bitem5 baritem">
-        <a class="topbara" href="../notes.html">Notes</a>
-      </div>
-      <div class="bitem6 baritem">
-        <a class="topbara" href="../questions.html">Questions</a>
-      </div>
-      <div class="bitem7 baritem">
-        <a class="topbara" href="../contact.html">Contact</a>
-      </div>
-    </div>
+    <div id="topbar"></div>
     <div class="mainbody">
       <h1 class="mainhead">
         LAB SHEET NO.4 - To be familiar with Unformatted and Formatted I/0
       </h1>
       <hr />
+      <div class="back">
+        <a class="back" href="/LabSheet.html"
+          ><img class="back" src="/Image/back.png" alt=""
+        /></a>
+      </div>
       <a href="../LabSheet.html" class="back_button"
         ><img class="backimg" src="../Thumbnails/back.png" alt=""
       /></a>
-    <div class="code55">
-      <div class="question55" id="question55">1. WAP to get your name, address and display using unformatted I/O.</div>
-      <div id="answer55" class="code-container">
-        <pre class="code"><code>
+      <div class="code55">
+        <div class="question55" id="question55">
+          1. WAP to get your name, address and display using unformatted I/O.
+        </div>
+        <div id="answer55" class="code-container">
+          <pre class="code"><code>
     #include&lt;stdio.h>
     void main(){
       char name[20],add[20];
@@ -63,20 +49,22 @@
       puts(add);
     }
         </code></pre>
-      </div>
-      <div class="output55" id="output55">
-        OUTPUT:- <br>
-        Enter your name and address: John; <br>
-        Itahari <br>
-        Name and address are: John <br>
-        Itahari
-      </div>
-      <br>
-      <div class="question55" id="question55">2. WAP to get a character form the user using unformatted I/O and display the ASCII
-        value of the entered character.</div>
-      <div id="answer55" class="code-container">
-        <pre class="code"><code>
-    #include <stdio.h>
+        </div>
+        <div class="output55" id="output55">
+          OUTPUT:- <br />
+          Enter your name and address: John; <br />
+          Itahari <br />
+          Name and address are: John <br />
+          Itahari
+        </div>
+        <br />
+        <div class="question55" id="question55">
+          2. WAP to get a character form the user using unformatted I/O and
+          display the ASCII value of the entered character.
+        </div>
+        <div id="answer55" class="code-container">
+          <pre class="code"><code>
+    #include &lt;stdio.h>
     void main(){
       char c;
       printf("Enter the character: ");
@@ -84,15 +72,16 @@
       printf("The ASCII value of %c is %d.",c,c);
     }
         </code></pre>
-      </div>
-      <div class="output55" id="output55">
-        OUTPUT:- <br>
-        Enter the character: a <br>
-The ASCII value of a is 97.
-      </div>
-      <br>
-      <div class="question55" id="question55">3. WAP to display the output as [take a=15, b=20.43, c=35]: 
-        <pre>
+        </div>
+        <div class="output55" id="output55">
+          OUTPUT:- <br />
+          Enter the character: a <br />
+          The ASCII value of a is 97.
+        </div>
+        <br />
+        <div class="question55" id="question55">
+          3. WAP to display the output as [take a=15, b=20.43, c=35]:
+          <pre>
         <code>
           A = 15|15    |    15|15    |    15|15    |    15|15    |    15|15    | <br>
           B = 20.43    | 20.43|20.43 | 20.43|20.43 | 20.43|20.43 | 20.43|20.43 | <br>
@@ -100,8 +89,8 @@ The ASCII value of a is 97.
         </code>
         </pre>
         </div>
-      <div id="answer55" class="code-container">
-        <pre class="code"><code>
+        <div id="answer55" class="code-container">
+          <pre class="code"><code>
     #include&lt;stdio.h> 
     void main(){
       int a=15, c=35;
@@ -111,31 +100,33 @@ The ASCII value of a is 97.
       printf("C=%15d|%-15d|%15d|%-15d|%15d|%-15d|%15d|%-15d|%15d|%-15d|",c,c,c,c,c,c,c,c,c,c);
     }
         </code></pre>
-      </div>
-      <div class="output55" id="output55">
-        <pre>
+        </div>
+        <div class="output55" id="output55">
+          <pre>
         <code>
           A = 15|15    |    15|15    |    15|15    |    15|15    |    15|15    | <br>
           B = 20.43    | 20.43|20.43 | 20.43|20.43 | 20.43|20.43 | 20.43|20.43 | <br>
           C = 35|35    |    35|35    |    35|35    |    35|35    |    35|35    |
         </code>
         </pre>
-      </div>
-      <br>
-      <div class="question55" id="question55">4. WAP to display the output as below using formatted I/O [take char a[]=”I Love
-        Nepal”]. <br> 
-        I <br>
-        I L <br>
-        I LO <br>
-        I LOV <br>
-        I LOVE <br>
-        I LOVE N <br>
-        I LOVE NE <br>
-        I LOVE NEP <br>
-        I LOVE NEPA <br>
-        I LOVE NEPAL</div>
-      <div id="answer55" class="code-container">
-        <pre class="code"><code>
+        </div>
+        <br />
+        <div class="question55" id="question55">
+          4. WAP to display the output as below using formatted I/O [take char
+          a[]=”I Love Nepal”]. <br />
+          I <br />
+          I L <br />
+          I LO <br />
+          I LOV <br />
+          I LOVE <br />
+          I LOVE N <br />
+          I LOVE NE <br />
+          I LOVE NEP <br />
+          I LOVE NEPA <br />
+          I LOVE NEPAL
+        </div>
+        <div id="answer55" class="code-container">
+          <pre class="code"><code>
     #include&lt;stdio.h>
     void main(){
       char a[]="I LOVE NEPAL";
@@ -151,33 +142,25 @@ The ASCII value of a is 97.
       printf("%.12s\n",a);
     }
         </code></pre>
+        </div>
+        <div class="output55" id="output55">
+          OUTPUT:- <br />
+          I <br />
+          I L <br />
+          I LO <br />
+          I LOV <br />
+          I LOVE <br />
+          I LOVE N <br />
+          I LOVE NE <br />
+          I LOVE NEP <br />
+          I LOVE NEPA <br />
+          I LOVE NEPAL
+        </div>
+        <br />
       </div>
-      <div class="output55" id="output55">
-        OUTPUT:- <br>
-        I <br>
-        I L <br>
-        I LO <br>
-        I LOV <br>
-        I LOVE <br>
-        I LOVE N <br>
-        I LOVE NE <br>
-        I LOVE NEP <br>
-        I LOVE NEPA <br>
-        I LOVE NEPAL
-      </div>
-      <br>
-    </div></div>
-    <footer>
-      <div>© 2023 The Engineering Junction. All Rights Reserved.</div>
-      <div>
-        Suggest us:
-        <a
-          style="color: rgb(230, 230, 230)"
-          href="mailto:079bce052@ioepc.edu.np"
-          >079bce052@ioepc.edu.np</a
-        >
-      </div>
-      <div>Designed & Developed By: Krishal Basnet</div>
-    </footer>
+    </div>
+    <div id="footer"></div>
   </body>
+  <script src="/topbar.js"></script>
+  <script src="/footer.js"></script>
 </html>
