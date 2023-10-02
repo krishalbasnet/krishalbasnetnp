@@ -4,8 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9200097242455912"
-     crossorigin="anonymous"></script>
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9200097242455912"
+      crossorigin="anonymous"
+    ></script>
     <title>The Engineering Junction</title>
     <link
       rel="shortcut icon"
@@ -15,43 +18,19 @@
     <link rel="stylesheet" href="../style.css" />
   </head>
   <body>
-    <div class="topbar">
-      <div class="bitem1 baritem">
-        <a class="topbara topbaraimg" href="../index.html"
-          ><img class="topbarlogo" src="../Image/Topbarlogo.png" alt=""
-        /></a>
-      </div>
-      <div class="bitem2 baritem">
-        <a class="topbara" href="../index.html">Home</a>
-      </div>
-      <div class="bitem3 baritem">
-        <a class="topbara" href="../solution.html">Solutions</a>
-      </div>
-      <div class="bitem4 baritem">
-        <a class="topbara" href="../pastpaper.html">Past Paper</a>
-      </div>
-      <div class="bitem5 baritem">
-        <a class="topbara" href="../notes.html">Notes</a>
-      </div>
-      <div class="bitem6 baritem">
-        <a class="topbara" href="../questions.html">Questions</a>
-      </div>
-      <div class="bitem7 baritem">
-        <a class="topbara" href="../contact.html">Contact</a>
-      </div>
-    </div>
+    <div id="topbar"></div>
     <div class="mainbody">
-      <h1 class="mainhead">
-        LAB SHEET NO.10 - To be familiar with string
-      </h1>
+      <h1 class="mainhead">LAB SHEET NO.10 - To be familiar with string</h1>
       <hr />
       <a href="../LabSheet.html" class="back_button"
         ><img class="backimg" src="../Thumbnails/back.png" alt=""
       /></a>
-    <div class="code55">
-      <div class="question55" id="question55">1. WAP to input and display a string. </div>
-      <div id="answer55" class="code-container">
-        <pre class="code"><code>
+      <div class="code55">
+        <div class="question55" id="question55">
+          1. WAP to input and display a string.
+        </div>
+        <div id="answer55" class="code-container">
+          <pre class="code"><code>
     #include&lt;stdio.h>
     void main(){
       char str[20];
@@ -60,16 +39,19 @@
       printf("The entered character is %s",str)
     }
         </code></pre>
-      </div>
-      <div class="output55" id="output55">
-        OUTPUT:- <br>
-        Enter a character: Alpha <br>
-        The entered character is Alpha
-      </div>
-<br>
-      <div class="question55" id="question55">2. WAP to illustrate the use of string functions (strlen, strcpy, strcat, strcmp, strrev).</div>
-      <div id="answer55" class="code-container">
-        <pre class="code"><code>
+        </div>
+        <div class="output55" id="output55">
+          OUTPUT:- <br />
+          Enter a character: Alpha <br />
+          The entered character is Alpha
+        </div>
+        <br />
+        <div class="question55" id="question55">
+          2. WAP to illustrate the use of string functions (strlen, strcpy,
+          strcat, strcmp, strrev).
+        </div>
+        <div id="answer55" class="code-container">
+          <pre class="code"><code>
     #include&lt;stdio.h>
     #include&lt;string.h>
     void main(){
@@ -87,19 +69,21 @@
       printf("After using strcat(): %s\n",strcat(str1,str2));
     }
         </code></pre>
-      </div>
-      <div class="output55" id="output55">
-      OUTPUT:- <br>
-      The length of str1 using strlen(): 5 <br>
-After using strcpy(): World      <br>
-The strings are different.       <br>
-Reverse of World id dlroW        <br>
-After using strcat(): HelloWorld
-      </div>
-<br>
-      <div class="question55" id="question55">3. WAP to count the length of string without using string function.</div>
-      <div id="answer55" class="code-container">
-        <pre class="code"><code>
+        </div>
+        <div class="output55" id="output55">
+          OUTPUT:- <br />
+          The length of str1 using strlen(): 5 <br />
+          After using strcpy(): World <br />
+          The strings are different. <br />
+          Reverse of World id dlroW <br />
+          After using strcat(): HelloWorld
+        </div>
+        <br />
+        <div class="question55" id="question55">
+          3. WAP to count the length of string without using string function.
+        </div>
+        <div id="answer55" class="code-container">
+          <pre class="code"><code>
     #include&lt;stdio.h>
     void main(){
       char str[20],i;
@@ -112,16 +96,18 @@ After using strcat(): HelloWorld
       printf("The length is %d",i);
     }
         </code></pre>
-      </div>
-      <div class="output55" id="output55">
-        OUTPUT:- <br>
-        Enter the string:Programmer  <br> 
-The length is 10
-      </div>
-<br>
-      <div class="question55" id="question55">4. WAP to copy the string without using string function.</div>
-      <div id="answer55" class="code-container">
-        <pre class="code"><code>
+        </div>
+        <div class="output55" id="output55">
+          OUTPUT:- <br />
+          Enter the string:Programmer <br />
+          The length is 10
+        </div>
+        <br />
+        <div class="question55" id="question55">
+          4. WAP to copy the string without using string function.
+        </div>
+        <div id="answer55" class="code-container">
+          <pre class="code"><code>
     #include&lt;stdio.h>
     void main(){
       char str[20],copy[20],i;
@@ -136,15 +122,18 @@ The length is 10
       printf("The copied is %s",copy);
     }
         </code></pre>
-      </div>
-      <div class="output55" id="output55">OUTPUT:- <br>
-        Enter the string: alpha <br>
-        The copied is alpha
-      </div>
-<br>
-      <div class="question55" id="question55">5. WAP to compare two string without using string function.</div>
-      <div id="answer55" class="code-container">
-        <pre class="code"><code>
+        </div>
+        <div class="output55" id="output55">
+          OUTPUT:- <br />
+          Enter the string: alpha <br />
+          The copied is alpha
+        </div>
+        <br />
+        <div class="question55" id="question55">
+          5. WAP to compare two string without using string function.
+        </div>
+        <div id="answer55" class="code-container">
+          <pre class="code"><code>
     #include&lt;stdio.h>
     int compareStrings(char* str1, char* str2) {
         int i = 0;
@@ -172,16 +161,19 @@ The length is 10
         }
     }
         </code></pre>
-      </div>
-      <div class="output55" id="output55">OUTPUT:- <br>
-        Enter the first string: man <br>
-Enter the second string: woman <br>
-The strings are not equal.
-      </div>
-<br>
-      <div class="question55" id="question55">6. WAP to concatenate two string using user define function.</div>
-      <div id="answer55" class="code-container">
-        <pre class="code"><code>
+        </div>
+        <div class="output55" id="output55">
+          OUTPUT:- <br />
+          Enter the first string: man <br />
+          Enter the second string: woman <br />
+          The strings are not equal.
+        </div>
+        <br />
+        <div class="question55" id="question55">
+          6. WAP to concatenate two string using user define function.
+        </div>
+        <div id="answer55" class="code-container">
+          <pre class="code"><code>
     #include&lt;stdio.h>
     void concatStrings(char* str1, char* str2, char* result) {
         int i = 0, j = 0;
@@ -208,22 +200,28 @@ The strings are not equal.
         printf("Concatenated string: %s\n", result);
     }
         </code></pre>
-      </div>
-      <div class="output55" id="output55">OUTPUT:- <br>
-        Enter the first string: hello <br>
-Enter the second string: world <br>
-Concatenated string: helloworld
-      </div>
-<br>
-      <div class="question55" id="question55">7. WAP to input array of strings and also display the strings in alphabetic order.</div>
-      <div id="answer55" class="code-container">
-        <pre class="code"><code></code></pre>
-      </div>
-      <div class="output55" id="output55">OUTPUT:- <br></div>
-<br>
-      <div class="question55" id="question55">8. WAP to check whether the string is palindrome or not.</div>
-      <div id="answer55" class="code-container">
-        <pre class="code"><code>
+        </div>
+        <div class="output55" id="output55">
+          OUTPUT:- <br />
+          Enter the first string: hello <br />
+          Enter the second string: world <br />
+          Concatenated string: helloworld
+        </div>
+        <br />
+        <div class="question55" id="question55">
+          7. WAP to input array of strings and also display the strings in
+          alphabetic order.
+        </div>
+        <div id="answer55" class="code-container">
+          <pre class="code"><code></code></pre>
+        </div>
+        <div class="output55" id="output55">OUTPUT:- <br /></div>
+        <br />
+        <div class="question55" id="question55">
+          8. WAP to check whether the string is palindrome or not.
+        </div>
+        <div id="answer55" class="code-container">
+          <pre class="code"><code>
     #include&lt;stdio.h>
     #include&lt;string.h>
     void main(){
@@ -240,26 +238,16 @@ Concatenated string: helloworld
       }
     }
         </code></pre>
+        </div>
+        <div class="output55" id="output55">
+          OUTPUT:- <br />
+          Enter the string: madam <br />
+          It is a palindrome.
+        </div>
       </div>
-      <div class="output55" id="output55">
-        OUTPUT:- <br>
-        Enter the string: madam <br>
-        It is a palindrome.
-      </div>
-
-</div>
     </div>
-    <footer>
-      <div>© 2023 The Engineering Junction. All Rights Reserved.</div>
-      <div>
-        Suggest us:
-        <a
-          style="color: rgb(230, 230, 230)"
-          href="mailto:079bce052@ioepc.edu.np"
-          >079bce052@ioepc.edu.np</a
-        >
-      </div>
-      <div>Designed & Developed By: Krishal Basnet</div>
-    </footer>
+    <div id="footer"></div>
   </body>
+  <script src="/topbar.js"></script>
+  <script src="/footer.js"></script>
 </html>
