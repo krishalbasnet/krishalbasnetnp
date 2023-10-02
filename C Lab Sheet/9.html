@@ -5,8 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Engineering Junction</title>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9200097242455912"
-     crossorigin="anonymous"></script>
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9200097242455912"
+      crossorigin="anonymous"
+    ></script>
     <link
       rel="shortcut icon"
       href="../logo_transparent-cutout.png"
@@ -15,45 +18,20 @@
     <link rel="stylesheet" href="../style.css" />
   </head>
   <body>
-    <div class="topbar">
-      <div class="bitem1 baritem">
-        <a class="topbara topbaraimg" href="../index.html"
-          ><img class="topbarlogo" src="../Image/Topbarlogo.png" alt=""
-        /></a>
-      </div>
-      <div class="bitem2 baritem">
-        <a class="topbara" href="../index.html">Home</a>
-      </div>
-      <div class="bitem3 baritem">
-        <a class="topbara" href="../solution.html">Solutions</a>
-      </div>
-      <div class="bitem4 baritem">
-        <a class="topbara" href="../pastpaper.html">Past Paper</a>
-      </div>
-      <div class="bitem5 baritem">
-        <a class="topbara" href="../notes.html">Notes</a>
-      </div>
-      <div class="bitem6 baritem">
-        <a class="topbara" href="../questions.html">Questions</a>
-      </div>
-      <div class="bitem7 baritem">
-        <a class="topbara" href="../contact.html">Contact</a>
-      </div>
-    </div>
+    <div id="topbar"></div>
     <div class="mainbody">
-      <h1 class="mainhead">
-        LAB SHEET NO.9 - To be familiar with structure
-      </h1>
+      <h1 class="mainhead">LAB SHEET NO.9 - To be familiar with structure</h1>
       <hr />
       <a href="../LabSheet.html" class="back_button"
         ><img class="backimg" src="../Thumbnails/back.png" alt=""
       /></a>
-    <div class="code55">
-
-      <div class="question55" id="question55">1. WAP to store and print the employee number, name, address and salary of the n
-          employee using the structure.</div>
-      <div id="answer55" class="code-container">
-        <pre class="code"><code>
+      <div class="code55">
+        <div class="question55" id="question55">
+          1. WAP to store and print the employee number, name, address and
+          salary of the n employee using the structure.
+        </div>
+        <div id="answer55" class="code-container">
+          <pre class="code"><code>
     #include&lt;stdio.h>
     struct employeee{
       int empno, salary;
@@ -71,25 +49,29 @@
         printf("%d %s %s %d\n",emp[i].empno,emp[i].name,emp[i].add,emp[i].salary);
     }}
         </code></pre>
-      </div>
-      <div class="output55" id="output55">OUTPUT:- <br>
-        Enter employee no., name, address and salary: 1 <br>
-        Krishal <br>
-        Itahari <br>
-        20000 <br>
-        Enter employee no., name, address and salary: 2 <br>
-        Ram <br>
-        Dharan <br>
-        30000 <br>
-        employee no., name, address and salary: <br>
-        1 Krishal Itahari 20000 <br>
-        2 Ram Dharan 30000
-      </div> <br>
+        </div>
+        <div class="output55" id="output55">
+          OUTPUT:- <br />
+          Enter employee no., name, address and salary: 1 <br />
+          Krishal <br />
+          Itahari <br />
+          20000 <br />
+          Enter employee no., name, address and salary: 2 <br />
+          Ram <br />
+          Dharan <br />
+          30000 <br />
+          employee no., name, address and salary: <br />
+          1 Krishal Itahari 20000 <br />
+          2 Ram Dharan 30000
+        </div>
+        <br />
 
-      <div class="question55" id="question55">2. WAP to add two distance (feet-inch) using the structure.</div>
-      <div id="answer55" class="code-container">
-        <pre class="code"><code>
-    #include<stdio.h>
+        <div class="question55" id="question55">
+          2. WAP to add two distance (feet-inch) using the structure.
+        </div>
+        <div id="answer55" class="code-container">
+          <pre class="code"><code>
+    #include&lt;stdio.h>
     struct feet{
       int foot, inch;
     } d,d1,d2;
@@ -103,16 +85,21 @@
       printf("The sum is %d foot and %d inch.",d.foot,d.inch);
     }
         </code></pre>
-      </div>
-      <div class="output55" id="output55">OUTPUT:- <br>
-        Enter the 1st distance in foot inch format: 2 10 <br>
-Enter the 2nd distance in foot inch format: 3 10 <br>
-The sum is 6 foot and 8 inch. <br>
-      </div> <br>
+        </div>
+        <div class="output55" id="output55">
+          OUTPUT:- <br />
+          Enter the 1st distance in foot inch format: 2 10 <br />
+          Enter the 2nd distance in foot inch format: 3 10 <br />
+          The sum is 6 foot and 8 inch. <br />
+        </div>
+        <br />
 
-      <div class="question55" id="question55">3. WAP to read and print the values of structure using pointer to structure.</div>
-      <div id="answer55" class="code-container">
-        <pre class="code"><code>
+        <div class="question55" id="question55">
+          3. WAP to read and print the values of structure using pointer to
+          structure.
+        </div>
+        <div id="answer55" class="code-container">
+          <pre class="code"><code>
     #include&lt;stdio.h>
     struct student{
       int roll;
@@ -130,21 +117,26 @@ The sum is 6 foot and 8 inch. <br>
       printf(" %s",ptr->name);
     }
         </code></pre>
-      </div>
-      <div class="output55" id="output55">OUTPUT:- <br>
-        Enter roll no.: 22  <br>
-Enter name: Ram <br>
-The roll and name are:- 22       Ram
-      </div> <br>
+        </div>
+        <div class="output55" id="output55">
+          OUTPUT:- <br />
+          Enter roll no.: 22 <br />
+          Enter name: Ram <br />
+          The roll and name are:- 22 Ram
+        </div>
+        <br />
 
-      <div class="question55" id="question55">4. WAP to define a structure employee with members empno, name, salary and
-        address. Main() should always ask input for the particular function call until user
-        exits the program. And create functions as below: <br>
-        a. Input(): To read a record of employee. <br>
-        b. Display(): To display the all the records. <br>
-        c. Updatesal(): To update the particular salary of the employee.</div>
-      <div id="answer55" class="code-container">
-        <pre class="code"><code>
+        <div class="question55" id="question55">
+          4. WAP to define a structure employee with members empno, name, salary
+          and address. Main() should always ask input for the particular
+          function call until user exits the program. And create functions as
+          below: <br />
+          a. Input(): To read a record of employee. <br />
+          b. Display(): To display the all the records. <br />
+          c. Updatesal(): To update the particular salary of the employee.
+        </div>
+        <div id="answer55" class="code-container">
+          <pre class="code"><code>
     #include&lt;stdio.h>
     struct employee{
       int empno,salary;
@@ -201,9 +193,10 @@ The roll and name are:- 22       Ram
       scanf("%d",&emp[a].salary);
     }
         </code></pre>
-      </div>
-      <div class="output55" id="output55">OUTPUT:- <br>
-        <pre>
+        </div>
+        <div class="output55" id="output55">
+          OUTPUT:- <br />
+          <pre>
 Choose action: 
 1.Input        
 2.Display      
@@ -253,21 +246,15 @@ Employee no.     Name            Salary          Address
 1                Ramesh          40000           Dharan
 
 Enter Y or y to continue or any other to exit the program:n
-        </pre>
-      </div> <br>
-</div>
-    </div>
-    <footer>
-      <div>© 2023 The Engineering Junction. All Rights Reserved.</div>
-      <div>
-        Suggest us:
-        <a
-          style="color: rgb(230, 230, 230)"
-          href="mailto:079bce052@ioepc.edu.np"
-          >079bce052@ioepc.edu.np</a
-        >
+        </pre
+          >
+        </div>
+        <br />
       </div>
-      <div>Designed & Developed By: Krishal Basnet</div>
-    </footer>
+    </div>
+
+    <div id="footer"></div>
   </body>
+  <script src="/topbar.js"></script>
+  <script src="/footer.js"></script>
 </html>
