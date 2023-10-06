@@ -1,5 +1,5 @@
 footer {
-  background-color: #787F88;
+  background-color: #787f88;
   color: rgb(230, 230, 230);
   text-align: center;
   font-family: "Yatra One", cursive;
@@ -17,7 +17,7 @@ footer {
 }
 .footertopheader556 {
   border-top: 2px rgb(219, 11, 11) solid;
-  background-color: #3E4D5A;
+  background-color: #3e4d5a;
   margin-bottom: 5px;
 }
 .TEJcopysub > div {
@@ -61,4 +61,7 @@ footer {
     border-top: 0px;
     margin-bottom: 5px;
   }
+}
+.footer456 > a:hover {
+  text-decoration: underline;
 }
