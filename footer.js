@@ -8,33 +8,32 @@ document.getElementById("footer").innerHTML = `
           </h3>
           <div class="TEJcopysub">
             <div class="logofooter">
-              <img src="https://krishalbasnet.com.np/Image/Topbarlogo.png" alt="">
+              <img src="/Image/Topbarlogo.png" alt="">
               <div class="socialmediaicon">
                 <a target="_blank" href="https://www.facebook.com/profile.php?id=61550198021764">
-                  <img class="logodowner" src="https://krishalbasnet.com.np/Image/fbno.png">
+                  <img class="logodowner" src="/Image/fbno.png">
                 </a>
                 <a target="_blank" href="https://www.youtube.com/channel/UCXr3XO7L2QmbErx35mpOPzg">
-                  <img class="logodowner" src="https://krishalbasnet.com.np/Image/ytno.png">
+                  <img class="logodowner" src="/Image/ytno.png">
                 </a>
               </div>
             </div>
-            <img src="https://krishalbasnet.com.np/Image/email.png" alt="" />
+            <img src="/Image/email.png" alt="" />
             <div>
               Itahari, Sunsari <br />
               Koshi Province
             </div>
-            <img src="https://krishalbasnet.com.np/Image/add.png" alt="" />
+            <img src="/Image/add.png" alt="" />
             <div>079bce052@ioepc.edu.np</div>
           </div>
         </div>
-        <div>
+        <div class="footer456">
           <h3 class="footertopheader556 zeromargin">SHORTCUT</h3>
-          <a href="https://krishalbasnet.com.np/syllabus.html">IOE Syllabus</a> <br>
-          <a href="https://krishalbasnet.com.np/LabSheet.html">C Lab Sheet</a><br>
-          <a href="https://krishalbasnet.com.np/futureplans.html">Future Plans of TEJ</a><br>
-          <!--<a href="https://krishalbasnet.com.np/TEJ.html">TEJ calender</a>-->
+          <a href="/syllabus.html">IOE Syllabus</a> <br>
+          <a href="/LabSheet.html">C Lab Sheet</a><br>
+          <a href="/futureplans.html">Future Plans of TEJ</a><br>
         </div>
-        <div>
+        <div class="footer456">
           <h3 class="footertopheader556 zeromargin">IMPORTANT LINK</h3>
           <a href="https://entrance.ioe.edu.np/" target="_blank"
             >IOE Entrance</a
