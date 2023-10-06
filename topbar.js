@@ -28,9 +28,4 @@ document.getElementById('topbar').innerHTML = `
         <a class="topbara" href="/support.html">Support</a>
       </div>
     </div>
-    <center>
-      <h2 class="warningtop" style="color:red">
-        PDF of past paper are not being accessed from Mobile. Conversion process has been started.
-      </h2>
-    </center>
 `;
