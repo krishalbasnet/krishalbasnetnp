@@ -20,8 +20,9 @@ hr {
   line-height: 30px;
 }
 .sidebar {
-  background-color: #787F88;
+  background-color: #868d97;
   border-radius: 20px;
+  box-shadow: inset black 0 0 10px 1px;
   padding-top: 1px;
   position: sticky;
   top: 10px;
