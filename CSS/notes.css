@@ -1,43 +1,12 @@
-.notestopbar {
-  display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
-  gap: 20px;
-  width: 80%;
-  margin: auto;
+.notesbody {
+  background-color: #8eaca0;
+  font-family: "Young Serif", serif;
+  padding: 10px;
+  font-size: 17px;
+  font-weight: 600;
+  border-radius: 25px;
 }
-.notestopbar > div {
-  background-color: gray;
-  text-align: center;
-  padding: 5px;
-  border-radius: 20px;
-  box-shadow: black 4px 4px 10px 1px;
-}
-.notemainbody {
-  background-color: rgb(104, 104, 104);
-  background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
-  margin-top: 20px;
-  border: 2px solid black;
-  padding: 15px;
-  border-radius: 20px;
-}
-.code-container {
-  background-color: #272727;
-  font-family: "Courier New", monospace;
-  line-height: 1.5;
-  white-space: pre-wrap;
-  color: blanchedalmond;
-}
-.svgrxnchem {
-  width: 40%;
-}
-.mainbodynote {
-  display: grid;
-  margin-top: 20px;
-  grid-template-columns: 1fr 4fr;
-  gap: 10px;
-}
-.mainleftbodynote {
-  border: 2px solid black;
-  padding: 20px 10px;
-  border-radius: 20px;
+.noteppppp{
+  font-weight: 100;
+  font-size: 15px;
 }
