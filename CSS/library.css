@@ -19,17 +19,24 @@
   transition: 0.6s;
   border-radius: 10px;
 }
-.booklinklibrary:hover {
+.booklibrary:hover {
   translate: 0 -15px;
   transition: 0.6s;
-}
-.booklibrary:hover {
   transition: 0.6s;
   box-shadow: rgb(0, 0, 0) 0 10px 20px 0;
 }
-.textcardtubeimg{
-  aspect-ratio: 3/2 ;
+.textcardtubeimg {
+  aspect-ratio: 3/2;
 }
-.booklinklibrary{
+.booklinklibrary {
   position: relative;
+}
+.booktitle {
+  background-color: rgba(136, 141, 146, 0.884);
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding: 2px 0px;
+}
+a.booklinklibrary{
+  height: fit-content !important;
 }
