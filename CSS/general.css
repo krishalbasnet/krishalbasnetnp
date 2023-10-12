@@ -11,5 +11,5 @@ a {
   color: black;
 }
 .zeromargin{
-  margin: 0;
+  margin: 0 !important;
 }
