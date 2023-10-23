@@ -1,5 +1,6 @@
 // JavaScript code to display the provided HTML in the "footer" div
 document.getElementById('topbar').innerHTML = `
+
 <div class="toopadministration"><a href="/login.html">Admin</a></div>
 <div class="topbar">
       <div class="bitem1 baritem">
@@ -29,4 +30,6 @@ document.getElementById('topbar').innerHTML = `
         <a class="topbara" href="/support.html">Support</a>
       </div>
     </div>
+    <center>
+    <div style="font-size:40px; color:red; font-weight:800;margin:0">विजयादशमी को शुभकामना !!!</div> </center>
 `;
