@@ -30,6 +30,4 @@ document.getElementById('topbar').innerHTML = `
         <a class="topbara" href="/support.html">Support</a>
       </div>
     </div>
-    <center>
-    <div style="font-size:40px; color:red; font-weight:800;margin:0">विजयादशमी को शुभकामना !!!</div> </center>
 `;
