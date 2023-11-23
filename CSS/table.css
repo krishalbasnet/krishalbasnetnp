@@ -1,0 +1,10 @@
+div.rankingtable>table>*>tr>td{
+    border: 1px solid black;
+}
+div.rankingtable>table{
+    border-collapse: collapse;
+}
+.rankingtable{
+    width: 90%;
+    margin: auto;
+}
