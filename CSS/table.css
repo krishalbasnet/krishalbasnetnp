@@ -8,3 +8,9 @@ div.rankingtable>table{
     width: 90%;
     margin: auto;
 }
+.t079{
+    background: #5e5e5e;
+}
+thead{
+    background-color: rgb(95, 95, 177);
+}
