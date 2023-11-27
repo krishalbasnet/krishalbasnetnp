@@ -31,7 +31,7 @@ document.getElementById("footer").innerHTML = `
           <h3 class="footertopheader556 zeromargin">SHORTCUT</h3>
           <a href="/syllabus.html">IOE Syllabus</a> <br>
           <a href="/LabSheet.html">C Lab Sheet</a><br>
-          <a href="/futureplans.html">Future Plans of TEJ</a><br>
+        <!--  <a href="/futureplans.html">Future Plans of TEJ</a><br> -->
         </div>
         <div class="footer456">
           <h3 class="footertopheader556 zeromargin">IMPORTANT LINK</h3>
