@@ -1,0 +1,25 @@
+.next76 {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  text-align: center;
+  gap: 8px ;
+}
+.math {
+  background-color: #2C497F;
+}
+.applied {
+  background-color: #5A6650;
+}
+.electric {
+  background-color: #F5EDF0;
+}
+.electro {
+  background-color: #FC5130;
+}
+.physics {
+  background-color: #295135;
+}
+.longlist {
+  background-color: #A6A6A8;
+  padding: 10px;
+}
