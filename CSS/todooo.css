@@ -6,18 +6,23 @@
 }
 .math {
   background-color: #2C497F;
+  border-radius: 20px;
 }
 .applied {
   background-color: #5A6650;
+  border-radius: 20px;
 }
 .electric {
   background-color: #F5EDF0;
+  border-radius: 20px;
 }
 .electro {
   background-color: #FC5130;
+  border-radius: 20px;
 }
 .physics {
   background-color: #295135;
+  border-radius: 20px;
 }
 .longlist {
   background-color: #A6A6A8;
