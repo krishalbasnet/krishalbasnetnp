@@ -1,30 +1,41 @@
 .next76 {
   display: grid;
-  grid-template-columns: auto auto auto auto auto;
+  grid-template-columns: auto auto auto auto auto auto;
   text-align: center;
   gap: 8px ;
 }
 .math {
   background-color: #2C497F;
+  padding: 10px;
   border-radius: 20px;
 }
 .applied {
   background-color: #5A6650;
+  padding: 10px;
   border-radius: 20px;
 }
 .electric {
   background-color: #F5EDF0;
+  padding: 10px;
   border-radius: 20px;
 }
 .electro {
   background-color: #FC5130;
+  padding: 10px;
   border-radius: 20px;
 }
 .physics {
   background-color: #295135;
+  padding: 10px;
   border-radius: 20px;
 }
 .longlist {
   background-color: #A6A6A8;
+  border-radius: 20px;
   padding: 10px;
+}
+.extraalab{
+  background-color: #222725;
+  padding: 10px;
+  border-radius: 20px;
 }
