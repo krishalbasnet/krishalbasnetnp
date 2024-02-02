@@ -1,6 +1,6 @@
 .topbar {
   display: grid;
-  grid-template-columns: 4fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 4fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   margin-top: 20px;
   width: 90%;
   margin: auto;
@@ -32,7 +32,7 @@ a.topbara:not(.topbaraimg)::before {
   scale: 0;
   transition: 0.4s;
 }
-a.topbara:not(.topbaraimg):hover::before {
+a.topbara:not(.topbaraimg, .topbara9):hover::before {
   transition: 0.4s;
   scale: 1;
 }
@@ -47,4 +47,13 @@ a.topbara:not(.topbaraimg):hover::before {
 .toopadministration{
   text-align: right;
   padding: 0 20px;
+}
+.bitem9{
+  background-color: rgba(38, 90, 139, 0.815);
+  text-align: center;
+  border-radius: 5px;
+}
+.bitem9:hover{
+  background-color: rgb(38, 90, 139);
+
 }
