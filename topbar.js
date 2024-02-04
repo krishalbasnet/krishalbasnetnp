@@ -18,7 +18,7 @@ document.getElementById('topbar').innerHTML = `
         <a class="topbara" href="/pastpaper.html">Past Paper</a>
       </div>
       <div class="bitem5 baritem">
-        <a class="topbara" href="#">Coming....</a>
+        <a class="topbara" href="/notes.html">Notes</a>
       </div>
       <div class="bitem8 baritem">
         <a class="topbara" href="/library.html">E-Library</a>
@@ -28,9 +28,6 @@ document.getElementById('topbar').innerHTML = `
       </div>
       <div class="bitem7 baritem">
         <a class="topbara" href="/support.html">Support</a>
-      </div>
-      <div class="bitem9 baritem">
-        <a class="topbara topbara9" href="/2.0/index.html">New Syllabus</a>
       </div>
     </div>
 `;
