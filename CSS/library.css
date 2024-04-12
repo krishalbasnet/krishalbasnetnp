@@ -1,42 +1,15 @@
-.library {
-  background-color: rgba(44, 44, 44, 0.8);
-  border-radius: 10px;
-  padding: 10px 15px;
-  width: 80%;
-  text-align: center;
-  margin: auto;
+.librarybody{
+    display: grid;
+    background-color: rgb(182, 182, 182);
+    padding: 30px;
+    gap: 80px;
+    grid-template-columns: repeat(5, 1fr);
 }
-.librarybookscontainer {
-  text-align: center;
-  width: 90%;
-  margin: auto;
-  display: grid;
-  gap: 5%;
-  grid-template-columns: repeat(6, 1fr);
+.libbname{
+    text-align: center;
+    font-size: 18px;
 }
-.booklinklibrary,
-.booklibrary {
-  transition: 0.6s;
-  border-radius: 10px;
-}
-.booklibrary:hover {
-  translate: 0 -15px;
-  transition: 0.6s;
-  transition: 0.6s;
-  box-shadow: rgb(0, 0, 0) 0 10px 20px 0;
-}
-.textcardtubeimg {
-  aspect-ratio: 3/2;
-}
-.booklinklibrary {
-  position: relative;
-}
-.booktitle {
-  background-color: rgba(136, 141, 146, 0.884);
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
-  padding: 2px 0px;
-}
-a.booklinklibrary{
-  height: fit-content !important;
+.libitem{
+    background-color: rgb(156, 166, 175);
+    padding: 10px;
 }

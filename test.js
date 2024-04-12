@@ -1,1 +1,0 @@
-console.log(Symbol("Foo")===Symbol("Foo"))

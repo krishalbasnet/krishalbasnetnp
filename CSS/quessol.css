@@ -1,0 +1,26 @@
+.probsoll{
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+}
+.questionbox{
+    background-color: gray;
+    padding: 20px;
+
+}
+.answerbox{
+    text-align: center;
+}
+.answerbox>img{
+    width: 50%;
+    margin-top: 10px;
+}
+.answerbox{
+    display: none;
+}
+.showans{
+    background-color: rgb(77, 77, 77);
+    width: fit-content;
+    padding: 10px;
+    margin-top: 10px;
+}

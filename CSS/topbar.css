@@ -1,0 +1,33 @@
+.topbar{
+    display: grid;
+    grid-template-columns: 5fr 1fr 1fr 1fr 1fr;
+    width: 95%;
+    margin: auto;
+    
+    text-align: center;
+    align-items: center;
+    gap: 10px;
+    font-style: normal;
+}
+.topimg{
+    width: 60%;
+    height: fit-content;
+}
+.topitem>a{
+    position: relative;
+}
+.topitem:not(.topimg)>a::before{
+background-color: rgb(87, 87, 87);
+content: " ";
+position: absolute;
+height: 2px;
+width: 60%;
+bottom: 0;
+scale: 0;
+left: 20%;
+transition: all 0.3s;
+}
+.topitem:not(.topimg)>a:hover::before{
+    scale:1;
+    transition: all 0.3s;
+}

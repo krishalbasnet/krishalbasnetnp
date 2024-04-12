@@ -1,20 +1,26 @@
-.notebody{
-  padding: 10px;
-  border-radius: 10px;
+.notescontainer{
+    margin-top: 10px;
+    
 }
-.notebody>ol>li{
-  font-weight: bolder;
-  font-size: 25px;
-  }
-.notebody>ol>ul, .notebody>ol>ol{
-  background-color: gray;
-  line-height: 30px;
-  padding-top: 10px;
-  padding-right: 10px;
-  text-align: justify;
-  padding-bottom: 10px;
-  margin-top: 10px;
-  border-radius: 10px;
-  /* font-family: 'Anonymous Pro', monospace; */
-  font-size: 18px;
+.notescontainer>ol{
+    display: grid;
+    gap: 10px;
+}
+.notescontainer>ol,.notescontainer>ol>li>ul{
+    list-style: none;
+}
+.notescontainer>ol>li{
+    font-size:30px;
+    background-color: #919191;
+    border-radius: 20px;
+    padding: 20px;
+}
+.notescontainer>ol>li>ul>li{
+    font-size: 22px;
+    margin-top: 20px;
+}
+.notescontainer>ol>li>ul>li>p{
+    margin: 0;
+    font-size: 18px;
+    margin-left: 20px;
 }
