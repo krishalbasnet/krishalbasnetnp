@@ -1,0 +1,56 @@
+.landingfirst {
+  background-color: var(--color4);
+  height: 100vh;
+  width: 100%;
+  border-radius: 60px 0 400px 0;
+  overflow: hidden;
+  box-shadow: black 2px 3px 15px 0px;
+}
+.landingsecond{
+  padding-top: 10px;
+height: 100vh;
+}
+.landingcontainer {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  overflow: hidden;
+  color: rgb(255, 255, 255);
+}
+.landinghead{
+  font-size: 60px;
+  margin: auto;
+  width: 80%;
+  font-family: "Rubik Glitch";
+  font-weight: 400;
+  font-style: normal;
+}
+.landingimgeng {
+  width: 80%;
+}
+.landingconttwo {
+  text-align: center;
+  padding-top: 10vh;
+  align-items: center;
+}
+.landingcontone {
+  align-items: center;
+  padding: 15vh 0px 28vh 20px;
+  margin: auto;
+}
+.threeland {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 5%;
+  width: 80%;
+  margin: auto;
+  margin-top: 60px;
+}
+.threeland > div {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  padding: 10px;
+  text-align: justify;
+  border-radius: 20px;
+  background: linear-gradient(145deg, #b9b9b9, #f0f0f0);
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+}

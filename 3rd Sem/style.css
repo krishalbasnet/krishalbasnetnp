@@ -1,0 +1,17 @@
+.boxcont{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+.box{
+    background-color: #26C485;
+    padding: 10px;
+    border-radius: 15px;
+}
+div.box>hr{
+    width: 90%;
+}
+.head{
+    text-align: center;
+    font-size: 25px;
+}
