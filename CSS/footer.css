@@ -10,5 +10,9 @@ div.footer{
 }
 .g676{
     color: #cad2c5;
-
+}
+@media screen and (max-width:1000px) {
+    .copyright{
+        grid-template-columns: 1fr;
+    }
 }
