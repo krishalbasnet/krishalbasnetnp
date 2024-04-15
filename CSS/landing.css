@@ -6,9 +6,9 @@
   overflow: hidden;
   box-shadow: black 2px 3px 15px 0px;
 }
-.landingsecond{
+.landingsecond {
   padding-top: 10px;
-height: 100vh;
+  height: 100vh;
 }
 .landingcontainer {
   display: grid;
@@ -16,7 +16,7 @@ height: 100vh;
   overflow: hidden;
   color: rgb(255, 255, 255);
 }
-.landinghead{
+.landinghead {
   font-size: 60px;
   margin: auto;
   width: 80%;
@@ -54,4 +54,27 @@ height: 100vh;
   border-radius: 20px;
   background: linear-gradient(145deg, #b9b9b9, #f0f0f0);
   box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+}
+@media screen and (max-width: 1000px) {
+  .landingcontainer {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .landinghead {
+    font-size: 30px;
+    width: 99%;
+  }
+  .landingcontone {
+    padding: 0px;
+  }
+  .landingfirst {
+    border-radius: 60px 0 40px 0;
+  }
+  .landingimgeng {
+    max-height: 350px; /* Sets a maximum height for the image on mobile */
+    width: auto;
+  }
+  .threeland {
+    grid-template-columns: 1fr;
+  }
 }
