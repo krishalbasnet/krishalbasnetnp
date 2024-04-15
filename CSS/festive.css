@@ -1,9 +1,6 @@
 .landingfirst {
-  /* background: linear-gradient(to right, rgba(39, 37, 37, 0.651), rgba(0, 0, 0, 0)); */
   background-image: url("/Image/nep.jpeg");
-  /* background: url("/Image/nep.jpeg"); */
   background-size: cover;
-  /* background: linear-gradient(to right, rgba(0, 0, 0, 0.521), rgba(255, 0, 0, 0.548)); */
 }
 .landingsecond {
   background: linear-gradient(
