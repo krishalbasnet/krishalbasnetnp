@@ -1,14 +1,13 @@
-@import url(/CSS/font.css);
-@import url(/CSS/pastpaper.css);
-@import url(/CSS/general.css);
-@import url(/CSS/landing.css);
-@import url(/CSS/topbar.css);
-@import url(/CSS/color.css);
-@import url(/CSS/adlist.css);
-/* @import url(/CSS/festive.css); */
-@import url(/CSS/fof.css);
-@import url(/CSS/footer.css);
-@import url(/CSS/library.css);
-@import url(/CSS/questionbank.css);
-@import url(/CSS/quessol.css);
-@import url(/CSS/notes.css);
+@import url(CSS/font.css);
+@import url(CSS/pastpaper.css);
+@import url(CSS/general.css);
+@import url(CSS/topbar.css);
+@import url(CSS/color.css);
+@import url(CSS/adlist.css);
+@import url(CSS/fof.css);
+@import url(CSS/footer.css);
+@import url(CSS/library.css);
+@import url(CSS/questionbank.css);
+@import url(CSS/quessol.css);
+@import url(CSS/landing.css);
+@import url(CSS/festive.css);
