@@ -1,17 +1,46 @@
 .landingfirst {
-  background-image: url("/Image/nep.jpeg");
+  background-image: url("");
   background-size: cover;
 }
 .landingsecond {
   background: linear-gradient(
     to right,
-    rgba(248, 0, 0, 0.8),
-    rgba(51, 49, 202, 0.6),
+    rgba(233, 76, 3, 0.8),
+    rgba(233, 76, 3, 0.8),
+    rgba(189, 79, 28, 0.5),
+    rgba(255, 255, 0, 0.3),
     rgba(255, 255, 255, 0)
   );
 }
 .festivetext {
-    font-size: 35px;
-    color: aliceblue;
+    font-size: 20px;
+    color: rgb(58, 58, 58);
     text-align: center;
+}
+
+
+.adlist>a{
+
+background: linear-gradient(
+    to right,
+    rgba(233, 76, 3,0.9),
+    rgba(189, 79, 28,0.9),
+    rgba(240, 217, 13,0.9)
+  );
+}
+body{
+  background: url("/Image/om.png") rgb(134, 134, 134) repeat;
+  background-size: 200px;
+
+}
+
+.landingconttwo {
+  padding-top: 0vh;
+}
+
+
+.threeland > div {
+  box-shadow: 20px 20px 60px #f1842a, -20px -20px 60px #fca829;
+  background: linear-gradient(145deg, #f77b15, #f32121);
+
 }
