@@ -18,9 +18,25 @@
 .answerbox{
     display: none;
 }
+.DRWQues{
+    width: 50%;
+}
+.sdsds{
+text-align: center;
+}
 .showans{
     background-color: rgb(77, 77, 77);
     width: fit-content;
     padding: 10px;
     margin-top: 10px;
+    cursor: pointer;
+}
+.DRWsln{
+    background-color: white;
+    border-radius: 10px;
+}
+
+.DRWsln:hover{
+    position: relative;
+    width: 100%;
 }
