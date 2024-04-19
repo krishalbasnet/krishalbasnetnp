@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Engineering Junction</title>
+    <link rel="shortcut icon" href="Image/toptoptoplogo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="topbar"></div>
+    <div class="mainbody">
+        <h1 class="nomargin">IOE Past Papers - New Syllabus</h1>
+        <hr>
+        <button onclick="location.href='/past.html'">Old Syllabus</button>
+        <!-- <div class="semselector">
+            <div class="facgrid1">
+                <label for="FacultySelector">Select Faculty:</label>
+                <select id="FacultySelector">
+                    <option value="BCE">BCE</option>
+                    <option value="BCT">BCT</option>
+                    <option value="BEL">BEL</option>
+                    <option value="BEX">BEX</option>
+                    <option value="BAG">BAG</option>
+                    <option value="BME">BME</option>
+                    <option value="BCH">BCH</option>
+                    <option value="BArch">BArch</option>
+                </select> <br>
+                <label for="SemesterSelect">Select Semester</label>
+                <select id="SemesterSelect">
+                    <option value="first">1st</option>
+                    <option value="second">2nd</option>
+                    <option value="third">3rd</option>
+                    <option value="forth">4th</option>
+                    <option value="fifth">5th</option>
+                    <option value="sixth">6th</option>
+                </select>
+            </div>
+            <div class="facgrid2">
+                <button onclick="submitQ()">Filter</button>
+                <button onclick="resetQ()">Reset</button>
+            </div>
+        </div> -->
+        <div class="adlist kode">
+            <a href="PastPaper2/AE101.html" class="generalQ BAGfirst">Agricultural Engineering & Sustainable
+                Development</a>
+            <a href="PastPaper2/CE104.html" class="generalQ BELfirst">Applied Mechanics</a>
+            <a href="PastPaper2/EE103.html" class="generalQ BCEfirst BCHfirst"> Basic Electrical and Electronics
+                Engneering</a>
+            <a href="PastPaper2/AR103.html" class="generalQ BArchfirst">Building Material I</a>
+            <a href="PastPaper2/CE103.html" class="generalQ BCEfirst">Civil Engineering Material</a>
+            <a href="PastPaper2/CT101.html"
+                class="generalQ BCEfirst BCTfirst BELfirst BMEfirst BEXfirst BAGfirst">Computer
+                Programming</a>
+            <a href="PastPaper2/EE101.html" class="generalQ BELfirst">Electric Circuit I </a>
+            <a href="PastPaper2/CE102.html" class="generalQ BCEfirst">Engineering Geology I</a>
+            <a href="PastPaper2/CE101.html" class="generalQ BCEfirst BAGfirst">Engineering Mechanics</a>
+            <a href="PastPaper2/AR102.html" class="generalQ BArchfirst"> Introduction to Architecture I</a>
+
+            <a href="PastPaper2/EX101.html"
+                class="generalQ BEIfirst BCTfirst BMEfirst BAMfirst BIEfirst BASfirst">Fundamentals of Electrial and
+                Electronics Engineering
+            </a>
+            <a href="PastPaper2/GE101.html" class="generalQ BGEfirst">Basic Geo-Information Science</a>
+            <a href="PastPaper2/ME101.html" class="generalQ">Engineering Drawing</a>
+            <a href="PastPaper2/ME103.html" class="generalQ">Engneering Mechanics I</a>
+            <a href="PastPaper2/ME104.html" class="generalQ">Engineering Thermodynamics I</a>
+            <a href="PastPaper2/ME105.html" class="generalQ">Fundamentals of Thermodynamics and Heat Transfer</a>
+            <a href="PastPaper2/SH101.html" class="generalQ">Engineering Mathematics I</a>
+            <a href="PastPaper2/SH102.html" class="generalQ">Engineering Physics</a>
+            <a href="PastPaper2/SH103.html" class="generalQ">Engineering Chemistry</a>
+            <a href="PastPaper2/SH104.html" class="generalQ BArchfirst">Mathematics for Architecture I</a>
+
+
+        </div>
+
+    </div>
+    <div id="footer"></div>
+</body>
+<script src="script.js"></script>
+<script>
+
+    const FacultySelector = document.getElementById("FacultySelector");
+    const SemesterSelect = document.getElementById("SemesterSelect");
+    function submitQ() {
+        const facselected = FacultySelector.value;
+        const semselected = SemesterSelect.value;
+        const QPaper = facselected + semselected;
+
+        const generalQ = document.getElementsByClassName("generalQ");
+        for (let i = 0; i < generalQ.length; i++) {
+            generalQ[i].style.display = "none";
+        }
+
+        const Classsel = document.getElementsByClassName(QPaper);
+        for (var i = 0; i < Classsel.length; i++) {
+            Classsel[i].style.display = "block";
+        }
+
+
+    }
+    function resetQ() {
+        const generalQ = document.getElementsByClassName("generalQ");
+        for (let i = 0; i < generalQ.length; i++) {
+            generalQ[i].style.display = "block";
+        }
+    }
+</script>
+
+</html>
