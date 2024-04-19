@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Engineering Junction</title>
+  <link rel="shortcut icon" href="/Image/toptoptoplogo.png" type="image/x-icon">
+  <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+  <div id="topbar"></div>
+  <div class="mainbody">
+    <h1>Past Paper - Digital Logic I</h1>
+    <hr>
+    <div class="back">
+      <a href="/past.html">
+        <img src="/Image/back.png" alt="">
+      </a>
+    </div>
+    <div class="labele">
+      <label for="pdfSelector">Choose the set:</label>
+      <select id="pdfSelector">
+        <option value="2075 Chaitra.png">2075 Chaitra</option>
+          <option value="2076 Ashwin.png">2076 Ashwin</option>
+          <option value="2076 Chaitra.png">2076 Chaitra</option>
+          <option value="2078 Bhadra.png">2078 Bhadra</option>
+          <option value="2078 Kartik.png">2078 Kartik</option>
+          <option value="2079 Bhadra.png">2079 Bhadra</option>
+          <option value="2080 Baishakh.png">2080 Baishakh</option>
+      </select>
+    </div>
+    <div class="imgembedd">
+      <img id="pdfEmbed" class="embeddedimg" src="dl1/2075 Chaitra.png" alt="" />
+    </div>
+  </div>
+  <div id="footer"></div>
+</body>
+<script>
+  const pdfSelector = document.getElementById("pdfSelector");
+  const pdfEmbed = document.getElementById("pdfEmbed");
+
+  pdfSelector.addEventListener("change", function () {
+    const selectedPdf = pdfSelector.value;
+    const pdfPath = "dl1/" + selectedPdf;
+    pdfEmbed.src = pdfPath;
+  });
+</script>
+<script src="/script.js"></script>
+
+</html>

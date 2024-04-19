@@ -20,10 +20,41 @@
     rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
-.labele>select{
-    background-color: rgb(138, 138, 138);
+.labele > select {
+  background-color: rgb(138, 138, 138);
   font-size: 18px;
   padding: 20px;
-    border-radius: 5px;
-    color: white;
+  border-radius: 5px;
+  color: white;
+}
+.semselector {
+  background-color: rgb(142, 148, 175);
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  padding: 20px 10px;
+  width: 50%;
+  margin: auto;
+
+  box-shadow: rgba(87, 87, 100, 0.25) 0px 50px 100px -20px,
+    rgba(187, 186, 186, 0.3) 0px 30px 60px -30px,
+    rgba(205, 210, 214, 0.35) 0px -2px 6px 0px inset;
+
+  border-radius: 10px;
+}
+.facgrid2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 5px;
+}
+.facgrid2 > button {
+  background-color: rgb(185, 185, 185);
+  border: 0;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+}
+.facgrid1 {
+  align-content: center;
+  text-align: center;
+  font-size: large;
 }
