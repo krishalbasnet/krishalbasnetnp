@@ -2,13 +2,25 @@
   background-color: var(--color5);
   box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.5),
     10px 10px 15px rgba(70, 70, 70, 0.12);
+    display: grid;
+    grid-template-columns: 1fr 8fr;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    border-radius: 20px;
+    transition: all 0.5s;
+  }
+  .semQ{
+    padding: 10px 0;
+    border-radius: 20px 0 0 20px;
+  background-color: #f77700;
+font-size: 20px;
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.nameQ{
   padding: 10px 0;
-  display: block;
-  text-align: center;
-  width: 50%;
-  margin: auto;
-  border-radius: 20px;
-  transition: all 0.5s;
 }
 .adlist > a:hover {
   width: 60%;

@@ -19,6 +19,9 @@ topbar.innerHTML = `
 var footer = document.getElementById("footer");
 footer.innerHTML = `
 <div class="footer yatrafont    ">
+<div>
+<a href="/Math Tools/cramers.html">Cramer's Solver</a>
+</div>
             <div class="copyright">
                 <div>© 2023 The Engineering Junction. All Rights Reserved.</div>
                 <div>Suggest us: 079bce052@ioepc.edu.np</div>
@@ -28,7 +31,7 @@ footer.innerHTML = `
 `;
 function solutiondisplay(x, y) {
   var id = "DRW" + x + "-" + y;
-  var id2 = "DRW" + x  + y;
+  var id2 = "DRW" + x + y;
   var aghy = document.getElementById(id);
   var aghy2 = document.getElementById(id2);
   if (aghy.style.display === "none") {
@@ -36,7 +39,6 @@ function solutiondisplay(x, y) {
     aghy2.innerHTML = "Hide Answer";
   } else {
     aghy.style.display = "none";
-    aghy2.innerHTML = "Show Answer"
-
+    aghy2.innerHTML = "Show Answer";
   }
 }
