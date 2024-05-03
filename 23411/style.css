@@ -1,0 +1,17 @@
+body{
+    background-color: rgb(41, 41, 41);
+
+}
+.container{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+}
+.card{
+    box-shadow: 0 0 10px 2px black;
+color: aliceblue;
+font-size: 20px;
+    padding: 5px;
+    text-align: center;
+}
