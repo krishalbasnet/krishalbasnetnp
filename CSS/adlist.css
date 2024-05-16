@@ -36,4 +36,9 @@ font-size: 20px;
 .adlist > a {
 width: 100%;
 }
+.adlist > a:hover {
+  width: 100%;
+  transition: all 0.5s;
+  box-shadow: 0 0 10px 1px black;
+}
 }
