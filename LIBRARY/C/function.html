@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Engineering Junction</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <div id="topbar"></div>
+    <div class="mainbody">
+        <h1 class="nomargin">Functions</h1>
+        <hr>
+        <div class="codespace">
+            <div class="codecard">
+                <div class="codeprob">WAP to reverse a number entered by user using the concept of function.</div>
+                <div class="codesol">
+<pre>
+#include&lt;stdio.h&gt;<br>
+void main(){<br>
+    int n, rev=0, rem;<br>
+    printf("Enter a number: ");<br>
+    scanf("%d", &n);<br>
+    rev = reverse(n);<br>
+    printf("Reverse of %d is %d", n, rev);<br>
+}<br>
+    int reverse(int n){<br>
+    int rev=0, rem;<br>
+    while(n!=0){<br>
+        rem = n%10;<br>
+        rev = rev*10 + rem;<br>
+        n = n/10;<br>
+    }<br>
+    return rev;<br>
+}
+</pre>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer"></div>
+</body>
+<script src="/script.js"></script>
+
+</html>

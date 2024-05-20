@@ -1,0 +1,15 @@
+.codespace{
+    background-color: rgb(100, 100, 100);
+    padding: 20px;
+    padding-left: 40px;
+    border-radius: 20px;
+    border: 2px solid black;
+}
+.codeprob{
+    font-size: 20px;
+    font-weight: 900;
+}
+.codesol{
+    line-height: 13px;
+    font-size: 14px;
+}
