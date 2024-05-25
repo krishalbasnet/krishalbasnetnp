@@ -15,25 +15,25 @@
         <hr>
         <div class="codespace">
             <div class="codecard">
-                <div class="codeprob">WAP to reverse a number entered by user using the concept of function.</div>
+                <div class="codeprob">1. WAP to reverse a number entered by user using the concept of function.</div>
                 <div class="codesol">
 <pre>
-#include&lt;stdio.h&gt;<br>
-void main(){<br>
-    int n, rev=0, rem;<br>
-    printf("Enter a number: ");<br>
-    scanf("%d", &n);<br>
-    rev = reverse(n);<br>
-    printf("Reverse of %d is %d", n, rev);<br>
-}<br>
-    int reverse(int n){<br>
-    int rev=0, rem;<br>
-    while(n!=0){<br>
-        rem = n%10;<br>
-        rev = rev*10 + rem;<br>
-        n = n/10;<br>
-    }<br>
-    return rev;<br>
+#include&lt;stdio.h&gt;
+void main(){
+    int n, rev=0, rem;
+    printf("Enter a number: ");
+    scanf("%d", &n);
+    rev = reverse(n);
+    printf("Reverse of %d is %d", n, rev);
+}
+int reverse(int n){
+    int rev=0, rem;
+    while(n!=0){
+        rem = n%10;
+        rev = rev*10 + rem;
+        n = n/10;
+    }
+    return rev;
 }
 </pre>
                 </div>
