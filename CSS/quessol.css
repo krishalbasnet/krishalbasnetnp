@@ -41,3 +41,13 @@ text-align: center;
     position: relative;
     width: 100%;
 }
+
+@media only screen and (max-width:720px){
+    .DRWQues{
+        width: 100%;
+    }
+    .answerbox>img{
+
+        width: 100%;
+    }
+}

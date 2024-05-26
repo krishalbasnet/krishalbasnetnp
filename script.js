@@ -8,8 +8,8 @@ topbar.innerHTML = `
            <!-- <div class="topitem titem2"><a href="">Blogs</a></div>-->
             <div class="topitem titem4"><a href="/past.html">Past Paper</a></div>
             <!----> 
-            <div class="topitem titem5"><a href="/library.html">E-Library</a></div><!--
-            <div class="topitem titem3"><a href="">Services</a></div>  
+            <div class="topitem titem5"><a href="/library.html">E-Library</a></div> <!--
+            <div class="topitem titem3"><a href="/class.html">Classes</a></div> 
             <div class="topitem titem6"><a href="/contact.html">Contact</a></div>
             <div class="topitem titem7"><a href="">Dark</a></div>
             <div class="topitem titem8"><a href="">Login</a></div>-->
@@ -42,3 +42,4 @@ function solutiondisplay(x, y) {
     aghy2.innerHTML = "Show Answer";
   }
 }
+disable

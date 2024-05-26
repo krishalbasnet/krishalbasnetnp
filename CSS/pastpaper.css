@@ -40,6 +40,7 @@
     rgba(205, 210, 214, 0.35) 0px -2px 6px 0px inset;
 
   border-radius: 10px;
+  margin-top: 10px;
 }
 .facgrid2 {
   display: grid;
@@ -57,4 +58,12 @@
   align-content: center;
   text-align: center;
   font-size: large;
+}
+@media only screen and (max-width:720px){
+  .semselector{
+    width: 90%;
+  }
+  .imgembedd{
+    width: 95%;
+  }
 }
