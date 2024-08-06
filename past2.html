@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+    
+    <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Engineering Junction</title>
@@ -12,22 +12,16 @@
 <body>
     <div id="topbar"></div>
     <div class="mainbody">
-        <h1 class="nomargin">IOE Past Papers - New Syllabus</h1>
+        <h1 class="nomargin">IOE Past Papers - Old Syllabus</h1>
         <hr>
-        <button onclick="location.href='/past.html'">Old Syllabus</button>
-        <!-- <div class="semselector">
+        <button onclick="location.href='/past2.html'">New Syllabus</button>
+        <div class="semselector">
             <div class="facgrid1">
                 <label for="FacultySelector">Select Faculty:</label>
                 <select id="FacultySelector">
                     <option value="BCE">BCE</option>
                     <option value="BCT">BCT</option>
                     <option value="BEL">BEL</option>
-                    <option value="BEX">BEX</option>
-                    <option value="BAG">BAG</option>
-                    <option value="BME">BME</option>
-                    <option value="BCH">BCH</option>
-                    <option value="BAS">BAS</option>
-                    <option value="BArch">BArch</option>
                 </select> <br>
                 <label for="SemesterSelect">Select Semester</label>
                 <select id="SemesterSelect">
@@ -37,14 +31,18 @@
                     <option value="forth">4th</option>
                     <option value="fifth">5th</option>
                     <option value="sixth">6th</option>
+                    <option value="seventh">7th</option>
+                    <option value="eight">8th</option>
+
                 </select>
             </div>
             <div class="facgrid2">
                 <button onclick="submitQ()">Filter</button>
                 <button onclick="resetQ()">Reset</button>
             </div>
-        </div> -->
+        </div>
         <div class="adlist kode">
+            
             <a href="PastPaper2/AE101.html" class="generalQ BAGfirst">Agricultural Engineering & Sustainable
                 Development</a>
             <a href="PastPaper2/CE104.html" class="generalQ BELfirst">Applied Mechanics</a>
@@ -57,7 +55,10 @@
                 <div class="nameQ">Computer Programming</div>
             </a>
             <a href="PastPaper2/EE101.html" class="generalQ BELfirst">Electric Circuit I </a>
-            <a href="PastPaper2/CE102.html" class="generalQ BCEfirst">Engineering Geology I</a>
+            <a href="PastPaper2/CE102.html" class="generalQ BCEfirst">
+                <div class="semQ">1st</div>
+                <div class="nameQ">Engineering Geology I</div>
+            </a>
             <a href="PastPaper2/CE101.html" class="generalQ BCEfirst BAGfirst">Engineering Mechanics</a>
             <a href="PastPaper2/AR102.html" class="generalQ BArchfirst"> Introduction to Architecture I</a>
 
@@ -84,7 +85,7 @@
 <script src="script.js"></script>
 <script>
 
-    const FacultySelector = document.getElementById("FacultySelector");
+const FacultySelector = document.getElementById("FacultySelector");
     const SemesterSelect = document.getElementById("SemesterSelect");
     function submitQ() {
         const facselected = FacultySelector.value;
@@ -98,7 +99,7 @@
 
         const Classsel = document.getElementsByClassName(QPaper);
         for (var i = 0; i < Classsel.length; i++) {
-            Classsel[i].style.display = "block";
+            Classsel[i].style.display = "grid";
         }
 
 
@@ -106,7 +107,7 @@
     function resetQ() {
         const generalQ = document.getElementsByClassName("generalQ");
         for (let i = 0; i < generalQ.length; i++) {
-            generalQ[i].style.display = "block";
+            generalQ[i].style.display = "grid";
         }
     }
 </script>
