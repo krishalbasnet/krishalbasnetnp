@@ -11,17 +11,17 @@ topbar.innerHTML = `
             <div class="topitem titem5"><a href="/library.html">E-Library</a></div> <!--
             <div class="topitem titem3"><a href="/class.html">Classes</a></div> 
             <div class="topitem titem6"><a href="/contact.html">Contact</a></div>
-            <div class="topitem titem7"><a href="">Dark</a></div>
-            <div class="topitem titem8"><a href="">Login</a></div>-->
+            <div class="topitem titem7"><a href="">Dark</a></div>-->
+            <div class="topitem titem8"><a href="/cheatsheet.html">CheatSheet</a></div>
            
         </div>
 `;
 var footer = document.getElementById("footer");
 footer.innerHTML = `
 <div class="footer yatrafont    ">
-<div>
+<!-- <div>
 <a href="/Math Tools/cramers.html">Cramer's Solver</a>
-</div>
+</div>-->
             <div class="copyright">
                 <div>© 2023 The Engineering Junction. All Rights Reserved.</div>
                 <div>Suggest us: 079bce052@ioepc.edu.np</div>

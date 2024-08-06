@@ -1,0 +1,22 @@
+.cheatcont{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+    text-align: center;
+}
+.cheatbox{
+    background-color: gray;
+    padding: 10px;
+}
+.cheatdetail{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.cheatimg{
+    width: 90%;
+}
+.cheatfinalimg998{
+    width: 80%;
+    border-radius: 20px;
+}
