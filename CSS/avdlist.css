@@ -1,4 +1,4 @@
-.adlist > a {
+.avdlist > a {
   background-color: var(--color5);
   box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.5),
     10px 10px 15px rgba(70, 70, 70, 0.12);
@@ -22,21 +22,21 @@ font-size: 20px;
 .nameQ{
   padding: 10px 0;
 }
-.adlist > a:hover {
+.avdlist > a:hover {
   width: 60%;
   transition: all 0.5s;
 }
-.adlist {
+.avdlist {
   margin-top: 2%;
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
 }
 @media screen and (max-width: 1000px) {
-.adlist > a {
+.avdlist > a {
 width: 100%;
 }
-.adlist > a:hover {
+.avdlist > a:hover {
   width: 100%;
   transition: all 0.5s;
   box-shadow: 0 0 10px 1px black;
