@@ -5,11 +5,9 @@
 .landingsecond {
   background: linear-gradient(
     to right,
-    rgba(233, 76, 3, 0.8),
-    rgba(233, 76, 3, 0.8),
-    rgba(189, 79, 28, 0.5),
-    rgba(255, 255, 0, 0.3),
-    rgba(255, 255, 255, 0)
+    rgba(33, 136, 233, 0.8),
+    rgba(18, 64, 190, 0.3),
+    rgba(240, 240, 240, 0)
   );
 }
 .festivetext {
@@ -28,8 +26,8 @@ background: linear-gradient(
     rgba(240, 217, 13,0.9)
   );
 }
+
 body{
-  background: url("/Image/om.png") rgb(134, 134, 134) repeat;
   background-size: 200px;
 
 }
@@ -38,9 +36,3 @@ body{
   padding-top: 0vh;
 }
 
-
-.threeland > div {
-  box-shadow: 20px 20px 60px #f1842a, -20px -20px 60px #fca829;
-  background: linear-gradient(145deg, #f77b15, #f32121);
-
-}

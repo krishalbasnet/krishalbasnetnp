@@ -1,44 +1,50 @@
-.avdlist > a {
+.avdlist>a {
   background-color: var(--color5);
   box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.5),
     10px 10px 15px rgba(70, 70, 70, 0.12);
-    display: grid;
-    grid-template-columns: 1fr 8fr;
-    text-align: center;
-    width: 50%;
-    margin: auto;
-    border-radius: 20px;
-    transition: all 0.5s;
-  }
-  .semQ{
-    padding: 10px 0;
-    border-radius: 20px 0 0 20px;
+  display: grid;
+  grid-template-columns: 1fr 8fr;
+  text-align: center;
+  width: 50%;
+  margin: auto;
+  border-radius: 10px;
+  transition: all 0.5s;
+}
+
+.semQ {
+  padding: 10px 0;
+  border-radius: 10px 0 0 10px;
   background-color: #f77700;
-font-size: 20px;
+  font-size: 20px;
   font-family: "Lora", serif;
   font-optical-sizing: auto;
   font-style: normal;
 }
-.nameQ{
+
+.nameQ {
   padding: 10px 0;
 }
-.avdlist > a:hover {
+
+.avdlist>a:hover {
   width: 60%;
   transition: all 0.5s;
 }
+
 .avdlist {
   margin-top: 2%;
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
 }
+
 @media screen and (max-width: 1000px) {
-.avdlist > a {
-width: 100%;
-}
-.avdlist > a:hover {
-  width: 100%;
-  transition: all 0.5s;
-  box-shadow: 0 0 10px 1px black;
-}
+  .avdlist>a {
+    width: 100%;
+  }
+
+  .avdlist>a:hover {
+    width: 100%;
+    transition: all 0.5s;
+    box-shadow: 0 0 10px 1px black;
+  }
 }

@@ -1,45 +1,69 @@
-.topbar{
+.topbar {
     display: grid;
-    grid-template-columns: 5fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 4fr 1fr 1fr 1fr 4fr;
     width: 95%;
     margin: auto;
-    
+
     text-align: center;
     align-items: center;
     gap: 10px;
     font-style: normal;
 }
-.topimg{
-    width: 60%;
+
+.topimg {
+    width: 70%;
     height: fit-content;
 }
-.topitem>a{
+
+.topitem>a {
     position: relative;
 }
-.topitem:not(.topimg)>a::before{
-background-color: rgb(87, 87, 87);
-content: " ";
-position: absolute;
-height: 2px;
-width: 60%;
-bottom: 0;
-scale: 0;
-left: 20%;
-transition: all 0.3s;
-}
-.topitem:not(.topimg)>a:hover::before{
-    scale:1;
+
+.topitem:not(.topimg, .titem4)>a::before {
+    background-color: rgb(87, 87, 87);
+    content: " ";
+    position: absolute;
+    height: 2px;
+    width: 60%;
+    bottom: 0;
+    scale: 0;
+    left: 20%;
     transition: all 0.3s;
 }
 
+.topitem:not(.topimg)>a:hover::before {
+    scale: 1;
+    transition: all 0.3s;
+}
+
+.titem1,
+.titem2,
+.titem3 {
+    text-align: center;
+}
+
+.titem4 {
+    text-align: right;
+    margin-right: 10px;
+}
+
+.titem4>a {
+    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+    padding: 5px 30px;
+    text-align: center;
+    border-radius: 30px;
+}
+
 @media screen and (max-width:1000px) {
-    .topbar{
+    .topbar {
         grid-template-columns: 1fr;
     }
-    .topitem{
-       width: 100%;
+
+    .topitem {
+        width: 100%;
     }
-    .topimg{
+
+    .topimg {
         max-width: 500px;
         margin: auto;
     }

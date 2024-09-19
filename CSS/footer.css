@@ -1,18 +1,39 @@
-div.footer{
-    margin-top: 10vh;
-    background-color: #354f52;
-}
-.copyright{
+.copyrightfooter {
+    background-color: rgb(77, 77, 77);
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     text-align: center;
-    color: #cad2c5;
+    font-family: "Yatra One", system-ui;
+    font-weight: 400;
+    color: aliceblue;
 }
-.g676{
-    color: #cad2c5;
+.mainfooter{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 2fr;
+    background-color: rgb(77, 77, 77);
+    margin-top: 100px;
+    text-align: center;
 }
-@media screen and (max-width:1000px) {
-    .copyright{
-        grid-template-columns: 1fr;
-    }
+.footerimg{
+    width: 70%;
+    margin: auto;
+}
+.socialfooter{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 70px;
+    padding: 20px;
+}
+a.footerlogoa{
+    border-radius: 50%;
+}
+a.footerlogoa>img{
+    border-radius: 50%;
+}
+.mainfooter{
+    padding-top:20px ;
+}
+.footerhead4{
+    font-weight: 900;
+    margin-bottom: 10px;
 }

@@ -5,29 +5,57 @@ topbar.innerHTML = `
                 <img src="/Image/Topbarlogo.png" alt="">
             </a></div>
             <div class="topitem titem1"><a class="topimage" href="/index.html">Home</a></div>
-           <!-- <div class="topitem titem2"><a href="">Blogs</a></div>-->
-            <div class="topitem titem4"><a href="/past.html">Past Paper</a></div>
-            <!----> 
-            <div class="topitem titem5"><a href="/library.html">E-Library</a></div> <!--
-            <div class="topitem titem3"><a href="/class.html">Classes</a></div> 
-            <div class="topitem titem6"><a href="/contact.html">Contact</a></div>
-            <div class="topitem titem7"><a href="">Dark</a></div>-->
-            <div class="topitem titem8"><a href="/cheatsheet.html">CheatSheet</a></div>
+            <div class="topitem titem2"><a href="/past.html">Past Paper</a></div>
+            <div class="topitem titem3"><a href="/library.html">E-Library</a></div> 
+            <div class="topitem titem4"><a href="/404.html">Coming Soon...</a></div> 
+
            
         </div>
 `;
 var footer = document.getElementById("footer");
 footer.innerHTML = `
-<div class="footer yatrafont    ">
-<!-- <div>
-<a href="/Math Tools/cramers.html">Cramer's Solver</a>
-</div>-->
-            <div class="copyright">
-                <div>© 2023 The Engineering Junction. All Rights Reserved.</div>
-                <div>Suggest us: 079bce052@ioepc.edu.np</div>
-                <div>Designed & Developed By: <a class="g676" target="_blank" href="https://www.instagram.com/basnet__kazi_/"> Krishal Basnet</a></div>
+<div class="footer">
+        <div class="mainfooter">
+            <!-- <div class="footer1"> -->
+                <!-- <div class="footerhead4">FOOTER TOP HEAD</div> -->
+                <!-- <div><a href="">TEST</a></div> -->
+                <!-- <div><a href="">TEST</a></div> -->
+                <!-- <div><a href="">TEST</a></div> -->
+                <!-- <div><a href="">TEST</a></div> -->
+            <!-- </div> -->
+            <!-- <div class="footer2"> -->
+                <!-- <div class="footerhead4">FOOTER TOP HEAD</div> -->
+                <!-- <div><a href="">TEST</a></div> -->
+                <!-- <div><a href="">TEST</a></div> -->
+                <!-- <div><a href="">TEST</a></div> -->
+                <!-- <div><a href="">TEST</a></div> -->
+            <!-- </div> -->
+            <div class="footer3">
+                <div class="footerhead4">Information</div>
+                <div><a href="">Syllabus</a></div>
+                <div><a href="">Cut-off</a></div>
+                <!-- <div><a href="">TEST</a></div> -->
+                <!-- <div><a href="">TEST</a></div> -->
+            </div>
+            <div class="footer4">
+                <img class="footerimg" src="Image/The Engineering Junction-logos_white - Copy.png" alt="">
+                <div class="socialfooter">
+                    <a target="_blank" href="https://www.facebook.com/profile.php?id=61550198021764"
+                        class="social2 footerlogoa"><img src="Image/fb.png" alt=""></a>
+                    <a target="_blank" href="https://www.instagram.com/the_engineering_junction/"
+                        class="social1 footerlogoa"><img src="Image/ig.png" alt=""></a>
+                    <a target="_blank" href="https://github.com/krishalbasnet" class="social3 footerlogoa"><img
+                            src="Image/gh.png" alt=""></a>
+                    <a target="_blank" href="https://www.youtube.com/@krishalbasnet" class="social4 footerlogoa"><img
+                            src="Image/yt.png" alt=""></a>
+                </div>
             </div>
         </div>
+        <div class="copyrightfooter">
+            <div>© 2024 The Engineering Junction. All Rights Reserved.</div>
+            <div>Designed & Developed By: Krishal Basnet</div>
+        </div>
+    </div>
 `;
 function solutiondisplay(x, y) {
   var id = "DRW" + x + "-" + y;
@@ -42,4 +70,4 @@ function solutiondisplay(x, y) {
     aghy2.innerHTML = "Show Answer";
   }
 }
-disable
+disable;
