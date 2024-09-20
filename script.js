@@ -6,8 +6,8 @@ topbar.innerHTML = `
             </a></div>
             <div class="topitem titem1"><a class="topimage" href="/index.html">Home</a></div>
             <div class="topitem titem2"><a href="/past.html">Past Paper</a></div>
-            <div class="topitem titem3"><a href="/library.html">E-Library</a></div> 
-            <div class="topitem titem4"><a href="/404.html">Coming Soon...</a></div> 
+           <!-- <div class="topitem titem3"><a href="/library.html">E-Library</a></div> 
+            <div class="topitem titem4"><a href="/404.html">Coming Soon...</a></div> -->
 
            
         </div>
@@ -30,12 +30,12 @@ footer.innerHTML = `
                 <!-- <div><a href="">TEST</a></div> -->
                 <!-- <div><a href="">TEST</a></div> -->
             <!-- </div> -->
-            <div class="footer3">
+           <!-- <div class="footer3">
                 <div class="footerhead4">Information</div>
                 <div><a href="">Syllabus</a></div>
                 <div><a href="">Cut-off</a></div>
-                <!-- <div><a href="">TEST</a></div> -->
-                <!-- <div><a href="">TEST</a></div> -->
+                <div><a href="">TEST</a></div> 
+                 <div><a href="">TEST</a></div> 
             </div>
             <div class="footer4">
                 <img class="footerimg" src="Image/The Engineering Junction-logos_white - Copy.png" alt="">
@@ -49,7 +49,7 @@ footer.innerHTML = `
                     <a target="_blank" href="https://www.youtube.com/@krishalbasnet" class="social4 footerlogoa"><img
                             src="Image/yt.png" alt=""></a>
                 </div>
-            </div>
+            </div>-->
         </div>
         <div class="copyrightfooter">
             <div>© 2024 The Engineering Junction. All Rights Reserved.</div>
