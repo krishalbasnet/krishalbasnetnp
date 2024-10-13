@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Engineering Junction</title>
+    <link rel="shortcut icon" href="/Image/toptoptoplogo.png" type="image/x-icon">
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <div id="topbar"></div>
+    <div class="mainbody">
+        <h1>Past Paper - Engineering</h1>
+        <hr>
+        <div class="back">
+            <a href="/past.html">
+                <img src="/Image/back.png" alt="">
+            </a>
+        </div>
+        <div class="labele">
+            <label for="pdfSelector">Choose the set:</label>
+            <select id="pdfSelector">
+                <option value='1 (30).png'>TEST</option>
+                <option value='1 (29).png'>TEST</option>
+                <option value='1 (28).png'>TEST</option>
+                <option value='1 (27).png'>TEST</option>
+                <option value='1 (26).png'>TEST</option>
+                <option value='1 (25).png'>TEST</option>
+                <option value='1 (24).png'>TEST</option>
+                <option value='1 (23).png'>TEST</option>
+                <option value='1 (22).png'>TEST</option>
+                <option value='1 (21).png'>TEST</option>
+                <option value='1 (20).png'>TEST</option>
+                <option value='1 (19).png'>TEST</option>
+                <option value='1 (18).png'>TEST</option>
+                <option value='1 (17).png'>TEST</option>
+                <option value='1 (16).png'>TEST</option>
+                <option value='1 (15).png'>TEST</option>
+                <option value='1 (14).png'>TEST</option>
+                <option value='1 (13).png'>TEST</option>
+                <option value='1 (12).png'>TEST</option>
+                <option value='1 (11).png'>TEST</option>
+                <option value='1 (10).png'>TEST</option>
+                <option value='1 (9).png'>TEST</option>
+                <option value='1 (8).png'>TEST</option>
+                <option value='1 (7).png'>TEST</option>
+                <option value='1 (6).png'>TEST</option>
+                <option value='1 (5).png'>TEST</option>
+                <option value='1 (4).png'>TEST</option>
+                <option value='1 (3).png'>TEST</option>
+                <option value='1 (2).png'>TEST</option>
+                <option value='1 (1).png'>TEST</option>
+            </select>
+        </div>
+        <div class="imgembedd">
+            <img id="pdfEmbed" class="embeddedimg" src="XX000/1 (1).png" alt="" />
+        </div>
+    </div>
+    <div id="footer"></div>
+</body>
+<script>
+    const pdfSelector = document.getElementById("pdfSelector");
+    const pdfEmbed = document.getElementById("pdfEmbed");
+
+    pdfSelector.addEventListener("change", function () {
+        const selectedPdf = pdfSelector.value;
+        const pdfPath = "XX000/" + selectedPdf;
+        pdfEmbed.src = pdfPath;
+    });
+</script>
+<script src="/script.js"></script>
+
+</html>

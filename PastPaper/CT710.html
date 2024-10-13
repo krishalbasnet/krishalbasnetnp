@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Engineering Junction</title>
+    <link rel="shortcut icon" href="/Image/toptoptoplogo.png" type="image/x-icon">
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <div id="topbar"></div>
+    <div class="mainbody">
+        <h1>Past Paper - Artificial Intelligence</h1>
+        <hr>
+        <div class="back">
+            <a href="/past.html">
+                <img src="/Image/back.png" alt="">
+            </a>
+        </div>
+        <div class="labele">
+            <label for="pdfSelector">Choose the set:</label>
+            <select id="pdfSelector">
+                <option value='1 (2).png'>2079 Bhadra</option>
+                <option value='1 (1).png'>2080 Baishakh</option>
+            </select>
+        </div>
+        <div class="imgembedd">
+            <img id="pdfEmbed" class="embeddedimg" src="CT710/1 (1).png" alt="" />
+        </div>
+    </div>
+    <div id="footer"></div>
+</body>
+<script>
+    const pdfSelector = document.getElementById("pdfSelector");
+    const pdfEmbed = document.getElementById("pdfEmbed");
+
+    pdfSelector.addEventListener("change", function () {
+        const selectedPdf = pdfSelector.value;
+        const pdfPath = "CT710/" + selectedPdf;
+        pdfEmbed.src = pdfPath;
+    });
+</script>
+<script src="/script.js"></script>
+
+</html>

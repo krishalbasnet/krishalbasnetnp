@@ -1,52 +1,66 @@
-.notewholearea{
-    margin-top: 20px;
-    display: grid;
-    grid-template-columns: 1fr 4fr;
-    gap: 10px;
-    font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI",
-      Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji",
-      "Segoe UI Symbol";
-    color: #37352f;
-  }
-  .NoteBody{
-    font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI",
+.notewholearea {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  gap: 10px;
+  font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji",
+    "Segoe UI Symbol";
+  color: #37352f;
+}
+
+.NoteBody {
+  font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI",
     Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji",
     "Segoe UI Symbol";
   color: #37352f;
   width: 80%;
   margin: auto;
-  }
-  .notenavigator {
-    display: grid;
-    grid-template-columns: repeat(1fr);
-    gap: 10px;
-  }
-  .notenavigator>div{
-    display: grid;
-    grid-template-columns: 1fr;
-    height: fit-content;
-    gap: 10px;
-  }
-  .notenav {
-    width: fit-content;
-    height: fit-content;
-  }
-  .notehead1 {
-    font-size: 1.875rem;
-    margin: 15px;
-    margin-left: 0;
-    font-weight: 500;
-  }
-  .notehead2 {
-    font-size: 1.25rem;
-    margin: 15px;
-    margin-left: 0;
-    font-weight: 500;
-  }
-  .notemaintext {
-    font-size: 16px;
-    line-height: 25px;
-    text-align: justify;
-    
-  }
-  
+}
+
+.notenavigator {
+  display: grid;
+  grid-template-columns: repeat(1fr);
+  gap: 10px;
+}
+
+.notenavigator>div {
+  display: grid;
+  grid-template-columns: 1fr;
+  height: fit-content;
+  gap: 10px;
+}
+
+.notenav {
+  width: fit-content;
+  height: fit-content;
+  background-color: rgb(158, 158, 158);
+  border: 0;
+  width: 80%;
+  padding: 10px 0;
+  border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.notehead1 {
+  font-size: 1.875rem;
+  margin: 15px;
+  margin-left: 0;
+  font-weight: 500;
+}
+
+.notehead2 {
+  font-size: 1.25rem;
+  margin: 15px;
+  margin-left: 0;
+  font-weight: 500;
+}
+
+.notemaintext {
+  font-size: 16px;
+  line-height: 25px;
+  text-align: justify;
+
+}

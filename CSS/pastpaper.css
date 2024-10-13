@@ -28,7 +28,7 @@
   color: white;
 }
 .semselector {
-  background-color: rgb(142, 148, 175);
+  background-color: rgb(150, 150, 150);
   display: grid;
   grid-template-columns: 3fr 1fr;
   padding: 20px 10px;
@@ -59,6 +59,13 @@
   text-align: center;
   font-size: large;
 }
+.syllbutton{
+  border: 0;
+  padding: 10px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
 @media only screen and (max-width:720px){
   .semselector{
     width: 90%;
