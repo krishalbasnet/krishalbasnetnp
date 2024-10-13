@@ -14,6 +14,7 @@ topbar.innerHTML = `
 `;
 var footer = document.getElementById("footer");
 footer.innerHTML = `
+<br>
 <div class="footer">
         <div class="mainfooter">
              <div class="footer1"> 
@@ -50,6 +51,7 @@ footer.innerHTML = `
                 </div>
             </div>
         </div>
+        -->
         <div class="copyrightfooter">
             <div>© 2024 The Engineering Junction. All Rights Reserved.</div>
             <div>Designed & Developed By: Krishal Basnet</div>
