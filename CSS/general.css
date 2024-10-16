@@ -29,3 +29,8 @@ img{
 .SEO{
     display: none;
 }
+@media screen and (max-width:720px) {
+    .nomargin{
+        font-size: 1.5rem;
+    }
+}

@@ -67,3 +67,20 @@
   grid-template-columns: 1fr 5fr;
   align-items: center;
 }
+@media screen and (max-width:720px) {
+  .texthead{
+    font-size: 2rem;
+    width: 90%;
+    margin-top: 0px;
+  }
+  .halfboxindex{
+  grid-template-columns: 1fr;
+    
+  }
+  .imageimage2{
+    display: none;
+  }
+  .imageindex1{
+    width: 90%;
+  }
+}

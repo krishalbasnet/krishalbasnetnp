@@ -32,13 +32,13 @@ footer.innerHTML = `
                  <div><a href="">TEST</a></div> -->
              </div> 
             <div class="footer3">
-                <div class="footerhead4">Information</div>
+                <!--<div class="footerhead4">Information</div>
                 <div><a href="">Old Syllabus</a></div>
                 <div><a href="/syllnew.html">New Syllabus</a></div>
-                <div><a href="">Cut-off</a></div>
+                <div><a href="">Cut-off</a></div>-->
             </div>
             <div class="footer4">
-                <img class="footerimg" src="/Image/The Engineering Junction-logos_white - Copy.png" alt="">
+               <!-- <img class="footerimg" src="/Image/The Engineering Junction-logos_white - Copy.png" alt="">
                 <div class="socialfooter">
                     <a target="_blank" href="https://www.facebook.com/profile.php?id=61550198021764"
                         class="social2 footerlogoa"><img src="/Image/fb.png" alt=""></a>
@@ -48,10 +48,9 @@ footer.innerHTML = `
                             src="/Image/gh.png" alt=""></a>
                     <a target="_blank" href="https://www.youtube.com/@krishalbasnet" class="social4 footerlogoa"><img
                             src="/Image/yt.png" alt=""></a>
-                </div>
+                </div>-->
             </div>
         </div>
-        -->
         <div class="copyrightfooter">
             <div>© 2024 The Engineering Junction. All Rights Reserved.</div>
             <div>Designed & Developed By: Krishal Basnet</div>

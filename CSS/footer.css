@@ -7,33 +7,48 @@
     font-weight: 400;
     color: aliceblue;
 }
-.mainfooter{
+
+.mainfooter {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 2fr;
     background-color: rgb(77, 77, 77);
     margin-top: 100px;
     text-align: center;
 }
-.footerimg{
+
+.footerimg {
     width: 70%;
     margin: auto;
 }
-.socialfooter{
+
+.socialfooter {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 70px;
     padding: 20px;
 }
-a.footerlogoa{
+
+a.footerlogoa {
     border-radius: 50%;
 }
-a.footerlogoa>img{
+
+a.footerlogoa>img {
     border-radius: 50%;
 }
-.mainfooter{
-    padding-top:20px ;
+
+.mainfooter {
+    padding-top: 20px;
 }
-.footerhead4{
+
+.footerhead4 {
     font-weight: 900;
     margin-bottom: 10px;
+}
+
+@media screen and (max-width:720px) {
+
+    .copyrightfooter {
+        grid-template-columns: 1fr;
+        font-size: 0.8rem;
+    }
 }
