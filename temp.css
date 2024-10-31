@@ -1,0 +1,8 @@
+.tempbanner{
+    margin: auto;
+    background-color: rgb(156, 156, 156);
+    width: fit-content;
+    padding: 20px;
+    font-size: 1.1rem;
+    border-radius: 10px;
+}
