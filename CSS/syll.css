@@ -1,0 +1,18 @@
+.syllabus_sub_sem {
+    background-color: rgb(212, 212, 212);
+    padding: 10px;
+    width: 60%;
+    margin: auto;
+}
+
+.syllabus_sub_sem>ul {
+    margin: 0;
+}
+.ablue_ {
+color: rgb(54, 54, 231);
+}
+
+.sub_sem_syll_head{
+    font-weight: 600;
+    font-size: 1.1rem;
+}
