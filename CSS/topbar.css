@@ -1,9 +1,9 @@
+
 .topbar {
     display: grid;
     grid-template-columns: 4fr 1fr 1fr 1fr 1fr 4fr;
     width: 95%;
     margin: auto;
-
     text-align: center;
     align-items: center;
     gap: 10px;

@@ -1,6 +1,15 @@
+:root{
+  --color_adv:rgba(63, 63, 63, 0.2);
+  --color_adv_shadow:rgba(255, 255, 255, 0.5);
+}
+[data-theme="dark"]{
+  --color_adv:rgba(83, 83, 83, 0.5);
+  --color_adv_shadow:rgba(0, 0, 0, 0.5);
+
+}
 .avdlist>a {
-  background-color: rgb(177, 177, 177);
-  box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.5),
+  background-color: var(--color_adv);
+  box-shadow: -10px -10px 15px var(--color_adv_shadow),
     10px 10px 15px rgba(70, 70, 70, 0.12);
   display: grid;
   grid-template-columns: 1fr 8fr;
@@ -48,7 +57,4 @@
     transition: all 0.5s;
     box-shadow: 0 0 10px 1px black;
   }
-}
-.incomplete{
-  background-color: red !important;
 }

@@ -1,36 +1,70 @@
-body{
-    background-color: rgb(200, 200, 200);
+/* Add these variables at the top of your CSS file */
+:root {
+  --background: rgb(200,200,200);
+  --text-color: #000000;
+  --transition: all 0.3s ease;
+}
+
+/* Dark theme variables */
+[data-theme="dark"] {
+  --background: #1a1a1a;
+  --text-color: rgb(253, 243, 229);
+}
+
+/* Apply theme variables */
+body {
+  background-color: var(--background);
+  color: var(--text-color);
+  transition: var(--transition);
+  margin:0 ;
+}
+
+/* Style your theme toggle button */
+.theme-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  transition: var(--transition);
+}
+
+.nomargin {
     margin: 0;
 }
-.nomargin{
-    margin: 0;
-}
-a{
-    color: black;
+
+a {
+    color: var(--text-color);
     text-decoration: none;
 }
-img{
+
+img {
     width: 100%;
 }
-.mainbody{
+
+.mainbody {
     width: 90%;
     margin: auto;
     margin-top: 2%;
 }
-.back{
+
+.back {
     height: 30px;
     width: 80%;
     margin: auto;
 }
-.back>a>img{
+
+.back>a>img {
     width: auto;
     height: 100%;
 }
-.SEO{
+
+.SEO {
     display: none;
 }
+
 @media screen and (max-width:720px) {
-    .nomargin{
+    .nomargin {
         font-size: 1.5rem;
     }
 }

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- TOP, MIDDLE BOTTOM OF FS AND BS AS WELL-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Level Calculator (HOC Method)</title>
+    <link rel="stylesheet" href="/style.css">
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        input {
+            width: 80px;
+            padding: 4px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .rise,
+        .fall,
+        .distance {
+            font-weight: bold;
+        }
+
+        /* Previous CSS remains the same */
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        input {
+            width: 80px;
+            padding: 4px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .rise,
+        .fall,
+        .distance {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="topbar"></div>
+    <div class="mainbody">
+        <h1 class="nomargin">Auto Level Calculator (Rise & Fall Method)</h1>
+        <hr>
+        <table id="surveyTable">
+            <thead>
+                <tr>
+                    <th>S.N.</th>
+                    <th>BS</th>
+                    <th>FS</th>
+                    <th>Top</th>
+                    <th>Middle</th>
+                    <th>Bottom</th>
+                    <th>Rise</th>
+                    <th>Fall</th>
+                    <th>RL</th>
+                    <th>Distance</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td><input type="number" step="0.001" class="bs"></td>
+                    <td><input type="number" step="0.001" class="fs" disabled></td>
+                    <td><input type="number" step="0.001" class="top"></td>
+                    <td><input type="number" step="0.001" class="middle"></td>
+                    <td><input type="number" step="0.001" class="bottom"></td>
+                    <td class="rise">-</td>
+                    <td class="fall">-</td>
+                    <td><input type="number" step="0.001" class="rl" value="0"></td>
+                    <td class="distance">-</td>
+                </tr>
+            </tbody>
+        </table>
+        <button onclick="addRow()">Add Row</button>
+    </div>
+
+    <script>
+        function addRow() {
+            const tbody = document.querySelector('#surveyTable tbody');
+            const rows = tbody.querySelectorAll('tr');
+            const newRow = document.createElement('tr');
+            const sn = rows.length + 1;
+
+            newRow.innerHTML = `
+                <td>${sn}</td>
+                <td><input type="number" step="0.001" class="bs" ${sn > 1 ? '' : 'disabled'}></td>
+                <td><input type="number" step="0.001" class="fs"></td>
+                <td><input type="number" step="0.001" class="top"></td>
+                <td><input type="number" step="0.001" class="middle"></td>
+                <td><input type="number" step="0.001" class="bottom"></td>
+                <td class="rise">-</td>
+                <td class="fall">-</td>
+                <td><input type="number" step="0.001" class="rl" readonly></td>
+                <td class="distance">-</td>
+            `;
+
+            // Disable BS for previous last row
+            if (rows.length > 0) {
+                rows[rows.length - 1].querySelector('.bs').disabled = false;
+            }
+            tbody.appendChild(newRow);
+            calculateAll();
+        }
+
+        function calculateAll() {
+            const rows = document.querySelectorAll('#surveyTable tbody tr');
+            let previousBS = null;
+            let previousRL = 0;
+            let previousHOC = 0;
+
+            rows.forEach((row, index) => {
+                const bs = parseFloat(row.querySelector('.bs').value) || 0;
+                const fs = parseFloat(row.querySelector('.fs').value) || 0;
+                const top = parseFloat(row.querySelector('.top').value) || 0;
+                const bottom = parseFloat(row.querySelector('.bottom').value) || 0;
+
+                // Calculate distance
+                const distance = 100 * (top - bottom);
+                row.querySelector('.distance').textContent = distance ? distance.toFixed(1) : '-';
+
+                // Handle first row specially
+                if (index === 0) {
+                    previousBS = bs;
+                    previousRL = parseFloat(row.querySelector('.rl').value) || 0;
+                    previousHOC = previousBS + previousRL;
+                    row.querySelector('.rise').textContent = '-';
+                    row.querySelector('.fall').textContent = '-';
+                    return;
+                }
+
+                // Calculate rise/fall using previous BS and current FS
+                const diff = previousBS - fs;
+                let rise = 0;
+                let fall = 0;
+
+                if (diff > 0) {
+                    rise = diff;
+                } else if (diff < 0) {
+                    fall = -diff;
+                }
+
+                row.querySelector('.rise').textContent = rise ? rise.toFixed(3) : '-';
+                row.querySelector('.fall').textContent = fall ? fall.toFixed(3) : '-';
+
+                // Calculate RL
+                const currentRL = previousRL + rise - fall;
+                row.querySelector('.rl').value = currentRL.toFixed(3);
+
+                // Update for next iteration
+                previousBS = bs;
+                previousRL = currentRL;
+            });
+        }
+
+        // Event listeners
+        document.querySelector('#surveyTable tbody').addEventListener('input', calculateAll);
+
+
+        function PrintTable() {
+            var divToPrint = document.getElementById("surveyTable");
+            newWin = window.open("");
+            newWin.document.write(divToPrint.outerHTML);
+            newWin.Window.print();
+            newWin.Window.close();
+        }
+    </script>
+    <div id="footer"></div>
+
+</body>
+<script src="/script.js"></script>
+
+</html>

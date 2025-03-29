@@ -1,3 +1,16 @@
+:root{
+  --color_select:rgba(63, 63, 63,0.3);
+  --color_select_sdow1:rgba(87, 87, 100, 0.25);
+  --color_select_sdow2:rgba(187, 186, 186, 0.3);
+  --color_select_sdow3:rgba(205, 210, 214, 0.35);
+}
+[data-theme="dark"]{
+  --color_select:rgb(71, 71, 71);
+  --color_select_sdow1:rgb(27, 27, 27);
+  --color_select_sdow2:rgba(138, 138, 138, 0.3);
+  --color_select_sdow3:rgba(0, 0, 0, 0.35);
+
+}
 .imgembedd {
   width: 75%;
   border-radius: 20px;
@@ -28,16 +41,16 @@
   color: white;
 }
 .semselector {
-  background-color: rgb(150, 150, 150);
+  background-color: var(--color_select);
   display: grid;
   grid-template-columns: 3fr 1fr;
   padding: 20px 10px;
   width: 50%;
   margin: auto;
 
-  box-shadow: rgba(87, 87, 100, 0.25) 0px 50px 100px -20px,
-    rgba(187, 186, 186, 0.3) 0px 30px 60px -30px,
-    rgba(205, 210, 214, 0.35) 0px -2px 6px 0px inset;
+  box-shadow: var(--color_select_sdow1) 0px 50px 100px -20px,
+    var(--color_select_sdow2) 0px 30px 60px -30px,
+    var(--color_select_sdow3) 0px -2px 6px 0px inset;
 
   border-radius: 10px;
   margin-top: 10px;
