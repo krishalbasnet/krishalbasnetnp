@@ -1,7 +1,28 @@
+:root{
+    --glass_color1:rgba(219, 219, 219, 0.473);
+    --glass_border:rgba(255, 255, 255, 0.3);
 
+}
+[data-theme="dark"] {
+    --glass_color1:rgba(61, 61, 61, 0.3);
+    --glass_border:rgba(0, 0, 0, 0.6);
+
+}
+.navglass {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* From https://css.glass */
+    background: var(--glass_color1);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.4px);
+    -webkit-backdrop-filter: blur(6.4px);
+    border: 1px solid var(--glass_border);
+    padding: 5px 0;
+}
 .topbar {
     display: grid;
-    grid-template-columns: 4fr 1fr 1fr 1fr 1fr 4fr;
+    grid-template-columns: 4fr 4fr 4fr;
     width: 95%;
     margin: auto;
     text-align: center;
@@ -19,7 +40,7 @@
     position: relative;
 }
 
-.topitem:not(.topimg, .titem4)>a::before {
+.topitem:not(.topimg, .titem5)>a::before {
     background-color: rgb(87, 87, 87);
     content: " ";
     position: absolute;
@@ -38,7 +59,8 @@
 
 .titem1,
 .titem2,
-.titem3,.titem4 {
+.titem3,
+.titem4 {
     text-align: center;
 }
 
@@ -48,11 +70,16 @@
 }
 
 .titem5>a {
-    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
-    padding: 5px 30px;
-    text-align: center;
-    border-radius: 30px;
+    background: var(--glass_color1);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.4px);
+    -webkit-backdrop-filter: blur(6.4px);
+    border: 1px solid var(--glass_border);
+    padding: 5px 10px;
 }
+
+
 
 @media screen and (max-width:1000px) {
     .topbar {
@@ -67,7 +94,15 @@
         max-width: 500px;
         margin: auto;
     }
-    .titem5{
+
+    .titem5 {
         text-align: center;
     }
+}
+
+.lamp-img {
+    width: 30px;
+    position: fixed;
+    top: 0;
+    right: 20px;
 }

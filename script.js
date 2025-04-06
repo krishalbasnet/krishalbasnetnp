@@ -2,13 +2,30 @@ var topbar = document.getElementById("topbar");
 topbar.innerHTML = `
 <div class="topbar yatrafont    ">
             <div class="topitem topimg"><a href="/index.html">
-                <img src="/Image/Topbarlogo.png" alt="">
+            <img 
+    id="main-logo" 
+    src="/Image/Topbarlogo.png" 
+    alt="Site Logo"
+    data-light-logo="/Image/Topbarlogo.png"
+    data-dark-logo="/Image/Topbarlogo-dark.png"
+  >
+
+
             </a></div>
-            <div class="topitem titem1"><a class="topimage" href="/index.html">Home</a></div>
-            <div class="topitem titem2"><a href="/past.html">Past Paper</a></div>
-           <div class="topitem titem3"><a href="/library.html">E-Library</a></div> 
-           <div class="topitem titem4"><a href="/classes.html">Classes</a></div> 
-           <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">🌙</button>
+            <div class="navglass">
+              <div class="topitem titem1"><a class="topimage" href="/index.html">Home</a></div>
+              <div class="topitem titem2"><a href="/past.html">Past Paper</a></div>
+              <div class="topitem titem3"><a href="/library.html">E-Library</a></div> 
+              <div class="topitem titem4"><a href="/classes.html">Classes</a></div>  </div>
+              <div class="topitem titem5"><a href="/cheatsheet.html">CheatSheet</a></div> 
+           
+           <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+  <img class="lamp-img" 
+       src="/Image/light-lamp.png" 
+       data-light-icon="/Image/light-lamp.png" 
+       data-dark-icon="/Image/dark-lamp.png"
+       alt="Theme toggle icon">
+</button>
 
            
         </div>
