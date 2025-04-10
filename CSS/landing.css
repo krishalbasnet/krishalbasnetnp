@@ -1,7 +1,9 @@
 :root {
   --image-height: 200px
 }
-
+.landing_view{
+  height: 100vh;
+}
 .indextext {
   text-align: center;
   margin-top: 20vh;
@@ -9,10 +11,9 @@
 
 .texthead {
   font-size: 40px;
-  width: 40%;
+  width: 80%;
   margin: auto;
   font-family: "Gowun Batang", serif;
-  font-weight: 900;
   font-style: normal;
 }
 
@@ -21,7 +22,11 @@
   font-size: 18px;
 
 }
-
+.landing_two{
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
 .halfboxindex {
   display: grid;
   grid-template-columns: 2fr 1fr 2fr;
