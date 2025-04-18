@@ -1,15 +1,40 @@
-.librarybody{
+.lib_mock {
+    width: 70%;
+}
+
+.library_main_container {
     display: grid;
-    background-color: rgb(182, 182, 182);
-    padding: 30px;
-    gap: 80px;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 80%;
+    gap: 5%;
+    margin: auto;
 }
-.libbname{
+
+.book_cont {
+    background-color: rgb(143, 143, 143);
+    padding: 5px;
+}
+
+.book_img {
     text-align: center;
-    font-size: 18px;
+    padding: 10%;
+    aspect-ratio: 1/1;
+    background-color: rgb(129, 129, 129);
+    aspect-ratio: 1 / 1; /* makes it a square */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.libitem{
-    background-color: rgb(156, 166, 175);
-    padding: 10px;
+
+.book_img img {
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+}
+.book_title,.book_faculty{
+    margin-top: 5px;
+}
+.book_title{
+    font-weight: 900;
 }
