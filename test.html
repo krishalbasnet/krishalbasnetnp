@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book.com - Global Knowledge Platform</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+
+        nav a {
+            margin-left: 30px;
+            text-decoration: none;
+            color: #2c3e50;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            background-color: #f9f9f9;
+        }
+
+        .hero h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #2c3e50;
+        }
+
+        .hero p {
+            color: #666;
+            margin-bottom: 40px;
+            line-height: 1.6;
+        }
+
+        .search-bar {
+            width: 60%;
+            padding: 15px;
+            border: 2px solid #ddd;
+            border-radius: 25px;
+            margin-bottom: 40px;
+        }
+
+        .recent-books {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .books-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            padding: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .book-cover {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .book-cover:hover {
+            transform: translateY(-5px);
+        }
+
+        .section-title {
+            font-size: 1.8em;
+            margin-bottom: 30px;
+            color: #2c3e50;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Book.com</div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Discover</a>
+            <a href="#">Categories</a>
+            <a href="#">About</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Find the back<br>You're leaking for easier to read.</h1>
+        <p>A global knowledge platform and marketplace for educational bolivering<br>engaging learning to billions.</p>
+        <input type="text" class="search-bar" placeholder="Find your favourite book">
+    </section>
+ 
+    <section class="recent-books">
+        <h2 class="section-title">Recent BackedJees</h2>
+        <div class="books-grid">
+            <!-- Repeat this block for each book -->
+            <div class="book-item">
+                <img src="placeholder.jpg" alt="Bird Blue" class="book-cover">
+                <h3>Bird Blue</h3>
+                <p>Summer</p>
+            </div>
+            <div class="book-item">
+                <img src="placeholder.jpg" alt="The Girl with the Dragon Tattoo" class="book-cover">
+                <h3>THE GIRL WITH THE DRAGON TATTOO</h3>
+                <p>STIEG FONDA LEE</p>
+            </div>
+            <div class="book-item">
+                <img src="placeholder.jpg" alt="City Outtae Centric" class="book-cover">
+                <h3>CITY OUTTAE CENTRIC</h3>
+                <p>CARSCON CART+MILLIAMS</p>
+            </div>
+            <!-- Add more book items as needed -->
+        </div>
+    </section>
+</body>
+</html>
