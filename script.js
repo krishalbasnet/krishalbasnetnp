@@ -17,7 +17,7 @@ topbar.innerHTML = `
               <div class="topitem titem2"><a href="/past.html">Past Paper</a></div>
               <div class="topitem titem3"><a href="/library.html">E-Library</a></div> 
               <div class="topitem titem4"><a href="/classes.html">Classes</a></div>  </div>
-              <div class="topitem titem5"><a href="/cheatsheet.html">CheatSheet</a></div> 
+              <div class="topitem titem5"><a href="/Krishal">Krishal Basnet</a></div> 
            
            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
   <img class="lamp-img" 
