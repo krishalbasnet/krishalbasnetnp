@@ -12,7 +12,7 @@
 <body>
   <div id="topbar"></div>
   <div class="mainbody">
-    <h1>Past Paper - Computer Programming</h1>
+    <h1>Past Paper - Engineering Survey I</h1>
     <hr>
     <div class="back">
       <a href="/past2.html">
@@ -22,13 +22,11 @@
     <div class="labele">
       <label for="pdfSelector">Choose the set:</label>
       <select id="pdfSelector">
-        <option value="sample.png">Sample</option>
-        <option value="1 (1).png">2081 Baishakh</option>
-        <option value="1 (2).png">2081 Chaitra</option>
+        <option value="1 (1).png">2081 Ashwin</option>
       </select>
     </div>
     <div class="imgembedd">
-      <img id="pdfEmbed" class="embeddedimg" src="CT101/1 (2).png" alt="" />
+      <img id="pdfEmbed" class="embeddedimg" src="CE153/1 (1).png" alt="" />
     </div>
   </div>
   <div id="footer"></div>
@@ -39,7 +37,7 @@
 
   pdfSelector.addEventListener("change", function () {
     const selectedPdf = pdfSelector.value;
-    const pdfPath = "CT101/" + selectedPdf;
+    const pdfPath = "CE104/" + selectedPdf;
     pdfEmbed.src = pdfPath;
   });
 </script>
