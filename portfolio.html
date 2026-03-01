@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | Projects</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="portfolio-page">
+    <div class="top-header"></div>
+
+    <div class="container">
+      <section
+        id="portfolio-header"
+        style="min-height: auto; padding-top: 120px"
+      >
+        <h1 class="section-title">Project Portfolio</h1>
+        <p class="summary-text">
+          A collection of my practice projects in civil engineering,
+          architectural design, and land surveying.
+        </p>
+      </section>
+
+      <main class="portfolio-full-grid">
+        <div class="project-card">
+          <div class="project-image">
+            <img src="Portfolio/FL1/FL1.png" alt="House Floor Plan" />
+          </div>
+          <div class="project-info">
+            <span class="project-category">Freelance Project</span>
+            <h3>House Floor Plan</h3>
+            <p>
+              Complete architectural floor plan for a residential client. This
+              project involved detailed space planning, layout optimization, and
+              adherence to specific client requirements for a modern living
+              space.
+            </p>
+          </div>
+        </div>
+      </main>
+
+      <footer
+        style="
+          padding: 60px 0;
+          color: var(--text-muted);
+          font-size: 0.9rem;
+          text-align: center;
+        "
+      >
+        &copy; 2026 Krishal Basnet.
+      </footer>
+    </div>
+
+    <!-- Image Modal -->
+    <div class="image-modal" id="imageModal">
+      <span class="modal-close" id="modalClose">&times;</span>
+      <img class="modal-content" id="modalImage" alt="Enlarged Project View" />
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const modal = document.getElementById("imageModal");
+        const modalImg = document.getElementById("modalImage");
+        const closeBtn = document.getElementById("modalClose");
+        const projectCards = document.querySelectorAll(".project-card");
+
+        projectCards.forEach((card) => {
+          card.addEventListener("click", () => {
+            const img = card.querySelector("img");
+            if (img) {
+              modal.style.display = "flex";
+              modalImg.src = img.src;
+              document.body.style.overflow = "hidden";
+            }
+          });
+        });
+
+        const closeModal = () => {
+          modal.style.display = "none";
+          document.body.style.overflow = "auto";
+        };
+
+        closeBtn.addEventListener("click", closeModal);
+        modal.addEventListener("click", (e) => {
+          if (e.target === modal) closeModal();
+        });
+        document.addEventListener("keydown", (e) => {
+          if (e.key === "Escape") closeModal();
+        });
+      });
+    </script>
+  </body>
+</html>
