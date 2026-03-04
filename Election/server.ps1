@@ -20,7 +20,11 @@ try {
 
         if ($path -eq "/api/data") {
             if ($request.HttpMethod -eq "GET") {
-                $content = Get-Content "data.json" -Raw -Encoding UTF8
+                $dataPath = "data.json"
+                if (-not (Test-Path $dataPath)) {
+                    $dataPath = "api/data_initial.json"
+                }
+                $content = Get-Content $dataPath -Raw -Encoding UTF8
                 $buffer = [System.Text.Encoding]::UTF8.GetBytes($content)
                 $response.ContentType = "application/json"
                 $response.ContentLength64 = $buffer.Length
@@ -29,6 +33,15 @@ try {
             elseif ($request.HttpMethod -eq "POST") {
                 $reader = New-Object System.IO.StreamReader($request.InputStream)
                 $body = $reader.ReadToEnd()
+                
+                # Check if it's the new payload structure { password, data }
+                try {
+                    $json = $body | ConvertFrom-Json
+                    if ($json.data -ne $null) {
+                        $body = $json.data | ConvertTo-Json -Depth 10
+                    }
+                } catch {}
+
                 $body | Out-File "data.json" -Encoding UTF8
                 
                 $msg = "Data saved successfully"
