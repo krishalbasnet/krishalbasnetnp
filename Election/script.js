@@ -19,7 +19,14 @@ async function init() {
     }
 
     try {
-        const response = await fetch('/api/data');
+        let response = await fetch('/api/data');
+        
+        // Fallback for static hosting (GitHub Pages) if API is not found
+        if (!response.ok) {
+            console.warn('API endpoint not found, falling back to static data.json');
+            response = await fetch('data.json');
+        }
+        
         const fullData = await response.json();
         
         // Handle both old and new data structure
@@ -58,7 +65,7 @@ async function init() {
         document.getElementById('admin-logout-btn').addEventListener('click', logoutAdmin);
 
     } catch (e) {
-        console.error('Failed to load data:', e);
+        console.error('Failed to load data from both API and static fallback:', e);
     }
 }
 
