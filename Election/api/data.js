@@ -10,12 +10,9 @@ export default async function handler(req, res) {
       if (data) {
         return res.status(200).json(data);
       } else {
-        // Fallback to local data.json
-        const fs = require('fs');
-        const path = require('path');
-        const filePath = path.join(process.cwd(), 'data.json');
-        const fileData = fs.readFileSync(filePath, 'utf8');
-        return res.status(200).json(JSON.parse(fileData));
+        // Fallback to initial data (bundled by Vercel)
+        const initialData = require('./data_initial.json');
+        return res.status(200).json(initialData);
       }
     } catch (error) {
       return res.status(500).json({ error: error.message });
