@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nepal Election 2082 | Live Results</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="admin-controls">
+          <input
+            type="password"
+            id="admin-password"
+            placeholder="Admin Password"
+          />
+          <button id="admin-login-btn">Unlock Admin</button>
+          <button id="admin-logout-btn" style="display: none">
+            Lock Admin
+          </button>
+        </div>
+        <h1>Nepal Election 2082</h1>
+        <p>Live Winners Tracking Dashboard</p>
+      </header>
+
+      <section class="summary-section">
+        <h2>Party Seat Summary</h2>
+        <div class="summary-card">
+          <table id="party-summary-table">
+            <thead>
+              <tr>
+                <th>Political Party</th>
+                <th>Won (Official)</th>
+                <th>Leading (Temp)</th>
+              </tr>
+            </thead>
+            <tbody id="party-summary-body">
+              <!-- Populated by JS -->
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="pr-section">
+        <h2>Proportional Representative (PR) Tracking</h2>
+        <div class="summary-card">
+          <table id="pr-table">
+            <thead>
+              <tr>
+                <th>Political Party</th>
+                <th>Votes Received</th>
+                <th>Raw Percentage</th>
+                <th>Corrected Percentage (3% Threshold)</th>
+                <th>PR Seats (Total 110)</th>
+              </tr>
+            </thead>
+            <tbody id="pr-body">
+              <!-- Populated by JS -->
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="winners-section">
+        <h2>Winning Candidates</h2>
+        <div id="winners-list" class="winners-grid">
+          <!-- Populated by JS -->
+        </div>
+      </section>
+
+      <section class="main-tracking">
+        <div class="controls-bar">
+          <h2>All Constituencies</h2>
+          <div class="filters">
+            <input
+              type="text"
+              id="search"
+              placeholder="Search candidate or constituency..."
+            />
+            <select id="district-filter">
+              <option value="">All Districts</option>
+            </select>
+            <button id="save-btn">Manual Sync</button>
+          </div>
+        </div>
+
+        <div id="constituencies-container">
+          <!-- Populated by JS with constituency headers and candidates -->
+        </div>
+      </section>
+    </div>
+
+    <div class="save-indicator" id="save-indicator">
+      Data Synced Successfully!
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

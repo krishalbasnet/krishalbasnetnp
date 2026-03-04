@@ -1,0 +1,10 @@
+{
+  "name": "nepal-election-2082-dashboard",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "@vercel/kv": "^1.0.1"
+  }
+}
