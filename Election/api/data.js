@@ -20,13 +20,13 @@ export default async function handler(req, res) {
         // Fallback to initial data (bundled by Vercel)
         const fs = require('fs');
         const path = require('path');
-        const filePath = path.join(process.cwd(), 'api', 'data_initial.json');
+        const filePath = path.join(__dirname, 'data_initial.json');
         
         if (fs.existsSync(filePath)) {
           const initialData = JSON.parse(fs.readFileSync(filePath, 'utf8'));
           return res.status(200).json(initialData);
         } else {
-           return res.status(500).json({ error: 'Initial data file missing' });
+           return res.status(500).json({ error: 'Initial data file missing at ' + filePath });
         }
       }
     } catch (error) {
