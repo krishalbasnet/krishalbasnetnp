@@ -6,13 +6,28 @@ export default async function handler(req, res) {
 
   if (req.method === 'GET') {
     try {
-      const data = await kv.get(DATA_KEY);
+      let data = null;
+      try {
+        data = await kv.get(DATA_KEY);
+      } catch (kvError) {
+        console.error('KV connection error:', kvError);
+        // Continue to fallback if KV fails
+      }
+
       if (data) {
         return res.status(200).json(data);
       } else {
         // Fallback to initial data (bundled by Vercel)
-        const initialData = require('./data_initial.json');
-        return res.status(200).json(initialData);
+        const fs = require('fs');
+        const path = require('path');
+        const filePath = path.join(process.cwd(), 'api', 'data_initial.json');
+        
+        if (fs.existsSync(filePath)) {
+          const initialData = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+          return res.status(200).json(initialData);
+        } else {
+           return res.status(500).json({ error: 'Initial data file missing' });
+        }
       }
     } catch (error) {
       return res.status(500).json({ error: error.message });
