@@ -126,7 +126,11 @@ function renderMainGrid() {
     });
 
     const html = sortedGroups.map(groupKey => {
-        const candidates = grouped[groupKey];
+        const candidates = grouped[groupKey].sort((a, b) => {
+            const voteDiff = (b.midwayVotes || 0) - (a.midwayVotes || 0);
+            if (voteDiff !== 0) return voteDiff;
+            return a.CandidateName.localeCompare(b.CandidateName);
+        });
         const winner = candidates.find(c => c.won);
         
         return `
@@ -138,22 +142,29 @@ function renderMainGrid() {
                     </div>
                 </div>
                 <div class="candidates-row">
-                    ${candidates.map(c => `
-                        <div class="candidate-card ${c.won ? 'won' : ''}">
-                            <div class="candidate-name">${c.CandidateName}</div>
-                            <div class="party-name">${c.PoliticalPartyName}</div>
+                    ${candidates.map((c, idx) => {
+                        const isMedalist = idx < 3 && (c.midwayVotes || 0) > 0;
+                        const medalClass = isMedalist ? `medal-${idx + 1}` : '';
+                        const medalEmoji = idx === 0 ? '🥇' : idx === 1 ? '🥈' : '🥉';
+                        
+                        return `
+                            <div class="candidate-card ${c.won ? 'won' : ''} ${medalClass}">
+                                ${isMedalist ? `<div class="medal-badge">${medalEmoji}</div>` : ''}
+                                <div class="candidate-name">${c.CandidateName}</div>
+                                <div class="party-name">${c.PoliticalPartyName}</div>
 
-                            <input type="number" class="candidate-vote-input" 
-                                placeholder="Votes..." 
-                                value="${c.midwayVotes || ''}" 
-                                onchange="updateMidwayVotes(${c.CandidateID}, this.value)"
-                                min="0">
+                                <input type="number" class="candidate-vote-input" 
+                                    placeholder="Votes..." 
+                                    value="${c.midwayVotes || ''}" 
+                                    onchange="updateMidwayVotes(${c.CandidateID}, this.value)"
+                                    min="0">
 
-                            <button class="won-btn" onclick="toggleWon(${c.CandidateID})">
-                                ${c.won ? 'WON' : 'SET WINNER'}
-                            </button>
-                        </div>
-                    `).join('')}
+                                <button class="won-btn" onclick="toggleWon(${c.CandidateID})">
+                                    ${c.won ? 'WON' : 'SET WINNER'}
+                                </button>
+                            </div>
+                        `;
+                    }).join('')}
                 </div>
             </div>
         `;
@@ -242,8 +253,11 @@ function renderWinnersAndSummary() {
     });
 
     const sortedParties = Object.entries(partyStats).sort((a, b) => {
-        if (b[1].won !== a[1].won) return b[1].won - a[1].won;
-        return b[1].leading - a[1].leading;
+        const partyA = a[0];
+        const partyB = b[0];
+        const voteDiff = (prData[partyB] || 0) - (prData[partyA] || 0);
+        if (voteDiff !== 0) return voteDiff;
+        return partyA.localeCompare(partyB);
     });
 
     partySummaryBody.innerHTML = sortedParties.map(([party, stats]) => `
@@ -273,7 +287,11 @@ function renderWinnersAndSummary() {
 }
 
 function renderPRTable() {
-    const parties = Object.keys(prData).sort();
+    const parties = Object.keys(prData).sort((a, b) => {
+        const voteDiff = (prData[b] || 0) - (prData[a] || 0);
+        if (voteDiff !== 0) return voteDiff;
+        return a.localeCompare(b);
+    });
     const totalVotes = Object.values(prData).reduce((a, b) => a + b, 0);
     
     // Calculate 3% threshold and redistribute
@@ -318,8 +336,8 @@ function updateMidwayVotes(candidateId, value) {
     const candidate = electionData.find(c => c.CandidateID === candidateId);
     if (candidate) {
         candidate.midwayVotes = parseInt(value) || 0;
-        // Update the top list immediately
-        renderWinnersAndSummary();
+        // Update everything to re-sort the grid and party tables
+        renderAll();
         debounceSave();
     }
 }

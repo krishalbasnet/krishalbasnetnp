@@ -405,6 +405,64 @@ select:focus {
   color: var(--text-muted);
 }
 
+/* Medal Styles - Prominent Corner Ribbons */
+.candidate-card {
+  position: relative;
+  overflow: hidden; /* For the ribbon clip */
+}
+
+.medal-badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  z-index: 10;
+  background: white;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 75%, 0 100%);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding-bottom: 5px;
+}
+
+.medal-1 .medal-badge {
+  background: #fbbf24;
+  color: white;
+  border-bottom: 2px solid #d97706;
+}
+.medal-2 .medal-badge {
+  background: #94a3b8;
+  color: white;
+  border-bottom: 2px solid #64748b;
+}
+.medal-3 .medal-badge {
+  background: #b45309;
+  color: white;
+  border-bottom: 2px solid #92400e;
+}
+
+.medal-1 {
+  border-color: #fbbf24 !important;
+  background: #fffcf0 !important;
+}
+.medal-2 {
+  border-color: #94a3b8 !important;
+  background: #f1f5f9 !important;
+}
+.medal-3 {
+  border-color: #b45309 !important;
+  background: #fff7ed !important;
+}
+
+.medal-1 .candidate-name,
+.medal-2 .candidate-name,
+.medal-3 .candidate-name {
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
 .candidate-vote-input {
   width: 100%;
   background: rgba(241, 245, 249, 0.5);
