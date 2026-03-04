@@ -10,8 +10,12 @@ export default async function handler(req, res) {
       if (data) {
         return res.status(200).json(data);
       } else {
-        // Fallback or initial state can be handled here
-        return res.status(200).json({ error: 'No data found in KV' });
+        // Fallback to local data.json
+        const fs = require('fs');
+        const path = require('path');
+        const filePath = path.join(process.cwd(), 'data.json');
+        const fileData = fs.readFileSync(filePath, 'utf8');
+        return res.status(200).json(JSON.parse(fileData));
       }
     } catch (error) {
       return res.status(500).json({ error: error.message });
