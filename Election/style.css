@@ -76,9 +76,23 @@ body.admin-mode .admin-only {
   display: block;
 }
 
+body:not(.admin-mode) .non-admin-only {
+  display: block;
+}
+
+body.admin-mode .non-admin-only {
+  display: none;
+}
+
+body:not(.admin-mode) .admin-only {
+  display: none;
+}
+
 body.admin-mode .won-btn,
 body.admin-mode .candidate-vote-input,
-body.admin-mode .pr-input {
+body.admin-mode .pr-input,
+body.admin-mode .candidate-name-input,
+body.admin-mode .party-name-input {
   pointer-events: auto;
   opacity: 1;
 }
@@ -286,6 +300,28 @@ select {
   background: rgba(15, 23, 42, 0.8);
 }
 
+.candidate-name-input,
+.party-name-input {
+  width: 100%;
+  background: rgba(15, 23, 42, 0.5);
+  border: 1px solid var(--border);
+  color: var(--text-main);
+  padding: 0.4rem;
+  border-radius: 6px;
+  margin-bottom: 0.5rem;
+  font-size: 0.85rem;
+  outline: none;
+}
+
+.candidate-name-input {
+  font-weight: 700;
+}
+
+.candidate-name-input:focus,
+.party-name-input:focus {
+  border-color: var(--accent);
+}
+
 .won-btn {
   width: 100%;
   padding: 0.6rem;
@@ -307,13 +343,25 @@ select {
   filter: brightness(1.2);
 }
 
-button#save-btn {
+button#save-btn,
+button#export-btn {
   background: var(--primary);
   color: white;
   border: none;
   padding: 0.75rem 1.5rem;
   border-radius: 8px;
   cursor: pointer;
+}
+
+button#export-btn {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+}
+
+button#export-btn:hover {
+  background: var(--primary);
+  color: white;
 }
 
 .save-indicator {

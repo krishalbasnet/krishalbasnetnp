@@ -45,10 +45,17 @@ export default async function handler(req, res) {
     }
 
     try {
+      if (!process.env.KV_REST_API_URL || !process.env.KV_REST_API_TOKEN) {
+        throw new Error('Missing KV environment variables. Please set KV_REST_API_URL and KV_REST_API_TOKEN in Vercel settings.');
+      }
       await kv.set(DATA_KEY, data);
       return res.status(200).json({ success: true });
     } catch (error) {
-      return res.status(500).json({ error: error.message });
+      console.error('Save failed:', error);
+      return res.status(500).json({ 
+        error: error.message,
+        details: 'Check Vercel Storage tab to ensure KV is created and linked.'
+      });
     }
   }
 

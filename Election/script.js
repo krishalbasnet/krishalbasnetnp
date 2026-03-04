@@ -53,6 +53,7 @@ async function init() {
         searchInput.addEventListener('input', renderAll);
         districtFilter.addEventListener('change', renderAll);
         saveBtn.addEventListener('click', saveData);
+        document.getElementById('export-btn').addEventListener('click', exportData);
         document.getElementById('admin-login-btn').addEventListener('click', loginAdmin);
         document.getElementById('admin-logout-btn').addEventListener('click', logoutAdmin);
 
@@ -131,8 +132,18 @@ function renderMainGrid() {
                     ${candidates.map(c => `
                         <div class="candidate-card ${c.won ? 'won' : ''}">
                             <div>
-                                <div class="candidate-name">${c.CandidateName}</div>
-                                <div class="party-name">${c.PoliticalPartyName}</div>
+                                <input type="text" class="candidate-name-input admin-only" 
+                                    value="${c.CandidateName}" 
+                                    onchange="updateCandidateInfo(${c.CandidateID}, 'CandidateName', this.value)"
+                                    placeholder="Candidate Name">
+                                <div class="candidate-name non-admin-only">${c.CandidateName}</div>
+
+                                <input type="text" class="party-name-input admin-only" 
+                                    value="${c.PoliticalPartyName}" 
+                                    onchange="updateCandidateInfo(${c.CandidateID}, 'PoliticalPartyName', this.value)"
+                                    placeholder="Party Name">
+                                <div class="party-name non-admin-only">${c.PoliticalPartyName}</div>
+
                                 <input type="number" class="candidate-vote-input" 
                                     placeholder="Votes..." 
                                     value="${c.midwayVotes || ''}" 
@@ -150,6 +161,28 @@ function renderMainGrid() {
     }).join('');
 
     constituenciesContainer.innerHTML = html || '<p style="text-align:center; color: var(--text-muted)">No matching candidates found.</p>';
+}
+
+function updateCandidateInfo(candidateId, field, value) {
+    const candidate = electionData.find(c => c.CandidateID === candidateId);
+    if (candidate) {
+        candidate[field] = value;
+        renderWinnersAndSummary(); // Refresh summary if party name changes
+        debounceSave();
+    }
+}
+
+function exportData() {
+    const data = { electionData, prData };
+    const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `election_data_${new Date().toISOString().slice(0, 10)}.json`;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
 }
 
 function renderWinnersAndSummary() {
