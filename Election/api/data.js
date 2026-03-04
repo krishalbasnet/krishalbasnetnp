@@ -23,7 +23,10 @@ export default async function handler(req, res) {
         const filePath = path.join(__dirname, 'data_initial.json');
         
         if (fs.existsSync(filePath)) {
-          const initialData = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+          let content = fs.readFileSync(filePath, 'utf8');
+          // Strip BOM if it exists
+          content = content.replace(/^\uFEFF/, '');
+          const initialData = JSON.parse(content);
           return res.status(200).json(initialData);
         } else {
            return res.status(500).json({ error: 'Initial data file missing at ' + filePath });
