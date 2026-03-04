@@ -43,22 +43,27 @@
       </section>
 
       <section class="pr-section">
-        <h2>Proportional Representative (PR) Tracking</h2>
-        <div class="summary-card">
-          <table id="pr-table">
-            <thead>
-              <tr>
-                <th>Political Party</th>
-                <th>Votes Received</th>
-                <th>Raw Percentage</th>
-                <th>Corrected Percentage (3% Threshold)</th>
-                <th>PR Seats (Total 110)</th>
-              </tr>
-            </thead>
-            <tbody id="pr-body">
-              <!-- Populated by JS -->
-            </tbody>
-          </table>
+        <div class="section-header-row">
+          <h2>Proportional Representative (PR) Tracking</h2>
+          <button id="pr-toggle-btn" class="toggle-btn">Show Details</button>
+        </div>
+        <div id="pr-content" class="collapsible-content">
+          <div class="summary-card">
+            <table id="pr-table">
+              <thead>
+                <tr>
+                  <th>Political Party</th>
+                  <th>Votes Received</th>
+                  <th>Raw Percentage</th>
+                  <th>Corrected Percentage (3% Threshold)</th>
+                  <th>PR Seats (Total 110)</th>
+                </tr>
+              </thead>
+              <tbody id="pr-body">
+                <!-- Populated by JS -->
+              </tbody>
+            </table>
+          </div>
         </div>
       </section>
 

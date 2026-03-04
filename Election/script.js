@@ -64,6 +64,14 @@ async function init() {
         document.getElementById('admin-login-btn').addEventListener('click', loginAdmin);
         document.getElementById('admin-logout-btn').addEventListener('click', logoutAdmin);
 
+        // PR Section Toggle Logic
+        const prToggleBtn = document.getElementById('pr-toggle-btn');
+        const prContent = document.getElementById('pr-content');
+        prToggleBtn.addEventListener('click', () => {
+            const isExpanded = prContent.classList.toggle('expanded');
+            prToggleBtn.textContent = isExpanded ? 'Hide Details' : 'Show Details';
+        });
+
     } catch (e) {
         console.error('Failed to load data from both API and static fallback:', e);
     }

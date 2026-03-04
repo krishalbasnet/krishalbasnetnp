@@ -144,6 +144,50 @@ h2 {
   display: flex;
   align-items: center;
   gap: 0.75rem;
+  margin-bottom: 0; /* Let container handle spacing */
+}
+
+.section-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.25rem;
+}
+
+.toggle-btn {
+  background: var(--secondary);
+  color: white;
+  border: none;
+  padding: 0.5rem 1.25rem;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  box-shadow: var(--shadow-sm);
+}
+
+.toggle-btn:hover {
+  background: var(--secondary-hover);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.collapsible-content {
+  max-height: 0;
+  overflow: hidden;
+  transition:
+    max-height 0.45s cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 0.3s ease;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.collapsible-content.expanded {
+  max-height: 2000px; /* Large enough to fit content */
+  opacity: 1;
+  pointer-events: auto;
+  margin-top: 1rem;
 }
 
 h2::before {
