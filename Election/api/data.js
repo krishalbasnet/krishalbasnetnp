@@ -1,4 +1,10 @@
 import Redis from 'ioredis';
+import fs from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 // Use a singleton Redis client to avoid connection leaks
 let redisClient = null;
@@ -30,9 +36,7 @@ export default async function handler(req, res) {
         return res.status(200).json(data);
       } else {
         // Fallback to initial data
-        const fs = require('fs');
-        const path = require('path');
-        const filePath = path.join(process.cwd(), 'api', 'data_initial.json');
+        const filePath = path.join(__dirname, 'data_initial.json');
         
         if (fs.existsSync(filePath)) {
           let content = fs.readFileSync(filePath, 'utf8');
@@ -40,7 +44,15 @@ export default async function handler(req, res) {
           const initialData = JSON.parse(content);
           return res.status(200).json(initialData);
         } else {
-           return res.status(500).json({ error: 'Initial data file missing' });
+           // Provide debug info to help resolve Vercel deployment issues
+           return res.status(500).json({ 
+             error: 'Initial data file missing',
+             debug: {
+               dirname: __dirname,
+               lookingAt: filePath,
+               filesInDir: fs.existsSync(__dirname) ? fs.readdirSync(__dirname) : 'dir not found'
+             }
+           });
         }
       }
     } catch (error) {

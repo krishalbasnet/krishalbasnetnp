@@ -244,7 +244,24 @@ select {
   margin-bottom: 1.5rem;
   color: var(--text-main);
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+}
+
+.add-candidate-btn {
+  background: var(--success);
+  color: white;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.add-candidate-btn:hover {
+  filter: brightness(1.1);
+  transform: translateY(-1px);
 }
 
 .candidates-row {

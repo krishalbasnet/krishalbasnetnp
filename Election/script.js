@@ -125,8 +125,13 @@ function renderMainGrid() {
         return `
             <div class="constituency-group">
                 <div class="constituency-header">
-                    <span>${groupKey}</span>
-                    ${winner ? `<span style="color: var(--winner-gold)">Winner Decided</span>` : ''}
+                    <div>
+                        <span>${groupKey}</span>
+                        ${winner ? `<span style="color: var(--winner-gold); margin-left: 1rem;">Winner Decided</span>` : ''}
+                    </div>
+                    <button class="add-candidate-btn admin-only" onclick="addCandidate('${candidates[0].DistrictName}', ${candidates[0].ConstName})">
+                        + Add Candidate
+                    </button>
                 </div>
                 <div class="candidates-row">
                     ${candidates.map(c => `
@@ -161,6 +166,21 @@ function renderMainGrid() {
     }).join('');
 
     constituenciesContainer.innerHTML = html || '<p style="text-align:center; color: var(--text-muted)">No matching candidates found.</p>';
+}
+
+function addCandidate(districtName, constName) {
+    const newId = Math.max(0, ...electionData.map(c => c.CandidateID)) + 1;
+    electionData.push({
+        CandidateID: newId,
+        DistrictName: districtName,
+        ConstName: constName,
+        CandidateName: "New Candidate",
+        PoliticalPartyName: "Independent",
+        midwayVotes: 0,
+        won: false
+    });
+    renderAll();
+    debounceSave();
 }
 
 function updateCandidateInfo(candidateId, field, value) {
