@@ -136,32 +136,19 @@ function renderMainGrid() {
                         <span>${groupKey}</span>
                         ${winner ? `<span style="color: var(--winner-gold); margin-left: 1rem;">Winner Decided</span>` : ''}
                     </div>
-                    <button class="add-candidate-btn admin-only" onclick="addCandidate('${candidates[0].DistrictName}', ${candidates[0].ConstName})">
-                        + Add Candidate
-                    </button>
                 </div>
                 <div class="candidates-row">
                     ${candidates.map(c => `
                         <div class="candidate-card ${c.won ? 'won' : ''}">
-                            <div>
-                                <input type="text" class="candidate-name-input admin-only" 
-                                    value="${c.CandidateName}" 
-                                    onchange="updateCandidateInfo(${c.CandidateID}, 'CandidateName', this.value)"
-                                    placeholder="Candidate Name">
-                                <div class="candidate-name non-admin-only">${c.CandidateName}</div>
+                            <div class="candidate-name">${c.CandidateName}</div>
+                            <div class="party-name">${c.PoliticalPartyName}</div>
 
-                                <input type="text" class="party-name-input admin-only" 
-                                    value="${c.PoliticalPartyName}" 
-                                    onchange="updateCandidateInfo(${c.CandidateID}, 'PoliticalPartyName', this.value)"
-                                    placeholder="Party Name">
-                                <div class="party-name non-admin-only">${c.PoliticalPartyName}</div>
+                            <input type="number" class="candidate-vote-input" 
+                                placeholder="Votes..." 
+                                value="${c.midwayVotes || ''}" 
+                                onchange="updateMidwayVotes(${c.CandidateID}, this.value)"
+                                min="0">
 
-                                <input type="number" class="candidate-vote-input" 
-                                    placeholder="Votes..." 
-                                    value="${c.midwayVotes || ''}" 
-                                    onchange="updateMidwayVotes(${c.CandidateID}, this.value)"
-                                    min="0">
-                            </div>
                             <button class="won-btn" onclick="toggleWon(${c.CandidateID})">
                                 ${c.won ? 'WON' : 'SET WINNER'}
                             </button>
