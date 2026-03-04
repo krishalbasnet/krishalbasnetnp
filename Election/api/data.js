@@ -1,35 +1,46 @@
-import { kv } from '@vercel/kv';
+import Redis from 'ioredis';
+
+// Use a singleton Redis client to avoid connection leaks
+let redisClient = null;
+function getRedisClient() {
+  if (!redisClient && process.env.REDIS_URL) {
+    redisClient = new Redis(process.env.REDIS_URL);
+  }
+  return redisClient;
+}
 
 export default async function handler(req, res) {
   const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD;
   const DATA_KEY = 'election_2082_data';
+  const kv = getRedisClient();
 
   if (req.method === 'GET') {
     try {
       let data = null;
-      try {
-        data = await kv.get(DATA_KEY);
-      } catch (kvError) {
-        console.error('KV connection error:', kvError);
-        // Continue to fallback if KV fails
+      if (kv) {
+        try {
+          const rawData = await kv.get(DATA_KEY);
+          data = rawData ? JSON.parse(rawData) : null;
+        } catch (kvError) {
+          console.error('Redis connection error:', kvError);
+        }
       }
 
       if (data) {
         return res.status(200).json(data);
       } else {
-        // Fallback to initial data (bundled by Vercel)
+        // Fallback to initial data
         const fs = require('fs');
         const path = require('path');
-        const filePath = path.join(__dirname, 'data_initial.json');
+        const filePath = path.join(process.cwd(), 'api', 'data_initial.json');
         
         if (fs.existsSync(filePath)) {
           let content = fs.readFileSync(filePath, 'utf8');
-          // Strip BOM if it exists
           content = content.replace(/^\uFEFF/, '');
           const initialData = JSON.parse(content);
           return res.status(200).json(initialData);
         } else {
-           return res.status(500).json({ error: 'Initial data file missing at ' + filePath });
+           return res.status(500).json({ error: 'Initial data file missing' });
         }
       }
     } catch (error) {
@@ -41,21 +52,18 @@ export default async function handler(req, res) {
     const { password, data } = req.body;
 
     if (!ADMIN_PASSWORD || password !== ADMIN_PASSWORD) {
-      return res.status(401).json({ error: 'Unauthorized: Invalid Admin Password' });
+      return res.status(401).json({ error: 'Unauthorized' });
+    }
+
+    if (!kv) {
+      return res.status(500).json({ error: 'Redis connection unconfigured. Please check REDIS_URL environment variable.' });
     }
 
     try {
-      if (!process.env.KV_REST_API_URL || !process.env.KV_REST_API_TOKEN) {
-        throw new Error('Missing KV environment variables. Please set KV_REST_API_URL and KV_REST_API_TOKEN in Vercel settings.');
-      }
-      await kv.set(DATA_KEY, data);
+      await kv.set(DATA_KEY, JSON.stringify(data));
       return res.status(200).json({ success: true });
     } catch (error) {
-      console.error('Save failed:', error);
-      return res.status(500).json({ 
-        error: error.message,
-        details: 'Check Vercel Storage tab to ensure KV is created and linked.'
-      });
+      return res.status(500).json({ error: error.message });
     }
   }
 
