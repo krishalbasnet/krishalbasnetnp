@@ -48,10 +48,15 @@ async function init() {
         });
 
         // Initialize PR data for all parties if empty
-        const allParties = [...new Set(electionData.map(c => c.PoliticalPartyName))].sort();
+        const allParties = [...new Set(electionData.map(c => c.PoliticalPartyName))].filter(p => p).sort();
         allParties.forEach(p => {
             if (prData[p] === undefined) prData[p] = 0;
         });
+        
+        // Explicitly ensure Rastriya Swatantra Party is present
+        if (prData["राष्ट्रिय स्वतन्त्र पार्टी"] === undefined) {
+            prData["राष्ट्रिय स्वतन्त्र पार्टी"] = 0;
+        }
 
         // Initial render
         renderAll();
