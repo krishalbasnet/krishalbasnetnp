@@ -105,6 +105,7 @@ function renderAll() {
     renderMainGrid();
     renderWinnersAndSummary();
     renderPRTable();
+    updateTotalVotes();
 }
 
 function renderMainGrid() {
@@ -347,6 +348,14 @@ function updateMidwayVotes(candidateId, value) {
         // Update everything to re-sort the grid and party tables
         renderAll();
         debounceSave();
+    }
+}
+
+function updateTotalVotes() {
+    const total = electionData.reduce((sum, c) => sum + (c.midwayVotes || 0), 0);
+    const element = document.getElementById('total-votes-count');
+    if (element) {
+        element.textContent = total.toLocaleString();
     }
 }
 
