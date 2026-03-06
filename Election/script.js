@@ -9,6 +9,7 @@ const districtFilter = document.getElementById('district-filter');
 const saveBtn = document.getElementById('save-btn');
 
 let isAdmin = false;
+let showAllPR = false;
 
 async function init() {
     // Check for saved password
@@ -69,13 +70,8 @@ async function init() {
         document.getElementById('admin-login-btn').addEventListener('click', loginAdmin);
         document.getElementById('admin-logout-btn').addEventListener('click', logoutAdmin);
 
-        // PR Section Toggle Logic
-        const prToggleBtn = document.getElementById('pr-toggle-btn');
-        const prContent = document.getElementById('pr-content');
-        prToggleBtn.addEventListener('click', () => {
-            const isExpanded = prContent.classList.toggle('expanded');
-            prToggleBtn.textContent = isExpanded ? 'Hide Details' : 'Show Details';
-        });
+        // Remove PR Section Toggle Logic as it is now always visible
+
 
     } catch (e) {
         console.error('Failed to load data from both API and static fallback:', e);
@@ -328,7 +324,7 @@ function renderPRTable() {
     const qualifyingParties = parties.filter(p => prData[p] >= threshold && totalVotes > 0);
     const qualifyingTotalVotes = qualifyingParties.reduce((sum, p) => sum + prData[p], 0);
 
-    prBody.innerHTML = parties.map(p => {
+    const calculatedData = parties.map(p => {
         const votes = prData[p];
         const rawPercent = totalVotes > 0 ? (votes / totalVotes * 100).toFixed(2) : '0.00';
         const isQualifying = votes >= threshold && totalVotes > 0;
@@ -340,19 +336,44 @@ function renderPRTable() {
             ? Math.round(votes / qualifyingTotalVotes * 110)
             : 0;
 
-        return `
+        return { party: p, votes, rawPercent, isQualifying, correctedPercent, seats, threshold };
+    });
+
+    const filteredData = showAllPR 
+        ? calculatedData 
+        : calculatedData.filter(d => d.seats > 1);
+
+    const hasMore = calculatedData.length > filteredData.length;
+
+    prBody.innerHTML = filteredData.map(d => `
             <tr>
-                <td>${p}</td>
+                <td>${d.party}</td>
                 <td>
-                    <input type="number" class="pr-input" value="${votes}" 
-                        onchange="updatePRVotes('${p}', this.value)" min="0">
+                    <input type="number" class="pr-input" value="${d.votes}" 
+                        onchange="updatePRVotes('${d.party}', this.value)" min="0">
                 </td>
-                <td class="${votes < threshold && totalVotes > 0 ? 'threshold-fail' : ''}">${rawPercent}%</td>
-                <td class="${isQualifying ? 'threshold-pass' : 'threshold-fail'}">${correctedPercent}%</td>
-                <td style="font-weight: 800; color: var(--winner-gold)">${isQualifying ? seats : '-'}</td>
+                <td class="${d.votes < d.threshold && totalVotes > 0 ? 'threshold-fail' : ''}">${d.rawPercent}%</td>
+                <td class="${d.isQualifying ? 'threshold-pass' : 'threshold-fail'}">${d.correctedPercent}%</td>
+                <td style="font-weight: 800; color: var(--winner-gold)">${d.isQualifying ? d.seats : '-'}</td>
             </tr>
+        `).join('');
+
+    if (hasMore || showAllPR) {
+        const tr = document.createElement('tr');
+        tr.innerHTML = `
+            <td colspan="5" style="text-align: center;">
+                <button class="show-all-btn" onclick="toggleShowAllPR()">
+                    ${showAllPR ? 'Show Less' : 'More...'}
+                </button>
+            </td>
         `;
-    }).join('');
+        prBody.appendChild(tr);
+    }
+}
+
+function toggleShowAllPR() {
+    showAllPR = !showAllPR;
+    renderPRTable();
 }
 
 function updatePRVotes(party, value) {

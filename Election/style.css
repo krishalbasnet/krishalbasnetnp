@@ -194,21 +194,25 @@ h2 {
   box-shadow: var(--shadow-md);
 }
 
-.collapsible-content {
-  max-height: 0;
-  overflow: hidden;
-  transition:
-    max-height 0.45s cubic-bezier(0.4, 0, 0.2, 1),
-    opacity 0.3s ease;
-  opacity: 0;
-  pointer-events: none;
+.show-all-btn {
+  background: var(--secondary);
+  color: white;
+  border: none;
+  padding: 0.5rem 1.25rem;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  box-shadow: var(--shadow-sm);
+  margin-top: 1rem;
+  width: 100%;
 }
 
-.collapsible-content.expanded {
-  max-height: 2000px; /* Large enough to fit content */
-  opacity: 1;
-  pointer-events: auto;
-  margin-top: 1rem;
+.show-all-btn:hover {
+  background: var(--secondary-hover);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
 }
 
 h2::before {
