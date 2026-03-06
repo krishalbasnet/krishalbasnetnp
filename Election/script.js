@@ -143,7 +143,7 @@ function renderMainGrid() {
         const winner = candidates.find(c => c.won);
         
         return `
-            <div class="constituency-group">
+            <div class="constituency-group ${winner ? 'winner-declared' : ''}">
                 <div class="constituency-header">
                     <div>
                         <span>${groupKey}</span>
@@ -156,6 +156,9 @@ function renderMainGrid() {
                         const medalClass = isMedalist ? `medal-${idx + 1}` : '';
                         const medalEmoji = idx === 0 ? '🥇' : idx === 1 ? '🥈' : '🥉';
                         
+                        const deficit = idx > 0 ? (c.midwayVotes || 0) - (candidates[idx - 1].midwayVotes || 0) : null;
+                        const deficitHtml = (deficit !== null && deficit !== 0) ? `<div class="vote-deficit">${deficit.toLocaleString()}</div>` : '';
+
                         return `
                             <div class="candidate-card ${c.won ? 'won' : ''} ${medalClass}">
                                 ${isMedalist ? `<div class="medal-badge">${medalEmoji}</div>` : ''}
@@ -169,8 +172,9 @@ function renderMainGrid() {
                                     min="0">
 
                                 <button class="won-btn" onclick="toggleWon(${c.CandidateID})">
-                                    ${c.won ? 'WON' : 'SET WINNER'}
+                                    ${c.won ? 'निर्वाचित' : 'SET WINNER'}
                                 </button>
+                                ${deficitHtml}
                             </div>
                         `;
                     }).join('')}
@@ -234,14 +238,14 @@ function renderWinnersAndSummary() {
     const displayList = [];
     Object.values(constituencies).forEach(con => {
         if (con.winner) {
-            displayList.push({ ...con.winner, status: 'WINNER' });
+            displayList.push({ ...con.winner, status: 'निर्वाचित' });
         } else {
             // Find leading candidate (max midwayVotes > 0)
             const leading = con.candidates
                 .filter(c => (c.midwayVotes || 0) > 0)
                 .sort((a, b) => (b.midwayVotes || 0) - (a.midwayVotes || 0))[0];
             if (leading) {
-                displayList.push({ ...leading, status: 'LEADING' });
+                displayList.push({ ...leading, status: 'अग्रता' });
             }
         }
     });
@@ -254,9 +258,9 @@ function renderWinnersAndSummary() {
         if (!partyStats[item.PoliticalPartyName]) {
             partyStats[item.PoliticalPartyName] = { won: 0, leading: 0 };
         }
-        if (item.status === 'WINNER') {
+        if (item.status === 'निर्वाचित') {
             partyStats[item.PoliticalPartyName].won++;
-        } else if (item.status === 'LEADING') {
+        } else if (item.status === 'अग्रता') {
             partyStats[item.PoliticalPartyName].leading++;
         }
     });
@@ -279,17 +283,17 @@ function renderWinnersAndSummary() {
 
     // Winners/Leading List
     winnersList.innerHTML = displayList.sort((a, b) => {
-        if (a.status !== b.status) return a.status === 'WINNER' ? -1 : 1;
+        if (a.status !== b.status) return a.status === 'निर्वाचित' ? -1 : 1;
         return a.CandidateName.localeCompare(b.CandidateName);
     }).map(w => `
-        <div class="winner-card ${w.status === 'LEADING' ? 'leading-card' : ''}">
-            <div style="font-size: 0.75rem; color: ${w.status === 'WINNER' ? 'var(--winner-gold)' : 'var(--accent)'}; font-weight: bold; margin-bottom: 0.5rem;">
+        <div class="winner-card ${w.status === 'अग्रता' ? 'leading-card' : ''}">
+            <div style="font-size: 0.75rem; color: ${w.status === 'निर्वाचित' ? 'var(--winner-gold)' : 'var(--accent)'}; font-weight: bold; margin-bottom: 0.5rem;">
                 ${w.status}
             </div>
             <div class="candidate-name">${w.CandidateName}</div>
             <div class="party-name" style="color: var(--text-main)">${w.PoliticalPartyName}</div>
             <div style="font-size: 0.75rem; color: var(--text-muted); margin-top: 0.5rem;">
-                ${w.DistrictName} - ${w.ConstName} ${w.status === 'LEADING' ? `(${w.midwayVotes} votes)` : ''}
+                ${w.DistrictName} - ${w.ConstName} ${w.status === 'अग्रता' ? `(${w.midwayVotes} votes)` : ''}
             </div>
         </div>
     `).join('') || '<p style="color: var(--text-muted)">No results yet.</p>';

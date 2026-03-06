@@ -319,7 +319,7 @@ td:last-child {
 }
 
 .winner-card::after {
-  content: "WINNER";
+  content: "निर्वाचित";
   position: absolute;
   top: 1.2rem;
   right: -2.5rem;
@@ -341,7 +341,7 @@ td:last-child {
 }
 
 .winner-card.leading-card::after {
-  content: "LEADING";
+  content: "अग्रता";
   background: var(--secondary);
 }
 
@@ -440,11 +440,11 @@ select:focus {
   background: rgba(255, 255, 255, 0.95);
 }
 
-.candidate-card.won {
-  border-color: #fbbf24;
-  border-width: 3px;
-  background: rgba(255, 252, 240, 0.8);
-  box-shadow: 0 10px 25px rgba(180, 83, 9, 0.1);
+.candidate-card.won,
+.candidate-card.medal-1.won {
+  border-color: #10b981 !important;
+  background: rgba(240, 253, 244, 0.8) !important;
+  box-shadow: 0 10px 25px rgba(5, 150, 105, 0.1);
 }
 
 .candidate-name,
@@ -522,7 +522,23 @@ select:focus {
   background: #fff7ed !important;
 }
 
+/* Suppress and hide ranking styles if winner is declared */
+.winner-declared .medal-1,
+.winner-declared .medal-2,
+.winner-declared .medal-3 {
+  border-color: var(--border) !important;
+  background: rgba(255, 255, 255, 0.8) !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+}
+
+.winner-declared .medal-badge {
+  display: none !important;
+}
+
 .medal-1 .candidate-name,
+.winner-declared .medal-1 .candidate-name,
+.winner-declared .medal-2 .candidate-name,
+.winner-declared .medal-3 .candidate-name,
 .medal-2 .candidate-name,
 .medal-3 .candidate-name {
   border-color: rgba(0, 0, 0, 0.1);
@@ -555,14 +571,14 @@ select:focus {
 }
 
 .candidate-card.won .won-btn {
-  background: #d97706;
-  border-color: #d97706;
+  background: #059669;
+  border-color: #059669;
   color: white;
 }
 
 .won-btn:hover {
-  border-color: #d97706;
-  color: #d97706;
+  border-color: #059669;
+  color: #059669;
 }
 
 .candidate-card.won .won-btn:hover {
@@ -597,6 +613,15 @@ button#export-btn {
 button#export-btn:hover {
   background: #f1f5f9;
   border-color: var(--text-main);
+}
+
+.vote-deficit {
+  color: var(--danger);
+  font-weight: 800;
+  font-size: 0.9rem;
+  text-align: center;
+  margin-top: -0.25rem;
+  font-family: "JetBrains Mono", monospace;
 }
 
 .save-indicator {
