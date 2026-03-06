@@ -285,7 +285,8 @@ function renderWinnersAndSummary() {
     // Winners/Leading List
     const partyLogos = {
         "नेपाली काँग्रेस": "logo/nc.png",
-        "राष्ट्रिय स्वतन्त्र पार्टी": "logo/rsp.png"
+        "राष्ट्रिय स्वतन्त्र पार्टी": "logo/rsp.png",
+        "नेपाली कम्युनिष्ट पार्टी": "logo/ncp.png"
     };
 
     winnersList.innerHTML = displayList.sort((a, b) => {
@@ -296,9 +297,7 @@ function renderWinnersAndSummary() {
         return `
             <div class="winner-card ${w.status === 'अग्रता' ? 'leading-card' : ''}" style="text-align: center;">
                 ${logoUrl ? `<img src="${logoUrl}" class="party-logo" alt="${w.PoliticalPartyName} logo">` : '<div style="height: 50px;"></div>'}
-                <div style="font-size: 0.75rem; color: ${w.status === 'निर्वाचित' ? 'var(--winner-gold)' : 'var(--accent)'}; font-weight: bold; margin-bottom: 0.5rem; text-transform: uppercase; letter-spacing: 0.05em;">
-                    ${w.status}
-                </div>
+
                 <div class="candidate-name" style="border: none; background: none; font-size: 1.1rem; padding-bottom: 0;">${w.CandidateName}</div>
                 <div class="party-name" style="border: none; background: none; color: var(--text-main); font-size: 0.9rem; padding-top: 0;">${w.PoliticalPartyName}</div>
                 <div style="font-size: 0.75rem; color: var(--text-muted); margin-top: 0.5rem;">
