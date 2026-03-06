@@ -299,6 +299,8 @@ function renderWinnersAndSummary() {
     `).join('') || '<p style="color: var(--text-muted)">No results yet.</p>';
 }
 
+
+
 function renderPRTable() {
     const parties = Object.keys(prData).sort((a, b) => {
         const voteDiff = (prData[b] || 0) - (prData[a] || 0);
