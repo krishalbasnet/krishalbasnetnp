@@ -1,133 +1,190 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KRISHAL | Civil Engineering Student</title>
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap" rel="stylesheet">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Styles -->
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <!-- Fixed Elements -->
-    <header>
-        <div class="logo">
-            <img src="TEJ.png" alt="TEJ Logo" style="max-height: 60px; width: auto; object-fit: contain;">
-        </div>
-        <nav class="top-nav">
-            <a href="#projects" class="nav-link">PROJECTS</a>
-            <a href="#contact" class="nav-link">CONTACT</a>
-        </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NEPTECTURE | Premium Civil Engineering & Visualization</title>
+    <meta
+      name="description"
+      content="Explore Neptecture—Krishal Basnet's premier portfolio showcase for civil engineering, 3D Revit modeling, AutoCAD plans, and high-fidelity Enscape renders."
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Premium Header / Scrolling Navbar -->
+    <header class="header-nav" id="main-nav">
+      <a href="#" class="logo" id="logo-link">
+        <span class="logo-nep">NEP</span
+        ><span class="logo-tecture">TECTURE</span>
+      </a>
+
+      <nav class="nav-container">
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="#dashboard" class="nav-link active">Dashboard</a></li>
+          <li><a href="#services" class="nav-link">Service</a></li>
+          <li><a href="#case-studies" class="nav-link">Case Study</a></li>
+          <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+          <li><a href="#blogs" class="nav-link">Blogs</a></li>
+        </ul>
+      </nav>
+
+      <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </header>
-    
-    <aside class="left-sidebar">
-        <div class="socials">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
+
+    <!-- Full-Viewport Hero Image Section -->
+    <main>
+      <section class="hero-section" id="dashboard">
+        <img
+          src="https://lh3.googleusercontent.com/pw/AP1GczPyDEyq7Af41K4VB0PdAAiuXpDl_G5i3rxWH9Bz1Oyat4EttxJt7bte5NPiWqUMBKConS2AM0tKYA2LKbDMCWTWHAoWMwftxDj3LFdmU9ePRgTPEApz"
+          alt="Neptecture Hero"
+          class="hero-image"
+        />
+      </section>
+
+      <!-- Intro / About Section -->
+      <section class="about-section" id="services">
+        <div class="about-container">
+          <div class="about-content">
+            <h2 class="about-title">Precise Craftsmanship</h2>
+            <p class="about-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <p class="about-text">
+              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+          <div class="about-image-wrapper">
+            <img
+              src="https://lh3.googleusercontent.com/pw/AP1GczPyDEyq7Af41K4VB0PdAAiuXpDl_G5i3rxWH9Bz1Oyat4EttxJt7bte5NPiWqUMBKConS2AM0tKYA2LKbDMCWTWHAoWMwftxDj3LFdmU9ePRgTPEApz"
+              alt="Neptecture Showcase"
+              class="about-image"
+            />
+          </div>
         </div>
-    </aside>
-
-    <aside class="right-sidebar">
-        <div class="scroll-wrapper">
-            <span class="scroll-text">SCROLL</span>
-            <div class="scroll-line"></div>
-        </div>
-    </aside>
-
-    <main class="container">
-        <!-- Home Section -->
-        <section id="home" class="section active">
-            <div class="hero-content">
-                <span class="subtitle">I AM</span>
-                <h1 class="title" id="name-title" data-value="KRISHAL">KRISHAL</h1>
-                <span class="role">A STUDENT<br>CIVIL ENGINEER</span>
-            </div>
-        </section>
-
-        <!-- Projects Section -->
-        <section id="projects" class="section">
-            <div class="carousel">
-                <!-- Left Project -->
-                <div class="carousel-item side left">
-                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Restaurant app" class="parallax-img">
-                    <div class="overlay"></div>
-                </div>
-                <!-- Main Project -->
-                <div class="carousel-item main">
-                    <div class="card-inner">
-                        <img src="https://images.unsplash.com/photo-1497935586351-b67a49e012bf?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Keet Cafe" class="parallax-img">
-                    </div>
-                    <div class="card-content">
-                        <h3>TEJ</h3>
-                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit.</p>
-                        <a href="#" class="view-btn">VIEW PROJECT</a>
-                    </div>
-                </div>
-                <!-- Right Project -->
-                <div class="carousel-item side right">
-                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Data dashboard" class="parallax-img">
-                    <div class="overlay"></div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact" class="section">
-            <div class="contact-grid">
-                <div class="contact-info">
-                    <h2>CONTACT</h2>
-                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    
-                    <div class="info-blocks">
-                        <div class="info-block">
-                            <h4>Address</h4>
-                            <p>Itahari, Sunsari, Nepal</p>
-                        </div>
-                        <div class="info-block">
-                            <h4>Phone</h4>
-                            <p>+977 9845030518</p>
-                        </div>
-                        <div class="info-block">
-                            <h4>E-mail</h4>
-                            <p>krishalbasnet1@gmail.com</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="contact-form-card">
-                    <h2>CONTACT FORM</h2>
-                    <form id="contactForm">
-                        <div class="input-group">
-                            <input type="text" id="name" required placeholder=" " autocomplete="off">
-                            <label for="name">Your name</label>
-                        </div>
-                        <div class="input-group">
-                            <input type="tel" id="phone" required placeholder=" " autocomplete="off">
-                            <label for="phone">Your phone</label>
-                        </div>
-                        <div class="input-group">
-                            <input type="email" id="email" required placeholder=" " autocomplete="off">
-                            <label for="email">Your e-mail</label>
-                        </div>
-                        <div class="input-group">
-                            <textarea id="message" required placeholder=" " rows="3" autocomplete="off"></textarea>
-                            <label for="message">Message</label>
-                        </div>
-                        <div class="submit-wrapper">
-                            <button type="submit" class="submit-btn" aria-label="Send Message">SEND MESSAGE <i class="fa-solid fa-arrow-right-long" style="margin-left: 8px;"></i></button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </section>
+      </section>
     </main>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
-    <script src="main.js"></script>
-</body>
+
+    <!-- Premium Black Footer -->
+    <footer class="footer-section">
+      <div class="footer-skyline-container">
+        <img
+          src="IMAGES/skyline.svg"
+          alt="Neptecture Skyline"
+          class="footer-skyline-img"
+        />
+      </div>
+      <div class="footer-container">
+        <div class="footer-logo-row">
+          <a href="#" class="logo footer-logo">
+            <span class="logo-nep">NEP</span><span class="logo-tecture-footer">TECTURE</span>
+          </a>
+        </div>
+        
+        <div class="footer-meta-row">
+          <div class="footer-copyright">
+            &copy; 2026 <span class="footer-brand-name">NEPTECTURE</span>. All rights reserved.
+          </div>
+          <div class="footer-author">
+            Built by <a href="https://www.linkedin.com/in/krishalbasnet/" target="_blank" class="author-link">Krishal Basnet</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Scroll handling for Frosted Glass Navbar & Parallax Effects
+      const mainNav = document.getElementById("main-nav");
+      const heroImage = document.querySelector(".hero-image");
+      const aboutImage = document.querySelector(".about-image");
+      const aboutSection = document.getElementById("services");
+
+      window.addEventListener("scroll", () => {
+        const scrolled = window.pageYOffset;
+
+        // Frosted Glass Navbar Toggle
+        if (scrolled > 50) {
+          mainNav.classList.add("scrolled");
+        } else {
+          mainNav.classList.remove("scrolled");
+        }
+
+        // Hero Image Parallax (scrolling slower)
+        if (heroImage) {
+          heroImage.style.transform = `translate3d(0, ${scrolled * 0.35}px, 0)`;
+        }
+
+        // About Image Parallax
+        if (aboutImage && aboutSection) {
+          const rect = aboutSection.getBoundingClientRect();
+          const windowHeight = window.innerHeight;
+          // Calculate when the about section enters viewport
+          if (rect.top < windowHeight && rect.bottom > 0) {
+            const scrollPercent = (windowHeight - rect.top) / (windowHeight + rect.height);
+            // Translate the image smoothly
+            const translateY = (scrollPercent - 0.5) * 45; 
+            aboutImage.style.transform = `translate3d(0, ${translateY}px, 0)`;
+          }
+        }
+      });
+
+      // Mobile menu toggle
+      const mobileToggle = document.getElementById("mobile-toggle");
+      const navMenu = document.getElementById("nav-menu");
+
+      mobileToggle.addEventListener("click", () => {
+        mobileToggle.classList.toggle("active");
+        navMenu.classList.toggle("active");
+      });
+
+      // Close menu when links are clicked on mobile, and smooth scroll
+      document.querySelectorAll(".nav-link").forEach((link) => {
+        link.addEventListener("click", (e) => {
+          mobileToggle.classList.remove("active");
+          navMenu.classList.remove("active");
+
+          // Update active class
+          document
+            .querySelectorAll(".nav-link")
+            .forEach((l) => l.classList.remove("active"));
+          link.classList.add("active");
+        });
+      });
+
+      // Smooth scroll handling with navigation offset for all local anchors
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          const targetId = this.getAttribute("href");
+          if (targetId === "#") {
+            e.preventDefault();
+            window.scrollTo({
+              top: 0,
+              behavior: "smooth"
+            });
+            return;
+          }
+          
+          try {
+            const targetElement = document.querySelector(targetId);
+            if (targetElement) {
+              e.preventDefault();
+              const navHeight = mainNav.offsetHeight;
+              const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
+              const offsetPosition = targetPosition - navHeight;
+
+              window.scrollTo({
+                top: offsetPosition,
+                behavior: "smooth"
+              });
+            }
+          } catch (err) {
+            // Graceful fallback for non-valid selectors or external anchors
+          }
+        });
+      });
+    </script>
+  </body>
 </html>
